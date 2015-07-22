@@ -25,6 +25,7 @@
             android:layout_height="79dp"
             android:id="@+id/imageButton2"
             android:layout_gravity="left|bottom"
+            android:onClick="Generation2"
             android:background="@drawable/euglena" />
 
         <ImageButton
@@ -32,6 +33,7 @@
             android:layout_height="79dp"
             android:id="@+id/imageButton3"
             android:layout_gravity="center_horizontal|bottom"
+            android:onClick="Generation3"
             android:background="@drawable/amoeba" />
 
         <ImageButton
@@ -39,6 +41,7 @@
             android:layout_height="79dp"
             android:id="@+id/imageButton4"
             android:layout_gravity="right|bottom"
+            android:onClick="Generation4"
             android:background="@drawable/tintinnids" />
 
         <FrameLayout
