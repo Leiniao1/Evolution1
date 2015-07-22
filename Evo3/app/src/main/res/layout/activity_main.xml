@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:layout_width="344dp"
+            android:layout_height="288dp"
+            android:id="@+id/imageButton"
+            android:layout_gravity="center_horizontal|top"
+            android:adjustViewBounds="false"
+            android:background="@drawable/cyanobacteria" />
+
+        <ImageButton
+            android:layout_width="95dp"
+            android:layout_height="79dp"
+            android:id="@+id/imageButton2"
+            android:layout_gravity="left|bottom"
+            android:background="@drawable/euglena" />
+
+        <ImageButton
+            android:layout_width="95dp"
+            android:layout_height="79dp"
+            android:id="@+id/imageButton3"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/amoeba" />
+
+        <ImageButton
+            android:layout_width="95dp"
+            android:layout_height="79dp"
+            android:id="@+id/imageButton4"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/tintinnids" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="191dp"
+            android:layout_gravity="left|bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Cyanoacteria"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal|top" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Euglena"
+                android:id="@+id/textView2"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Amoeba"
+                android:id="@+id/textView3"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Tintinnids"
+                android:id="@+id/textView4"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical|center_horizontal" />
+        </FrameLayout>
+
+    </FrameLayout>
+</RelativeLayout>
