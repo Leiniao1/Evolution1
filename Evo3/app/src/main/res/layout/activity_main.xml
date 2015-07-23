@@ -51,12 +51,12 @@
 
             <TextView
                 android:layout_width="208dp"
-                android:layout_height="wrap_content"
+                android:layout_height="53dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Cyanoacteria"
                 android:id="@+id/textView"
                 android:layout_gravity="center_horizontal|top"
-                android:gravity="center" />
+                android:gravity="top|center_horizontal" />
 
             <TextView
                 android:layout_width="98dp"
@@ -65,7 +65,8 @@
                 android:text="Euglena"
                 android:id="@+id/textView2"
                 android:layout_gravity="left|center_vertical"
-                android:gravity="bottom|center_horizontal" />
+                android:gravity="bottom|center_horizontal"
+                android:textSize="@dimen/abc_action_bar_content_inset_material" />
 
             <TextView
                 android:layout_width="104dp"
@@ -74,7 +75,8 @@
                 android:text="Amoeba"
                 android:id="@+id/textView3"
                 android:layout_gravity="center"
-                android:gravity="bottom|center_horizontal" />
+                android:gravity="bottom|center_horizontal"
+                android:textSize="@dimen/abc_action_bar_content_inset_material" />
 
             <TextView
                 android:layout_width="95dp"
@@ -83,7 +85,18 @@
                 android:text="Tintinnids"
                 android:id="@+id/textView4"
                 android:layout_gravity="right|center_vertical"
-                android:gravity="bottom|center_horizontal" />
+                android:gravity="bottom|center_horizontal"
+                android:textSize="@dimen/abc_action_bar_content_inset_material" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Party"
+                android:id="@+id/button"
+                android:layout_gravity="right|top"
+                android:textSize="@dimen/abc_action_bar_content_inset_material"
+                android:gravity="center" />
 
         </FrameLayout>
 
