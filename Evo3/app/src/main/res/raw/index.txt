@@ -1,0 +1,20 @@
+Cyanobacteria Evo
+Euglena
+Amoeba
+Tintinnids
+-----------------
+Euglena Evo
+Leishmania
+Trichonympha
+Nothing
+-----------------
+Amoeba Evo
+Lithelius
+Entamoeba
+Plasmodium
+-----------------
+Tintinnids Evo
+Colpoda
+Paramecium
+Nothing
+-----------------

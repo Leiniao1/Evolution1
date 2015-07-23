@@ -21,24 +21,24 @@
             android:background="@drawable/cyanobacteria" />
 
         <ImageButton
-            android:layout_width="95dp"
-            android:layout_height="79dp"
+            android:layout_width="90dp"
+            android:layout_height="75dp"
             android:id="@+id/imageButton2"
             android:layout_gravity="left|bottom"
             android:onClick="Generation2"
             android:background="@drawable/euglena" />
 
         <ImageButton
-            android:layout_width="95dp"
-            android:layout_height="79dp"
+            android:layout_width="90dp"
+            android:layout_height="75dp"
             android:id="@+id/imageButton3"
             android:layout_gravity="center_horizontal|bottom"
             android:onClick="Generation3"
             android:background="@drawable/amoeba" />
 
         <ImageButton
-            android:layout_width="95dp"
-            android:layout_height="79dp"
+            android:layout_width="90dp"
+            android:layout_height="75dp"
             android:id="@+id/imageButton4"
             android:layout_gravity="right|bottom"
             android:onClick="Generation4"
@@ -50,39 +50,41 @@
             android:layout_gravity="left|bottom">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="208dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Cyanoacteria"
                 android:id="@+id/textView"
-                android:layout_gravity="center_horizontal|top" />
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="center" />
 
             <TextView
-                android:layout_width="93dp"
-                android:layout_height="wrap_content"
+                android:layout_width="98dp"
+                android:layout_height="39dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Euglena"
                 android:id="@+id/textView2"
                 android:layout_gravity="left|center_vertical"
-                android:gravity="center_vertical|center_horizontal" />
+                android:gravity="bottom|center_horizontal" />
 
             <TextView
-                android:layout_width="87dp"
-                android:layout_height="wrap_content"
+                android:layout_width="104dp"
+                android:layout_height="39dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Amoeba"
                 android:id="@+id/textView3"
                 android:layout_gravity="center"
-                android:gravity="center_vertical|center_horizontal" />
+                android:gravity="bottom|center_horizontal" />
 
             <TextView
-                android:layout_width="92dp"
-                android:layout_height="wrap_content"
+                android:layout_width="95dp"
+                android:layout_height="39dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Tintinnids"
                 android:id="@+id/textView4"
                 android:layout_gravity="right|center_vertical"
-                android:gravity="center_vertical|center_horizontal" />
+                android:gravity="bottom|center_horizontal" />
+
         </FrameLayout>
 
     </FrameLayout>
