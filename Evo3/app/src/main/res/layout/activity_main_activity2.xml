@@ -5,16 +5,18 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.hyin.evo3.MainActivity2Activity"
-    android:background="#32269f07">
+    android:background="#32269f07"
+    android:id="@+id/main2">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="175dp"
-        android:layout_height="350dp"
+        android:layout_height="310dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:layout_marginTop="40dp">
 
         <TableLayout
             android:layout_width="170dp"
@@ -36,6 +38,19 @@
                     android:layout_column="1"
                     android:background="@drawable/cyanobacteria"
                     android:layout_gravity="top|center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="cyanobacteria"
+                    android:id="@+id/textView10"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_column="3"
+                    android:textSize="@dimen/abc_edit_text_inset_top_material"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="1dp" />
+
             </TableRow>
         </TableLayout>
 
@@ -145,12 +160,13 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="175dp"
-        android:layout_height="350dp"
+        android:layout_height="310dp"
         android:weightSum="1"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:gravity="right">
+        android:gravity="right"
+        android:layout_marginTop="40dp">
 
         <TableLayout
             android:layout_width="170dp"
@@ -300,39 +316,53 @@
             android:layout_gravity="left|center_vertical" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="Clone"
             android:id="@+id/button12"
-            android:layout_gravity="center_horizontal|top"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Die Out"
-            android:id="@+id/button13"
-            android:layout_gravity="center_horizontal|bottom"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Evo"
-            android:id="@+id/Evo"
             android:layout_gravity="right|top"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="Survive"
-            android:id="@+id/button14"
+            android:text="Die Out"
+            android:id="@+id/button13"
             android:layout_gravity="right|bottom"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp" />
+
     </FrameLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:text="Back to Evo"
+        android:id="@+id/button2"
+        android:textSize="@dimen/abc_edit_text_inset_top_material"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:text="Survive"
+        android:id="@+id/button3"
+        android:textSize="@dimen/abc_edit_text_inset_top_material"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Protozoan Era"
+        android:id="@+id/textView9"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

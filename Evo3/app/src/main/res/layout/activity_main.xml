@@ -20,7 +20,7 @@
             android:layout_gravity="center_horizontal|top"
             android:adjustViewBounds="false"
             android:background="@drawable/cyanobacteria"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="17dp" />
 
         <ImageButton
             android:layout_width="90dp"
@@ -95,11 +95,12 @@
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Party"
+                android:text="Reset"
                 android:id="@+id/button"
                 android:layout_gravity="right|top"
-                android:textSize="@dimen/abc_action_bar_content_inset_material"
+                android:textSize="@dimen/notification_subtext_size"
                 android:gravity="center"
+                android:onClick="ResetEvo"
                 android:layout_marginTop="15dp" />
 
         </FrameLayout>
@@ -111,7 +112,8 @@
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:id="@+id/layout1">
 
         <TextView
             android:layout_width="117dp"
