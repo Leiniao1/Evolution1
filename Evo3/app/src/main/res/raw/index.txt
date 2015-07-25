@@ -141,3 +141,189 @@ Nothing
 Nothing
 -----------------
 ======= Jellyfish =====
+Dicyemida Evo
+Hydra
+Nothing
+Nothing
+-----------------
+Hydra Evo
+Obelia
+Beroe
+Nothing
+-----------------
+Obelia Evo
+Tubularia
+Haliclystus
+Clavularia
+-----------------
+Tubularia Evo
+Eudendrium
+Muggiaea
+Craspedacusta
+-----------------
+Eudendrium Evo
+Hydractinia
+Pennaria
+Nothing
+-----------------
+Muggiaea Evo
+Physalia
+Nothing
+Nothing
+-----------------
+Craspedacusta Evo
+Gonionemus
+Nothing
+Nothing
+-----------------
+Hydractinia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pennaria Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Physalia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Gonionemus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Haliclystus Evo
+Chiropsalmus
+Aurelia
+Rhopilema
+-----------------
+Chiropsalmus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Aurelia Evo
+Pelagia
+Cyanea
+Nothing
+-----------------
+Rhopilema Evo
+Mastigias
+Nothing
+Nothing
+-----------------
+Pelagia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Cyanea Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Mastigias Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Clavularia Evo
+Heliopora
+Sagartia
+Nothing
+-----------------
+Heliopora Evo
+Alcyonium
+Gorgonia
+Virgularia
+-----------------
+Alcyonium Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Gorgonia Evo
+Corallium
+Nothing
+Nothing
+-----------------
+Virgularia Evo
+Cavernularia
+Nothing
+Nothing
+-----------------
+Corallium Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Cavernularia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Sagartia Evo
+Fungia
+Zoanthus
+Metridium
+-----------------
+Fungia Evo
+Acropora
+Meandrina
+Platygyra
+-----------------
+Zoanthus Evo
+Antipathes
+Nothing
+Nothing
+-----------------
+Metridium Evo
+Cerianthus
+Nothing
+Nothing
+-----------------
+Acropora Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Meandrina Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Platygyra Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Antipathes Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Cerianthus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Beroe Evo
+Pleurobrachia
+Cestum
+Nothing
+-----------------
+Pleurobrachia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Cestum Evo
+Neochildia
+Nothing
+Nothing
+-----------------
+======= Flatworm =======

@@ -18,4 +18,42 @@ Bath Sponge
 ------------------
 Tedania
 Fire Sponge
-
+------------------
+Physalia
+Man-O-War
+------------------
+Aurelia
+Moon Jellifish
+------------------
+Chiropsalmus
+Box Jellifish
+------------------
+Rhopilema
+Mushroom Cap Jellifish
+------------------
+Mastigias
+Lagoon Jellyfish
+------------------
+Cavernularia
+Sea Finger
+------------------
+Virgularia
+Sea Pen
+------------------
+Acropora
+Staghorn Coral
+------------------
+Meandrina
+Maze Coral
+------------------
+Platygyra
+Brain Coral
+------------------
+Antipathes
+Black Coral
+------------------
+Pleurobrachia
+Sea Gooseberry
+------------------
+Cestum
+Venus Girdle

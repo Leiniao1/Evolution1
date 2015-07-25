@@ -30,8 +30,8 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
-    public String English_Name[] = new String[100];
-    public String Latin_Name[] = new String[100];
+    public String English_Name[] = new String[200];
+    public String Latin_Name[] = new String[200];
     public Specie currMainSpecie = new Specie();
     public int DNA = 200, DNA_rate = 2;
     public int EvoLevel_DNA_Table[] = new int[200];
@@ -52,7 +52,7 @@ public class MainActivity extends ActionBarActivity {
             InputStream in = getResources().openRawResource(R.raw.latinenglish);
             BufferedReader dataIO = new BufferedReader(new InputStreamReader(in));
             String s_temp;
-            for(int i=0; i<100; i++) {English_Name[i]=""; Latin_Name[i]="";}
+            for(int i=0; i<200; i++) {English_Name[i]=""; Latin_Name[i]="";}
             int cnt=0;
             while ((s_temp = dataIO.readLine()) != null) {
                 if (s_temp.equals("------------------")) {
