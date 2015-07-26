@@ -18,8 +18,8 @@
             android:layout_height="288dp"
             android:id="@+id/imageButton"
             android:layout_gravity="center_horizontal|top"
-            android:adjustViewBounds="false"
-            android:background="@drawable/cyanobacteria"
+            android:src="@drawable/cyanobacteria"
+            android:scaleType="fitXY"
             android:layout_marginTop="17dp" />
 
         <ImageButton
@@ -28,7 +28,8 @@
             android:id="@+id/imageButton2"
             android:layout_gravity="left|bottom"
             android:onClick="Generation2"
-            android:background="@drawable/euglena" />
+            android:scaleType="fitXY"
+            android:src="@drawable/euglena" />
 
         <ImageButton
             android:layout_width="90dp"
@@ -36,7 +37,8 @@
             android:id="@+id/imageButton3"
             android:layout_gravity="center_horizontal|bottom"
             android:onClick="Generation3"
-            android:background="@drawable/amoeba" />
+            android:scaleType="fitXY"
+            android:src="@drawable/amoeba" />
 
         <ImageButton
             android:layout_width="90dp"
@@ -44,7 +46,8 @@
             android:id="@+id/imageButton4"
             android:layout_gravity="right|bottom"
             android:onClick="Generation4"
-            android:background="@drawable/tintinnids" />
+            android:scaleType="fitXY"
+            android:src="@drawable/tintinnids" />
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -105,58 +108,59 @@
 
         </FrameLayout>
 
-    </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/layout1"
+            android:layout_gravity="right|center_vertical">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/layout1">
+            <TextView
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="DNA: 200"
+                android:id="@+id/textView5"
+                android:layout_gravity="left|top"
+                android:gravity="top|left"
+                android:layout_marginLeft="5dp" />
 
-        <TextView
-            android:layout_width="117dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="DNA: 200"
-            android:id="@+id/textView5"
-            android:layout_gravity="left|top"
-            android:gravity="top|left"
-            android:layout_marginLeft="5dp" />
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="DNA: -2"
+                android:id="@+id/textView6"
+                android:layout_gravity="left|bottom"
+                android:gravity="top|center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="110dp" />
 
-        <TextView
-            android:layout_width="86dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="DNA: -2"
-            android:id="@+id/textView6"
-            android:layout_gravity="left|bottom"
-            android:gravity="top|center"
-            android:layout_marginLeft="5dp"
-            android:layout_marginBottom="110dp" />
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="DNA: -2"
+                android:id="@+id/textView7"
+                android:layout_gravity="center_horizontal|bottom"
+                android:gravity="top|center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="110dp" />
 
-        <TextView
-            android:layout_width="86dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="DNA: -2"
-            android:id="@+id/textView7"
-            android:layout_gravity="center_horizontal|bottom"
-            android:gravity="top|center"
-            android:layout_marginLeft="5dp"
-            android:layout_marginBottom="110dp" />
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="DNA: -2"
+                android:id="@+id/textView8"
+                android:layout_gravity="right|bottom"
+                android:gravity="top|center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="110dp" />
+        </FrameLayout>
 
-        <TextView
-            android:layout_width="86dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="DNA: -2"
-            android:id="@+id/textView8"
-            android:layout_gravity="right|bottom"
-            android:gravity="top|center"
-            android:layout_marginLeft="5dp"
-            android:layout_marginBottom="110dp" />
     </FrameLayout>
 
 </RelativeLayout>

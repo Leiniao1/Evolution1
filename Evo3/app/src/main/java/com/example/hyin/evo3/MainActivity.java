@@ -1,5 +1,9 @@
 package com.example.hyin.evo3;
 
+import android.graphics.BitmapFactory;
+import android.graphics.Bitmap;
+import android.content.res.Resources;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.preference.DialogPreference;
 import android.support.v7.app.ActionBarActivity;
@@ -33,7 +37,7 @@ public class MainActivity extends ActionBarActivity {
     public String English_Name[] = new String[200];
     public String Latin_Name[] = new String[200];
     public Specie currMainSpecie = new Specie();
-    public int DNA = 200, DNA_rate = 2;
+    public int DNA = 200, DNA_rate = 2; // TODO: change DNA back to 200 after testing
     public int EvoLevel_DNA_Table[] = new int[200];
 
     @Override
@@ -140,18 +144,9 @@ public class MainActivity extends ActionBarActivity {
             txV3.setText(Latin2English(sub3));
             txV4.setText(Latin2English(sub4));
             // Update evo pictures
-            ImageButton IBsub2 = (ImageButton) findViewById(R.id.imageButton2);
-            ImageButton IBsub3 = (ImageButton) findViewById(R.id.imageButton3);
-            ImageButton IBsub4 = (ImageButton) findViewById(R.id.imageButton4);
-            Drawable Pic2 = getDrawable(getResources()
-                    .getIdentifier(sub2.toLowerCase(), "drawable", getPackageName()));
-            IBsub2.setBackground(Pic2);
-            Drawable Pic3 = getDrawable(getResources()
-                    .getIdentifier(sub3.toLowerCase(), "drawable", getPackageName()));
-            IBsub3.setBackground(Pic3);
-            Drawable Pic4 = getDrawable(getResources()
-                    .getIdentifier(sub4.toLowerCase(), "drawable", getPackageName()));
-            IBsub4.setBackground(Pic4);
+            setImage2(sub2.toLowerCase());
+            setImage3(sub3.toLowerCase());
+            setImage4(sub4.toLowerCase());
             // Update Curr Main Specie Structure
             currMainSpecie.Evo_level = currMainSpecie.Evo_level+1;
             currMainSpecie.english = Latin2English(s);
@@ -184,24 +179,78 @@ public class MainActivity extends ActionBarActivity {
         txV2.setText(Latin2English(origin2));
         txV3.setText(Latin2English(origin3));
         txV4.setText(Latin2English(origin4));
-        ImageButton IBmain = (ImageButton) findViewById(R.id.imageButton);
-        ImageButton IBsub2 = (ImageButton) findViewById(R.id.imageButton2);
-        ImageButton IBsub3 = (ImageButton) findViewById(R.id.imageButton3);
-        ImageButton IBsub4 = (ImageButton) findViewById(R.id.imageButton4);
-        Drawable Pic1 = getDrawable(getResources()
-                .getIdentifier(origin1.toLowerCase(), "drawable", getPackageName()));
-        IBmain.setBackground(Pic1);
-        Drawable Pic2 = getDrawable(getResources()
-                .getIdentifier(origin2.toLowerCase(), "drawable", getPackageName()));
-        IBsub2.setBackground(Pic2);
-        Drawable Pic3 = getDrawable(getResources()
-                .getIdentifier(origin3.toLowerCase(), "drawable", getPackageName()));
-        IBsub3.setBackground(Pic3);
-        Drawable Pic4 = getDrawable(getResources()
-                .getIdentifier(origin4.toLowerCase(), "drawable", getPackageName()));
-        IBsub4.setBackground(Pic4);
+        setImage1(origin1.toLowerCase());
+        setImage2(origin2.toLowerCase());
+        setImage3(origin3.toLowerCase());
+        setImage4(origin4.toLowerCase());
         currMainSpecie.latin = "Cyanobacteria"; currMainSpecie.english = "Cyanobacteria"; currMainSpecie.Evo_level = 0;
         DNA_reload();
+        return;
+    }
+
+    public static int calculateInSampleSize(
+            BitmapFactory.Options options, int reqWidth, int reqHeight) {
+        // Raw height and width of image
+        final int height = options.outHeight;
+        final int width = options.outWidth;
+        int inSampleSize = 1;
+
+        if (height > reqHeight || width > reqWidth) {
+
+            final int halfHeight = height / 2;
+            final int halfWidth = width / 2;
+
+            // Calculate the largest inSampleSize value that is a power of 2 and keeps both
+            // height and width larger than the requested height and width.
+            while ((halfHeight / inSampleSize) > reqHeight
+                    && (halfWidth / inSampleSize) > reqWidth) {
+                inSampleSize *= 2;
+            }
+        }
+        return inSampleSize;
+    }
+
+    public static Bitmap decodeSampledBitmapFromResource(Resources res, int resId,
+                                                         int reqWidth, int reqHeight, int samplerate) {
+        // First decode with inJustDecodeBounds=true to check dimensions
+        final BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+        BitmapFactory.decodeResource(res, resId, options);
+
+        // Calculate inSampleSize
+        //options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
+        options.inSampleSize = samplerate;
+
+        // Decode bitmap with inSampleSize set
+        options.inJustDecodeBounds = false;
+        return BitmapFactory.decodeResource(res, resId, options);
+    }
+
+    private void setImage1(String origin1){
+        ImageButton IBmain = (ImageButton) findViewById(R.id.imageButton);
+        int res = getResources().getIdentifier(origin1, "drawable", getPackageName());
+        IBmain.setImageBitmap(decodeSampledBitmapFromResource(getResources(), res, IBmain.getWidth(), IBmain.getHeight(),1));
+        return;
+    }
+
+    private void setImage2(String origin2){
+        ImageButton IBsub2 = (ImageButton) findViewById(R.id.imageButton2);
+        int res = getResources().getIdentifier(origin2,"drawable", getPackageName());
+        IBsub2.setImageBitmap(decodeSampledBitmapFromResource(getResources(), res, IBsub2.getWidth(), IBsub2.getHeight(),4));
+        return;
+    }
+
+    private void setImage3(String origin3){
+        ImageButton IBsub3 = (ImageButton) findViewById(R.id.imageButton3);
+        int res = getResources().getIdentifier(origin3,"drawable", getPackageName());
+        IBsub3.setImageBitmap(decodeSampledBitmapFromResource(getResources(), res, IBsub3.getWidth(), IBsub3.getHeight(),4));
+        return;
+    }
+
+    private void setImage4(String origin4) {
+        ImageButton IBsub4 = (ImageButton) findViewById(R.id.imageButton4);
+        int res = getResources().getIdentifier(origin4,"drawable", getPackageName());
+        IBsub4.setImageBitmap(decodeSampledBitmapFromResource(getResources(), res, IBsub4.getWidth(), IBsub4.getHeight(),4));
         return;
     }
 
@@ -218,10 +267,7 @@ public class MainActivity extends ActionBarActivity {
         // Evolution process
         evo_update(s);
         // Picture process
-        s = s.toLowerCase();
-        Drawable Pic1 = getDrawable(getResources()
-                .getIdentifier(s, "drawable", getPackageName()));
-        IBmain.setBackground(Pic1);
+        setImage1(s.toLowerCase());
         return;
     }
 
@@ -238,10 +284,7 @@ public class MainActivity extends ActionBarActivity {
         // Evolution Process
         evo_update(s);
         // Picture Process
-        s = s.toLowerCase();
-        Drawable Pic1 = getDrawable(getResources()
-                .getIdentifier(s, "drawable", getPackageName()));
-        IBmain.setBackground(Pic1);
+        setImage1(s.toLowerCase());
         return;
     }
 
@@ -258,10 +301,7 @@ public class MainActivity extends ActionBarActivity {
         // Evolution Process
         evo_update(s);
         // Picture Process
-        s = s.toLowerCase();
-        Drawable Pic1 = getDrawable(getResources()
-                .getIdentifier(s, "drawable", getPackageName()));
-        IBmain.setBackground(Pic1);
+        setImage1(s.toLowerCase());
         return;
     }
 

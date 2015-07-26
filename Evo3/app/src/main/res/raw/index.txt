@@ -59,11 +59,6 @@ Nothing
 Nothing
 Nothing
 -----------------
-Codosiga Evo
-Proterospongia
-Nothing
-Nothing
------------------
 Eimeria Evo
 Nothing
 Nothing
@@ -75,7 +70,7 @@ Nothing
 Nothing
 -----------------
 ======= Sponge =====
-Proterospongia Evo
+Codosiga Evo
 Archaeocyatha
 Dicyemida
 Nothing
@@ -327,3 +322,99 @@ Nothing
 Nothing
 -----------------
 ======= Flatworm =======
+Neochildia Evo
+Macrostomum
+Pulchritia
+Nothing
+-----------------
+Macrostomum Evo
+Microstomum
+Botulus
+Taenia
+-----------------
+Microstomum Evo
+Pseudobiceros
+Dugesia
+Macrodasys
+-----------------
+Pseudobiceros Evo
+Prostheceraeus
+Nothing
+Nothing
+-----------------
+Prostheceraeus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Dugesia Evo
+Dendrocoelum
+Bipalium
+Nothing
+-----------------
+Dendrocoelum Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Bipalium Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Botulus Evo
+Clonorchis
+Fasciola
+Schistosomiasis
+-----------------
+Clonorchis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Fasciola Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Schistosomiasis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Taenia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Macrodasys Evo
+Lepidodermella
+Chaetoblack
+Corynosoma
+-----------------
+Lepidodermella Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Corynosoma Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pulchritia Evo
+Polyarthra
+Nothing
+Nothing
+-----------------
+Polyarthra Evo
+Nothing
+Nothing
+Nothing
+-----------------
+======== Roundworm ==========
+Chaetoblack Evo
+
+
+
+-----------------
