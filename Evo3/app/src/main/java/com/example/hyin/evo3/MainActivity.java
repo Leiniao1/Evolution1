@@ -1,5 +1,6 @@
 package com.example.hyin.evo3;
 
+import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.graphics.Bitmap;
 import android.content.res.Resources;
@@ -10,6 +11,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.view.View;
@@ -22,6 +25,8 @@ import java.io.*;
 import java.lang.String;
 
 public class MainActivity extends ActionBarActivity {
+
+    public final static String EXTRA_MESSAGE = "Go to party interface";
 
     public class Specie {
         String latin; // record the latin name
@@ -37,12 +42,13 @@ public class MainActivity extends ActionBarActivity {
     public String English_Name[] = new String[200];
     public String Latin_Name[] = new String[200];
     public Specie currMainSpecie = new Specie();
-    public int DNA = 200, DNA_rate = 2; // TODO: change DNA back to 200 after testing
+    public int DNA = 1200, DNA_rate = 2; // TODO: change DNA back to 200 after testing
     public int EvoLevel_DNA_Table[] = new int[200];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("Darwin's Tree");
         setContentView(R.layout.activity_main);
         readLatinEnglishFile();
         readEvoLevelFile();
@@ -308,7 +314,7 @@ public class MainActivity extends ActionBarActivity {
     public void alert1(){
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
         alertDialog.setTitle("No enough DNA...");
-        alertDialog.setMessage("No enough DNA! Go to survive mode for more!");
+        alertDialog.setMessage("No enough DNA! Go to survival mode for more!");
         alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 return;
@@ -338,6 +344,14 @@ public class MainActivity extends ActionBarActivity {
             }
         });
         builder.create().show();
+        return;
+    }
+
+    public void goParty(View view){
+        Intent intent = new Intent(this, MainActivity2Activity.class);
+        String message = "Manage your party";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
         return;
     }
 

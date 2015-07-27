@@ -10,359 +10,559 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="175dp"
-        android:layout_height="310dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:weightSum="1"
-        android:layout_marginTop="40dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2dip"
+        android:id="@+id/f33">
 
-        <TableLayout
-            android:layout_width="170dp"
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:orientation="horizontal"
+            android:layout_weight="0.08">
+
+            <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="0.20"
-            android:layout_gravity="center_vertical"
-            android:background="@android:color/holo_blue_dark">
+                android:layout_weight="0.25"
+            android:text="Evolution"
+            android:id="@+id/button2"
+            android:textSize="@dimen/abc_edit_text_inset_top_material" />
 
-            <TableRow
+            <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Protozoan Era"
+            android:id="@+id/textView9"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.25"
+                android:text="Survival"
+                android:id="@+id/button3"
+                android:textSize="@dimen/abc_edit_text_inset_top_material" />
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.67"
+            android:layout_marginBottom="4dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="3dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.2"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/holo_blue_dark">
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.2">
+
+                    <ImageView
+                        android:layout_height="fill_parent"
+                        android:layout_width="0dip"
+                        android:layout_weight="0.4"
+                        android:id="@+id/imageView11"
+                        android:layout_column="1"
+                        android:src="@drawable/cyanobacteria"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="top|center_vertical"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.6"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="cyanobacteria"
+                        android:id="@+id/textView11"
+                        android:layout_gravity="center_horizontal|top"
+                        android:layout_column="3"
+                        android:textSize="@dimen/abc_edit_text_inset_top_material"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="1dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.2"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/holo_green_light">
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.2">
 
                 <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="60dp"
-                    android:id="@+id/imageView"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.4"
+                    android:id="@+id/imageView12"
                     android:layout_column="1"
-                    android:background="@drawable/cyanobacteria"
-                    android:layout_gravity="top|center_vertical" />
+                    android:src="@drawable/nothing"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginBottom="2dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.6"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:text="cyanobacteria"
-                    android:id="@+id/textView10"
+                    android:id="@+id/textView12"
                     android:layout_gravity="center_horizontal|top"
                     android:layout_column="3"
                     android:textSize="@dimen/abc_edit_text_inset_top_material"
                     android:layout_marginLeft="2dp"
                     android:layout_marginTop="1dp" />
 
-            </TableRow>
-        </TableLayout>
+            </LinearLayout>
 
-        <TableLayout
-            android:layout_width="170dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="0.20"
-            android:id="@+id/tableA">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.2"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/holo_green_light">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></TableRow>
-
-            <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_green_light"
+                android:layout_gravity="center_vertical"
                 android:layout_weight="0.2">
 
                 <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="60dp"
-                    android:id="@+id/imageView3"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.4"
+                    android:id="@+id/imageView13"
                     android:layout_column="1"
-                    android:background="@drawable/cyanobacteria"
-                    android:layout_gravity="top|center_vertical" />
-            </TableRow>
-        </TableLayout>
+                    android:src="@drawable/nothing"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginBottom="2dp" />
 
-        <TableLayout
-            android:layout_width="170dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="0.20" >
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.6"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="cyanobacteria"
+                    android:id="@+id/textView13"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_column="3"
+                    android:textSize="@dimen/abc_edit_text_inset_top_material"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="1dp" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></TableRow>
+            </LinearLayout>
 
-            <TableRow
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.2"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/holo_green_light">
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_green_light"
+                android:layout_gravity="center_vertical"
                 android:layout_weight="0.2">
 
                 <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="60dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.4"
+                    android:id="@+id/imageView14"
+                    android:layout_column="1"
+                    android:src="@drawable/nothing"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginBottom="2dp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.6"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="cyanobacteria"
+                    android:id="@+id/textView14"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_column="3"
+                    android:textSize="@dimen/abc_edit_text_inset_top_material"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="1dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.2"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/holo_green_light">
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2">
+
+                <ImageView
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.4"
+                    android:id="@+id/imageView15"
+                    android:layout_column="1"
+                    android:src="@drawable/nothing"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginBottom="2dp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.6"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="cyanobacteria"
+                    android:id="@+id/textView15"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_column="3"
+                    android:textSize="@dimen/abc_edit_text_inset_top_material"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="1dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:gravity="right"
+            android:layout_gravity="right|center_horizontal"
+            android:layout_marginLeft="3dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.2"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/holo_green_light">
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2">
+
+                <ImageView
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.4"
+                    android:id="@+id/imageView16"
+                    android:layout_column="1"
+                    android:src="@drawable/nothing"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginBottom="2dp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.6"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="cyanobacteria"
+                    android:id="@+id/textView16"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_column="3"
+                    android:textSize="@dimen/abc_edit_text_inset_top_material"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="1dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.2"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/holo_green_light">
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2">
+
+                <ImageView
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.4"
+                    android:id="@+id/imageView17"
+                    android:layout_column="1"
+                    android:src="@drawable/nothing"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginBottom="2dp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.6"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="cyanobacteria"
+                    android:id="@+id/textView17"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_column="3"
+                    android:textSize="@dimen/abc_edit_text_inset_top_material"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="1dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.2"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/holo_green_light">
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2">
+
+                <ImageView
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.4"
+                    android:id="@+id/imageView18"
+                    android:layout_column="1"
+                    android:src="@drawable/nothing"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginBottom="2dp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.6"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="cyanobacteria"
+                    android:id="@+id/textView18"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_column="3"
+                    android:textSize="@dimen/abc_edit_text_inset_top_material"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="1dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.2"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/holo_green_light">
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2">
+
+                <ImageView
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.4"
+                    android:id="@+id/imageView19"
+                    android:layout_column="1"
+                    android:src="@drawable/nothing"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginBottom="2dp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.6"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="cyanobacteria"
+                    android:id="@+id/textView19"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_column="3"
+                    android:textSize="@dimen/abc_edit_text_inset_top_material"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="1dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.2"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/holo_green_light">
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2">
+
+                <ImageView
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.4"
+                    android:id="@+id/imageView20"
+                    android:layout_column="1"
+                    android:src="@drawable/nothing"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginBottom="2dp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.6"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="cyanobacteria"
+                    android:id="@+id/textView20"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_column="3"
+                    android:textSize="@dimen/abc_edit_text_inset_top_material"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="1dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.25"
+            android:background="@android:color/holo_blue_dark">
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
                     android:id="@+id/imageView5"
-                    android:layout_column="1"
-                    android:background="@drawable/nothing"
-                    android:layout_gravity="top|center_vertical" />
-            </TableRow>
-        </TableLayout>
+                    android:src="@drawable/cyanobacteria"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_margin="3dp" />
 
-        <TableLayout
-            android:layout_width="170dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="0.20" >
+            </LinearLayout>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="0dip"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_green_light"
-                android:layout_weight="0.2">
+                android:layout_weight="0.40">
 
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="60dp"
-                    android:id="@+id/imageView7"
-                    android:layout_column="1"
-                    android:background="@drawable/nothing"
-                    android:layout_gravity="top|center_vertical" />
-            </TableRow>
-        </TableLayout>
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.2">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Cyanobacteria"
+                        android:layout_gravity="top"
+                        android:id="@+id/textView25"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
-        <TableLayout
-            android:layout_width="170dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="0.20" >
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.8">
+                    <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Attack/Defense Size/Diet LiveEnvironment"
+                    android:id="@+id/textView21" />
+                </LinearLayout>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></TableRow>
+            </LinearLayout>
 
-            <TableRow
-                android:layout_width="match_parent"
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="0dip"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_green_light"
-                android:layout_weight="0.2">
+                android:layout_weight="0.25">
 
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="60dp"
-                    android:id="@+id/imageView9"
-                    android:layout_column="1"
-                    android:background="@drawable/nothing"
-                    android:layout_gravity="top|center_vertical" />
-            </TableRow>
-        </TableLayout>
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.2">
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:text="Clone"
+                    android:id="@+id/button12"
+                    android:layout_gravity="right|top"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+                </LinearLayout>
+
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.2">
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:text="Die Out"
+                    android:id="@+id/button13"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="175dp"
-        android:layout_height="310dp"
-        android:weightSum="1"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:gravity="right"
-        android:layout_marginTop="40dp">
-
-        <TableLayout
-            android:layout_width="170dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="0.20" >
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/holo_green_light"
-                android:layout_weight="0.2"
-                android:layout_gravity="right">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="60dp"
-                    android:id="@+id/imageView2"
-                    android:layout_column="1"
-                    android:background="@drawable/nothing"
-                    android:layout_gravity="top|center_vertical" />
-            </TableRow>
-        </TableLayout>
-
-        <TableLayout
-            android:layout_width="170dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="0.20" >
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/holo_green_light"
-                android:layout_weight="0.2"
-                android:layout_gravity="right">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="60dp"
-                    android:id="@+id/imageView4"
-                    android:layout_column="1"
-                    android:background="@drawable/nothing"
-                    android:layout_gravity="top|center_vertical" />
-            </TableRow>
-        </TableLayout>
-
-        <TableLayout
-            android:layout_width="170dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="0.20" >
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/holo_green_light"
-                android:layout_weight="0.2"
-                android:layout_gravity="right">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="60dp"
-                    android:id="@+id/imageView6"
-                    android:layout_column="1"
-                    android:background="@drawable/nothing"
-                    android:layout_gravity="top|center_vertical" />
-            </TableRow>
-        </TableLayout>
-
-        <TableLayout
-            android:layout_width="170dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="0.20" >
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/holo_green_light"
-                android:layout_weight="0.2"
-                android:layout_gravity="right">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="60dp"
-                    android:id="@+id/imageView8"
-                    android:layout_column="1"
-                    android:background="@drawable/nothing"
-                    android:layout_gravity="top|center_vertical" />
-            </TableRow>
-        </TableLayout>
-
-        <TableLayout
-            android:layout_width="170dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="0.20" >
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/holo_green_light"
-                android:layout_weight="0.2"
-                android:layout_gravity="right">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="60dp"
-                    android:id="@+id/imageView10"
-                    android:layout_column="1"
-                    android:background="@drawable/nothing"
-                    android:layout_gravity="top|center_vertical" />
-            </TableRow>
-        </TableLayout>
-
-    </LinearLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="@android:color/holo_blue_dark">
-
-        <ImageButton
-            android:layout_width="130dp"
-            android:layout_height="114dp"
-            android:id="@+id/imageButton5"
-            android:background="@drawable/cyanobacteria"
-            android:layout_gravity="left|center_vertical" />
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:text="Clone"
-            android:id="@+id/button12"
-            android:layout_gravity="right|top"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp" />
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:text="Die Out"
-            android:id="@+id/button13"
-            android:layout_gravity="right|bottom"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp" />
-
-    </FrameLayout>
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="90dp"
-        android:layout_height="40dp"
-        android:text="Back to Evo"
-        android:id="@+id/button2"
-        android:textSize="@dimen/abc_edit_text_inset_top_material"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="90dp"
-        android:layout_height="40dp"
-        android:text="Survive"
-        android:id="@+id/button3"
-        android:textSize="@dimen/abc_edit_text_inset_top_material"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Protozoan Era"
-        android:id="@+id/textView9"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 </RelativeLayout>
