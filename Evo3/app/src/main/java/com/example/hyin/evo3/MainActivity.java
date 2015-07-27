@@ -1,5 +1,6 @@
 package com.example.hyin.evo3;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.graphics.Bitmap;
@@ -33,8 +34,8 @@ public class MainActivity extends ActionBarActivity {
         String english; // record the english name
         int Evo_level; // record the evo level in the evo tree. Cyanobacteria has the level 0
         Specie(){
-            latin = "";
-            english = "";
+            latin = "Nothing";
+            english = "Nothing";
             Evo_level = 0;
         }
     }
@@ -42,6 +43,7 @@ public class MainActivity extends ActionBarActivity {
     public String English_Name[] = new String[200];
     public String Latin_Name[] = new String[200];
     public Specie currMainSpecie = new Specie();
+    public Specie otherSpecie[] = new Specie[9];
     public int DNA = 1200, DNA_rate = 2; // TODO: change DNA back to 200 after testing
     public int EvoLevel_DNA_Table[] = new int[200];
 
@@ -53,7 +55,20 @@ public class MainActivity extends ActionBarActivity {
         readLatinEnglishFile();
         readEvoLevelFile();
         currMainSpecie.latin = "Cyanobacteria"; currMainSpecie.english = "Cyanobacteria"; currMainSpecie.Evo_level = 0;
-        DNA_reload();
+        for(int i=0; i<9; i++) {otherSpecie[i]=new Specie();}
+        read2App(); // reload user information data, read animal party and current DNA amount
+        initialSet(); // set current animal
+        DNA_reload();// reload DNA_rate according to DNA_rate_table, and show them on screen
+        return;
+    }
+
+    private void initialSet(){
+        TextView txV1 = (TextView) findViewById(R.id.textView);
+        String s = currMainSpecie.latin;
+        txV1.setText(Latin2English(s));
+        animal_update(s);
+        // Picture process
+        setImage1(s.toLowerCase());
         return;
     }
 
@@ -127,7 +142,7 @@ public class MainActivity extends ActionBarActivity {
         return s;
     }
 
-    public void evo_update(String s){
+    public void animal_update(String s){
         try{
             // Open File
             InputStream in = getResources().openRawResource(R.raw.index);
@@ -142,24 +157,17 @@ public class MainActivity extends ActionBarActivity {
                     break;
                 }
             }
-            // Update evo names
+            // Update animal evo names
             TextView txV2 = (TextView) findViewById(R.id.textView2);
             TextView txV3 = (TextView) findViewById(R.id.textView3);
             TextView txV4 = (TextView) findViewById(R.id.textView4);
             txV2.setText(Latin2English(sub2));
             txV3.setText(Latin2English(sub3));
             txV4.setText(Latin2English(sub4));
-            // Update evo pictures
+            // Update animal evo pictures
             setImage2(sub2.toLowerCase());
             setImage3(sub3.toLowerCase());
             setImage4(sub4.toLowerCase());
-            // Update Curr Main Specie Structure
-            currMainSpecie.Evo_level = currMainSpecie.Evo_level+1;
-            currMainSpecie.english = Latin2English(s);
-            currMainSpecie.latin = English2Latin(s);
-            // Update DNA coefficients
-            DNA = DNA-DNA_rate;
-            DNA_reload();
             // Close File
             dataIO.close();
             in.close();
@@ -167,6 +175,18 @@ public class MainActivity extends ActionBarActivity {
         catch(Exception e){
             e.printStackTrace();
         }
+        return;
+    }
+
+    public void evo_update(String s){
+        animal_update(s);
+        // Update Curr Main Specie Structure
+        currMainSpecie.Evo_level = currMainSpecie.Evo_level+1;
+        currMainSpecie.english = Latin2English(s);
+        currMainSpecie.latin = English2Latin(s);
+        // Update DNA coefficients
+        DNA = DNA-DNA_rate;
+        DNA_reload();
         return;
     }
 
@@ -191,6 +211,7 @@ public class MainActivity extends ActionBarActivity {
         setImage4(origin4.toLowerCase());
         currMainSpecie.latin = "Cyanobacteria"; currMainSpecie.english = "Cyanobacteria"; currMainSpecie.Evo_level = 0;
         DNA_reload();
+        write2File();
         return;
     }
 
@@ -274,6 +295,7 @@ public class MainActivity extends ActionBarActivity {
         evo_update(s);
         // Picture process
         setImage1(s.toLowerCase());
+        write2File();
         return;
     }
 
@@ -291,6 +313,7 @@ public class MainActivity extends ActionBarActivity {
         evo_update(s);
         // Picture Process
         setImage1(s.toLowerCase());
+        write2File();
         return;
     }
 
@@ -308,6 +331,7 @@ public class MainActivity extends ActionBarActivity {
         evo_update(s);
         // Picture Process
         setImage1(s.toLowerCase());
+        write2File();
         return;
     }
 
@@ -351,7 +375,44 @@ public class MainActivity extends ActionBarActivity {
         Intent intent = new Intent(this, MainActivity2Activity.class);
         String message = "Manage your party";
         intent.putExtra(EXTRA_MESSAGE, message);
+        write2File();
         startActivity(intent);
+        return;
+    }
+
+    public void write2File(){
+        try {
+            OutputStreamWriter fos = new OutputStreamWriter(openFileOutput("playerinformation", Context.MODE_PRIVATE));
+            fos.write(Integer.toString(DNA)); fos.write('\n');
+            fos.write(currMainSpecie.latin); fos.write('\n');
+            fos.write(Integer.toString(currMainSpecie.Evo_level)); fos.write('\n');
+            for(int i=0; i<9; i++) {
+                fos.write(otherSpecie[i].latin);fos.write('\n'); // Set Animal Latin Name
+                fos.write(Integer.toString(otherSpecie[i].Evo_level)); fos.write('\n'); //Set Evo_level
+            }
+            fos.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return;
+    }
+
+    public void read2App(){
+        try {
+            BufferedReader inputReader = new BufferedReader(new InputStreamReader(
+                    openFileInput("playerinformation")));
+            DNA = Integer.parseInt(inputReader.readLine());
+            currMainSpecie.latin = inputReader.readLine();
+            currMainSpecie.english = Latin2English(currMainSpecie.latin);
+            currMainSpecie.Evo_level = Integer.parseInt(inputReader.readLine());
+            for(int i=0; i<9; i++) {
+                otherSpecie[i].latin = inputReader.readLine();
+                otherSpecie[i].english = Latin2English(otherSpecie[i].latin);
+                otherSpecie[i].Evo_level = Integer.parseInt(inputReader.readLine());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return;
     }
 

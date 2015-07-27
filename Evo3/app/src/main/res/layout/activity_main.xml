@@ -49,7 +49,7 @@
             android:orientation="horizontal"
             android:layout_height="0dip"
             android:layout_width="match_parent"
-            android:layout_weight="0.12">
+            android:layout_weight="0.10">
             <TextView
                 android:layout_width="0dip"
                 android:layout_height="fill_parent"
@@ -80,7 +80,7 @@
             android:orientation="horizontal"
             android:layout_height="0dip"
             android:layout_width="match_parent"
-            android:layout_weight="0.30">
+            android:layout_weight="0.32">
 
             <LinearLayout
                 android:orientation="vertical"
@@ -90,7 +90,7 @@
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="0dip"
-                    android:layout_weight="0.1"
+                    android:layout_weight="0.12"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:text="DNA: -2"
                     android:id="@+id/textView6"
@@ -100,7 +100,7 @@
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="0dip"
-                    android:layout_weight="0.2"
+                    android:layout_weight="0.24"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="Euglena"
                     android:id="@+id/textView2"
@@ -111,7 +111,7 @@
                 <ImageButton
                     android:layout_width="fill_parent"
                     android:layout_height="0dip"
-                    android:layout_weight="0.7"
+                    android:layout_weight="0.64"
                     android:id="@+id/imageButton2"
                     android:layout_gravity="left|bottom"
                     android:onClick="Generation2"
@@ -128,7 +128,7 @@
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="0dip"
-                    android:layout_weight="0.1"
+                    android:layout_weight="0.12"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:text="DNA: -2"
                     android:id="@+id/textView7"
@@ -138,7 +138,7 @@
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="0dip"
-                    android:layout_weight="0.2"
+                    android:layout_weight="0.24"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="Amoeba"
                     android:id="@+id/textView3"
@@ -149,7 +149,7 @@
                 <ImageButton
                     android:layout_width="fill_parent"
                     android:layout_height="0dip"
-                    android:layout_weight="0.7"
+                    android:layout_weight="0.64"
                     android:id="@+id/imageButton3"
                     android:layout_gravity="center_horizontal|bottom"
                     android:onClick="Generation3"
@@ -165,7 +165,7 @@
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="0dip"
-                    android:layout_weight="0.1"
+                    android:layout_weight="0.12"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:text="DNA: -2"
                     android:id="@+id/textView8"
@@ -175,7 +175,7 @@
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="0dip"
-                    android:layout_weight="0.2"
+                    android:layout_weight="0.24"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="Tintinnids"
                     android:id="@+id/textView4"
@@ -186,7 +186,7 @@
                 <ImageButton
                     android:layout_width="fill_parent"
                     android:layout_height="0dip"
-                    android:layout_weight="0.7"
+                    android:layout_weight="0.64"
                     android:id="@+id/imageButton4"
                     android:layout_gravity="right|bottom"
                     android:onClick="Generation4"
