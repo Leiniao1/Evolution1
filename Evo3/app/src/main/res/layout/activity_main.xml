@@ -18,23 +18,44 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="0dip"
-            android:layout_weight="0.04">
+            android:layout_weight="0.05">
             <TextView
-                android:layout_width="117dp"
+                android:layout_width="0dip"
                 android:layout_height="match_parent"
+                android:layout_weight="0.3"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="DNA: 200"
                 android:id="@+id/textView5"
-                android:layout_gravity="left|top"
-                android:gravity="top|left"
+                android:layout_gravity="left|bottom"
+                android:gravity="left|bottom"
                 android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Main Menu"
+                android:onClick="goMainMenu"
+                android:id="@+id/textView23"
+                android:layout_gravity="right"
+                android:gravity="top|right"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:textColor="#d670943f"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_height="0dip"
             android:layout_width="match_parent"
-            android:layout_weight="0.55">
+            android:layout_weight="0.54">
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

@@ -1,6 +1,9 @@
 package com.example.hyin.evo3;
 
+import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -20,7 +23,30 @@ public class MainInterface extends ActionBarActivity {
         setContentView(R.layout.activity_main_interface);
     }
 
-    public void ResetRecord(View view){
+    public void ResetRecord(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainInterface.this);
+        builder.setMessage("Are you sure to clear up your saved record?");
+        builder.setTitle("Clear record...");
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+                clearRecord();
+                return;
+            }
+        });
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+                return;
+            }
+        });
+        builder.create().show();
+        return;
+    }
+
+    public void clearRecord(){
         // Clear up and initialize the record
         try {
             OutputStreamWriter fos = new OutputStreamWriter(openFileOutput("playerinformation", Context.MODE_PRIVATE));
@@ -39,6 +65,7 @@ public class MainInterface extends ActionBarActivity {
         Intent intent = new Intent(this, MainActivity.class);
         String message = "Manage your party";
         startActivity(intent);
+        finish();
         return;
     }
 
@@ -46,6 +73,7 @@ public class MainInterface extends ActionBarActivity {
         Intent intent = new Intent(this, MainActivity.class);
         String message = "Manage your party";
         startActivity(intent);
+        finish();
         return;
     }
 

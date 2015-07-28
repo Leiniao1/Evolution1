@@ -318,8 +318,8 @@ Nothing
 -----------------
 Cestum Evo
 Plerogyra
-Nothing
-Nothing
+Mermis
+Spadella
 -----------------
 ======= Flatworm =======
 Plerogyra Evo
@@ -389,8 +389,8 @@ Nothing
 -----------------
 Macrodasys Evo
 Lepidodermella
-Chaetoblack
 Corynosoma
+Nothing
 -----------------
 Lepidodermella Evo
 Nothing
@@ -402,18 +402,285 @@ Nothing
 Nothing
 Nothing
 -----------------
+======== Roundworm ==========
+-----------------
+Mermis Evo
+Caenorhabditis
+Tardigrade
+Priapulus
+-----------------
+Priapulus Evo
+Pliciloricus
+Nothing
+Nothing
+-----------------
+Pliciloricus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Caenorhabditis Evo
+Nippostrongylus
+Anisakiasis
+Gordioida
+-----------------
+Nippostrongylus Evo
+Ancylostoma
+Pristionchus
+Tylenchida
+-----------------
+Ancylostoma Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pristionchus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Tylenchida Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Anisakiasis Evo
+Ascaris
+Dracunculus
+Dirofilaria
+-----------------
+Ascaris Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Dracunculus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Dirofilaria Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Gordioida Evo
+Paragordius
+Nothing
+Nothing
+-----------------
+Paragordius Evo
+Nothing
+Nothing
+Nothing
+-----------------
+======== Minor Phylums ======
+=== Rotifera/Nemertea/Bryozoa ===
+-----------------
 Pulchritia Evo
 Polyarthra
-Nothing
-Nothing
+Monostilifera
+Bryozoa
 -----------------
 Polyarthra Evo
 Nothing
 Nothing
 Nothing
 -----------------
-======== Roundworm ==========
-Chaetoblack Evo
+Monostilifera Evo
+Parborlasia
+Lingula
+Phoronid
+-----------------
+Parborlasia Evo
+Echiura
+Nothing
+Nothing
+-----------------
+Bryozoa Evo
+Entoprocta
+Nothing
+Nothing
+-----------------
+Entoprocta Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Phoronid Evo
+Riftia
+Nothing
+Nothing
+-----------------
+Riftia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+======== Shell ========
+-----------------
+Lingula Evo
+
+
+
+-----------------
+======== Earthworm =======
+-----------------
+Echiura Evo
+Myzostoma
+Naididae
+Placobdella
+-----------------
+Myzostoma Evo
+Eurythoe
+Spirobranchus
+Capitella
+-----------------
+Eurythoe Evo
+Eunice
+Glycera
+Nothing
+-----------------
+Eunice Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Glycera Evo
+Oxydromus
+Nephtyidae
+Alitta
+-----------------
+Oxydromus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Nephtyidae Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Alitta Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Spirobranchus Evo
+Protula
+Scolelepis
+Lanice
+-----------------
+Scolelepis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Protula Evo
+Phragmatopoma
+Sabellidae
+Spirorbis
+-----------------
+Phragmatopoma Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Sabellidae Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Spirorbis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Lanice Evo
+Alvinellidae
+Cirratulus
+Nothing
+-----------------
+Alvinellidae Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Cirratulus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Capitella Evo
+Euzonus
+Scoloplos
+Nothing
+-----------------
+Euzonus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Scoloplos Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Naididae Evo
+Eisenia
+Amynthas
+Nothing
+-----------------
+Eisenia Evo
+Lumbricidae
+Nothing
+Nothing
+-----------------
+Amynthas Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Lumbricidae Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Placobdella Evo
+Americobdella
+Euhirudinea
+Nothing
+-----------------
+Americobdella Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Euhirudinea Evo
+Hirudo
+Haemadipsa
+Nothing
+-----------------
+Hirudo Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Haemadipsa Evo
+Nothing
+Nothing
+Nothing
+-----------------
+======== Super-Arthropoda =====
+-----------------
+Tardigrade Evo
+
+
+
+-----------------
+======== Starfish ======
+-----------------
+Spadella Evo
 
 
 

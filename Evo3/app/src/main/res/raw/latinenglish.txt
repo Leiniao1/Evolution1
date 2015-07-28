@@ -23,13 +23,13 @@ Physalia
 Man-O-War
 ------------------
 Aurelia
-Moon Jellifish
+Moon Jellyfish
 ------------------
 Chiropsalmus
-Box Jellifish
+Box Jellyfish
 ------------------
 Rhopilema
-Mushroom Cap Jellifish
+Mushroom Cap Jellyfish
 ------------------
 Mastigias
 Lagoon Jellyfish
@@ -66,3 +66,73 @@ Land Planarian
 ------------------
 Chaetoblack
 Arrow worms
+------------------
+Monostilifera
+Ribbon worm
+------------------
+Parborlasia
+Proboscis Worm
+------------------
+Tardigrade
+Waterbear
+------------------
+Priapulus
+Priapulid Worms
+------------------
+Dirofilaria
+Heartworm
+------------------
+Tylenchida
+Soybean Cyst Nematode
+------------------
+Ancylostoma
+Hookworm
+------------------
+Gordioida
+Hair Snake
+------------------
+Paragordius
+Horsehair Worm
+------------------
+Riftia
+Giant Tube Worm
+------------------
+Eunice
+Bobbit Worm
+------------------
+Spirobranchus
+Christmas Tree Worm
+------------------
+Protula
+Red Fanworm
+------------------
+Lanice
+Spaghetti Worm
+------------------
+Phragmatopoma
+Sandcastle Worm
+------------------
+Sabellidae
+Feather Duster Worm
+------------------
+Alvinellidae
+Palm Worm
+------------------
+Scoloplos
+Bristle Worm
+------------------
+Eisenia
+Redwiggler
+------------------
+Amynthas
+Giant Earthworm
+------------------
+Americobdella
+Proboscisless Leech
+------------------
+Euhirudinea
+True Leech
+------------------
+Hirudo
+European Medical Leech
+------------------

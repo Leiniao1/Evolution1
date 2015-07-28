@@ -373,10 +373,16 @@ public class MainActivity extends ActionBarActivity {
 
     public void goParty(View view){
         Intent intent = new Intent(this, MainActivity2Activity.class);
-        String message = "Manage your party";
-        intent.putExtra(EXTRA_MESSAGE, message);
         write2File();
         startActivity(intent);
+        finish();
+        return;
+    }
+
+    public void goMainMenu(View view){
+        Intent intent = new Intent(this, MainInterface.class);
+        startActivity(intent);
+        finish();
         return;
     }
 
