@@ -255,3 +255,39 @@ Frog Shell
 ------------------
 Semicassis
 Helmet Shell
+------------------
+Architectonica
+Marine Snail
+------------------
+Bulla
+Bubble Snail
+------------------
+Aplysia
+Black Sea Hare
+------------------
+Thecosomata
+Sea Butterfly
+------------------
+Clione
+Sea Angel
+------------------
+Doris
+Sea Lemon
+------------------
+Flabellina
+Spainish Shawl
+------------------
+Planorbarius
+Great Ramshorn
+------------------
+Achatina
+Giant African Snail
+------------------
+Cochlodina
+Door Snail
+------------------
+Limax
+Great Grey Slug
+------------------
+Selenochlamys
+Ghost Slug

@@ -918,8 +918,8 @@ Nothing
 -----------------
 Theodoxus Evo
 Pomacea
-
-
+Architectonica
+Nautilus
 -----------------
 Pomacea Evo
 Pupinella
@@ -1115,6 +1115,238 @@ Voluta Evo
 Nothing
 Nothing
 Nothing
+-----------------
+Architectonica Evo
+Valvata
+Bulla
+Onchidella
+-----------------
+Valvata Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Valvata Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Bulla Evo
+Phyllaplysia
+Thecosomata
+Doris
+-----------------
+Phyllaplysia Evo
+Stylocheilus
+Aplysia
+Pleurobranchaea
+-----------------
+Stylocheilus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Aplysia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pleurobranchaea Evo
+Berthella
+Nothing
+Nothing
+-----------------
+Berthella Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Thecosomata Evo
+Clione
+Nothing
+Nothing
+-----------------
+Clione Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Doris Evo
+Glossodoris
+Armina
+Nothing
+-----------------
+Glossodoris Evo
+Diaulula
+Phyllidia
+Acanthodoris
+-----------------
+Diaulula Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Phyllidia Evo
+Dendrodoris
+Nothing
+Nothing
+-----------------
+Dendrodoris Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Acanthodoris Evo
+Triopha
+Hexabranchus
+Nothing
+-----------------
+Triopha Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Hexabranchus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Armina Evo
+Tritonia
+Flabellina
+Leminda
+-----------------
+Tritonia Evo
+Melibe
+Nothing
+Nothing
+-----------------
+Melibe Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Flabellina Evo
+Tenellia
+Piseinotecus
+Nothing
+-----------------
+Tenellia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Piseinotecus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Leminda Evo
+Janolus
+Nothing
+Nothing
+-----------------
+Janolus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Onchidella Evo
+Laevecaulis
+Lymnaea
+Achatinella
+-----------------
+Laevecaulis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Lymnaea Evo
+Planorbarius
+Nothing
+Nothing
+-----------------
+Planorbarius Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Achatinella Evo
+Cochlicopa
+Helicophanta
+Nothing
+-----------------
+Cochlicopa Evo
+Partula
+Vallonia
+Nothing
+-----------------
+Partula Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Vallonia Evo
+Pupilla
+Nothing
+Nothing
+-----------------
+Pupilla Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Helicophanta Evo
+Achatina
+Arion
+Discus
+-----------------
+Achatina Evo
+Cochlodina
+Helix
+Powelliphanta
+-----------------
+Arion Evo
+Limax
+Selenochlamys
+Nothing
+-----------------
+Discus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Cochlodina Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Helix Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Powelliphanta Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Limax Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Selenochlamys Evo
+Nothing
+Nothing
+Nothing
+-----------------
+======== Octopus =========
+-----------------
+Nautilus Evo
+
+
+
 -----------------
 ======== Earthworm =======
 -----------------
