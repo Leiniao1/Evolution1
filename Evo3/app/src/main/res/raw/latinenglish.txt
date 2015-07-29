@@ -136,3 +136,122 @@ True Leech
 Hirudo
 European Medical Leech
 ------------------
+Tonicella
+Lined Chiton
+------------------
+Cryptoconchus
+Butterfly Chiton
+------------------
+Antalis
+Tusk Shell
+------------------
+Arca
+Noah's Ark shell
+------------------
+Anodonta
+Duck Mussel
+------------------
+Plethobasus
+River Mussel
+------------------
+Cucullaea
+False Ark Shell
+------------------
+Tucetona
+Dog Cockle
+------------------
+Crassostrea
+True Oyster
+------------------
+Argopecten
+Atlantic Bay Scallop
+------------------
+Spondylus
+Thorny Oyster
+------------------
+Limidae
+File Shell
+------------------
+Miesmuscheln
+Blue Mussel
+------------------
+Zelithophaga
+Date Mussel
+------------------
+Pinna
+Pen Mussel
+------------------
+Pinctada
+Pearl Oyster
+------------------
+Solen
+Razor Shell
+------------------
+Mya
+Softshell Clam
+------------------
+Cyrtopleura
+Angle Wing Clam
+------------------
+Pholas
+Common Piddock
+------------------
+Lyrodus
+Ship Worm
+------------------
+Hippopus
+Bear Paw Clam
+------------------
+Tridacna
+Giant Clam
+------------------
+Acanthocardia
+Spiny Cockle
+------------------
+Mactra
+Duck Clam
+------------------
+Spisula
+Triangle Shell
+------------------
+Tresus
+Horse Clam
+------------------
+Gari
+Sunset Clam
+------------------
+Abra
+White Furrow Shell
+------------------
+Scrobicularia
+Peppery Furrow Shell
+------------------
+Austrovenus
+Tuangi Cockle
+------------------
+Patella
+Common Limpet
+------------------
+Chrysomallon
+Scaly-foot Gastropod
+------------------
+Naticarius
+Moon Snail
+------------------
+Aporrhais
+Pelican's Foot
+------------------
+Vermetidae
+Worm Shell
+------------------
+Xenophorid
+Carrier Shell
+------------------
+Lambis
+Spider Conch
+------------------
+Tutufa
+Frog Shell
+------------------
+Semicassis
+Helmet Shell

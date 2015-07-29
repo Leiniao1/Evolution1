@@ -520,9 +520,601 @@ Nothing
 ======== Shell ========
 -----------------
 Lingula Evo
+Falcidens
+Chaetopleura
+Monoplacophora
+-----------------
+Falcidens Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Chaetopleura Evo
+Chiton
+Tonicia
+Cryptoconchus
+-----------------
+Chiton Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Tonicia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Cryptoconchus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Monoplacophora Evo
+Antalis
+Nucula
+Patella
+-----------------
+Antalis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Nucula Evo
+Yaadia
+Arca
+Carditidae
+-----------------
+Yaadia Evo
+Anodonta
+Margaritifera
+Nothing
+-----------------
+Yaadia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Margaritifera Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Anodonta Evo
+Actinonaias
+Ellipsaria
+Plethobasus
+-----------------
+Actinonaias Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Ellipsaria Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Plethobasus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Arca Evo
+Cucullaea
+Argopecten
+Miesmuscheln
+-----------------
+Cucullaea Evo
+Tucetona
+Nothing
+Nothing
+-----------------
+Tucetona Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Argopecten Evo
+Crassostrea
+Spondylus
+Limidae
+-----------------
+Crassostrea Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Spondylus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Limidae Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Miesmuscheln Evo
+Zelithophaga
+Pinna
+Pinctada
+-----------------
+Zelithophaga Evo
+Modiolarca
+Nothing
+Nothing
+-----------------
+Pinna Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pinctada Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Modiolarca Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Carditidae Evo
+Solen
+Ensiskils
+Mya
+-----------------
+Solen Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Ensiskils Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Mya Evo
+Barnea
+Divaricella
+Corbicula
+-----------------
+Barnea Evo
+Cyrtopleura
+Pholas
+Lyrodus
+-----------------
+Cyrtopleura Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pholas Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Lyrodus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Divaricella Evo
+Codakia
+Nothing
+Nothing
+-----------------
+Codakia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Corbicula Evo
+Glossus
+Acanthocardia
+Diplodonta
+-----------------
+Glossus Evo
+Hippopus
+Tridacna
+Nothing
+-----------------
+Hippopus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Tridacna Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Acanthocardia Evo
+Acrosterigma
+Mactra
+Nothing
+-----------------
+Acrosterigma Evo
+Cerastoderma
+Dinocardium
+Pratulum
+-----------------
+Cerastoderma Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Dinocardium Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pratulum Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Mactra Evo
+Lutraria
+Gari
+Nothing
+-----------------
+Lutraria Evo
+Spisula
+Tresus
+Zenatia
+-----------------
+Spisula Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Tresus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Zenatia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Gari Evo
+Abra
+Scrobicularia
+Tellina
+-----------------
+Abra Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Scrobicularia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Tellina Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Diplodonta Evo
+Felaniella
+Petricola
+Austrovenus
+-----------------
+Felaniella Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Petricola Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Austrovenus Evo
+Chamelea
+Lioconcha
+Pitar
+-----------------
+Chamelea Evo
+Chione
+Dosinia
+Irus
+-----------------
+Chione Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Dosinia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Irus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Lioconcha Evo
+Notirus
+Notocallista
+Paphia
+-----------------
+Notirus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Notocallista Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Paphia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pitar Evo
+Protothaca
+Ruditapes
+Venus
+-----------------
+Protothaca Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Ruditapes Evo
+Tivela
+Nothing
+Nothing
+-----------------
+Tivela Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Venus Evo
+Venerupis
+Nothing
+Nothing
+-----------------
+Venerupis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+======== Snail ===========
+-----------------
+Patella Evo
+Chrysomallon
+Entemnotrochus
+Theodoxus
+-----------------
+Chrysomallon Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Entemnotrochus Evo
+Perrinia
+Tegula
+Nothing
+-----------------
+Perrinia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Tegula Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Theodoxus Evo
+Pomacea
 
 
-
+-----------------
+Pomacea Evo
+Pupinella
+Maoricolpus
+Crepidula
+-----------------
+Pupinella Evo
+Amphicyclotulus
+Nothing
+Nothing
+-----------------
+Amphicyclotulus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Maoricolpus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Crepidula Evo
+Maoricrypta
+Melanella
+Penion
+-----------------
+Maoricrypta Evo
+Capulus
+Cypraea
+Rissoa
+-----------------
+Capulus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Cypraea Evo
+Ficus
+Tudorella
+Naticarius
+-----------------
+Ficus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Tudorella Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Naticarius Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Rissoa Evo
+Aporrhais
+Tonna
+Vermetidae
+-----------------
+Aporrhais Evo
+Dolomena
+Harpago
+Nothing
+-----------------
+Dolomena Evo
+Lentigo
+Terestrombus
+Nothing
+-----------------
+Lentigo Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Terestrombus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Harpago Evo
+Lambis
+Strombus
+Nothing
+-----------------
+Lambis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Strombus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Tonna Evo
+Tutufa
+Distorsio
+Semicassis
+-----------------
+Tutufa Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Distorsio Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Semicassis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Vermetidae Evo
+Xenophorid
+Nothing
+Nothing
+-----------------
+Xenophorid Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Melanella Evo
+Monophorus
+Nothing
+Nothing
+-----------------
+Monophorus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Penion Evo
+Fasciolaria
+Aphera
+Cymatosyrinx
+-----------------
+Fasciolaria Evo
+Melongena
+Nassarius
+Nothing
+-----------------
+Melongena Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Nassarius Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Aphera Evo
+Trigonostoma
+Pyruclia
+Euclia
+-----------------
+Trigonostoma Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pyruclia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Euclia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Cymatosyrinx Evo
+Chicoreus
+Columbarium
+Voluta
+-----------------
+Chicoreus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Columbarium Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Voluta Evo
+Nothing
+Nothing
+Nothing
 -----------------
 ======== Earthworm =======
 -----------------
