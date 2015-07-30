@@ -291,3 +291,156 @@ Great Grey Slug
 ------------------
 Selenochlamys
 Ghost Slug
+------------------
+Spirula
+Ram's Horn Squid
+------------------
+Vampyromorphida
+Vampire Squid
+------------------
+Sepioloidea
+Pyjama Squid
+------------------
+Metasepia
+Flamboyant Cuttlefish
+------------------
+Sepiaapama
+Giant Cuttlefish
+------------------
+Sepiapharaonis
+Pharaoh Cuttlefish
+------------------
+Austrorossia
+Bobtail Squid
+------------------
+Loligo
+European Common Squid
+------------------
+Doryteuthis
+Opalescent Inshore Squid
+------------------
+Sepioteuthis
+Caribbean Reef Squid
+------------------
+Cranchiidae
+Glass Squid
+------------------
+Gonatus
+Armhook Squid
+------------------
+Histioteuthis
+Cock-eyed Squid
+------------------
+Psychroteuthis
+Glaicial Squid
+------------------
+Architeuthidae
+Giant Squid
+------------------
+Opisthoteuthis
+Umbrella Octopus
+------------------
+Cirrothauma
+Cirrate Octopus
+------------------
+Japetella
+Gelatinous Octopus
+------------------
+Amphioctopus
+Coconut Octopus
+------------------
+Tremoctopus
+Blanket Octopus
+------------------
+Vitreledonella
+Glass Octopus
+------------------
+Callistoctopus
+White-spotted Octopus
+------------------
+Wunderpus
+Wonder Octopus
+------------------
+Thaumoctopus 
+Mimic Octopus
+------------------
+Onychophoran
+Velvet Worm
+------------------
+Carcinoscorpius
+Horseshoe Crab
+------------------
+Scutigera
+House Centipede
+------------------
+Orchesella
+Springtail
+------------------
+Eukoenenia
+Microwhip Scorpion
+------------------
+Buthus
+Thick-tailed Scorpion
+------------------
+Hadrurus
+Hairy Scorpion
+------------------
+Pandinus
+Emperor Scorpion
+------------------
+Hottentotta
+Indian Red Scorpion
+------------------
+Chelifer
+Book Scorpion
+------------------
+Solifugid
+Sunspider
+------------------
+Megahexura
+Dwarf Tarantulas
+------------------
+Hadronyche
+Victorian Funnel-web
+------------------
+Missulena
+Black Mouse Spider
+------------------
+Brachypelma
+Redknee Birdeater
+------------------
+Hypochilus
+Lampshade Spider
+------------------
+Caponia
+Lungless Spider
+------------------
+Dysdera
+Woodlouse Hunter
+------------------
+Segestria
+Tube-dwelling Spider
+------------------
+Telamonia
+Jumping Spider
+------------------
+Argiope
+Orb-weaver Spider
+------------------
+Hogna
+Wolf Spider
+------------------
+Peucetia
+Lynx Spider
+------------------
+Phoneutria
+Wandering Spider
+------------------
+Thomisidae
+Crabspider
+------------------
+Mallinella
+Ground Spider
+------------------
+Latrodectus
+Black Widow Spider

@@ -1344,9 +1344,149 @@ Nothing
 ======== Octopus =========
 -----------------
 Nautilus Evo
-
-
-
+Spirula
+Vampyroteuthis
+Nothing
+-----------------
+Spirula Evo
+Sepioloidea
+Austrorossia
+Loligo
+-----------------
+Vampyroteuthis Evo
+Opisthoteuthis
+Japetella
+Nothing
+-----------------
+Sepioloidea Evo
+Sepiaapama
+Sepiapharaonis
+Nothing
+-----------------
+Sepiaapama Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Sepiapharaonis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Austrorossia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Loligo Evo
+Sepioteuthis
+Cranchiidae
+Nothing
+-----------------
+Sepioteuthis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Cranchiidae Evo
+Gonatus
+Histioteuthis
+Psychroteuthis
+-----------------
+Gonatus Evo
+Architeuthidae
+Nothing
+Nothing
+-----------------
+Histioteuthis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Psychroteuthis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Architeuthidae Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Opisthoteuthis Evo
+Cirrothauma
+Nothing
+Nothing
+-----------------
+Cirrothauma Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Japetella Evo
+Amphioctopus
+Tremoctopus
+Nothing
+-----------------
+Amphioctopus Evo
+Bathypolypus
+Octopus
+Vitreledonella
+-----------------
+Bathypolypus Evo
+Benthoctopus
+Callistoctopus
+Macrotritopus
+-----------------
+Benthoctopus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Callistoctopus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Macrotritopus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Octopus Evo
+Robsonella
+Velodona
+Wunderpus
+-----------------
+Robsonella Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Velodona Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Wunderpus Evo
+Thaumoctopus
+Nothing
+Nothing
+-----------------
+Thaumoctopus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Vitreledonella Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Tremoctopus Evo
+Nothing
+Nothing
+Nothing
 -----------------
 ======== Earthworm =======
 -----------------
@@ -1498,6 +1638,290 @@ Nothing
 ======== Super-Arthropoda =====
 -----------------
 Tardigrade Evo
+Onychophoran
+Trilobite
+Nothing
+-----------------
+Onychophoran Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Trilobite Evo
+Carcinoscorpius
+Scutigera
+Artemia
+-----------------
+========= Spider ==========
+-----------------
+Carcinoscorpius Evo
+Axial
+Eukoenenia
+Nothing
+-----------------
+Axial Evo
+Pycnogonid
+Nymphon
+Nothing
+-----------------
+Pycnogonid Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Nymphon Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Eukoenenia Evo
+Buthus
+Ryuthela
+
+-----------------
+Buthus Evo
+Hadrurus
+Neopseudogarypus
+Nothing
+-----------------
+Hadrurus Evo
+Cercophonius
+Hadrobunus
+Nothing
+-----------------
+Cercophonius Evo
+Hadogenes
+Pandinus
+Hottentotta
+-----------------
+Hadogenes Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pandinus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Hottentotta Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Hadrobunus Evo
+Sensu
+Lomanius
+Bishopella
+-----------------
+Sensu Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Lomanius Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Bishopella Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Neopseudogarypus Evo
+Chelifer
+Solifugid
+Nothing
+-----------------
+Chelifer Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Solifugid Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Ryuthela Evo
+Atypus
+Hypochilus
+Nothing
+-----------------
+Atypus Evo
+Megahexura
+Linothele
+Ummidia
+-----------------
+Megahexura Evo
+Hadronyche
+Calisoga
+Brachypelma
+-----------------
+Linothele Evo
+Antrodiaetus
+Nothing
+Nothing
+-----------------
+Ummidia Evo
+Missulena
+Nothing
+Nothing
+-----------------
+Hadronyche Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Calisoga Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Brachypelma Evo
+Avicularia
+Nothing
+Nothing
+-----------------
+Missulena Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Avicularia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Hypochilus Evo
+Gradungula
+Kukulcania
+Eresus
+-----------------
+Gradungula Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Kukulcania Evo
+Caponia
+Dysdera
+Pholcus
+-----------------
+Caponia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Dysdera Evo
+Segestria
+Trogloraptor
+Nothing
+-----------------
+Segestria Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Trogloraptor Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pholcus Evo
+Plectreurid
+Loxosceles
+Scytodes
+-----------------
+Plectreurid Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Loxosceles Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Scytodes Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Eresus Evo
+Taphiassa
+Araneus
+Telamonia
+-----------------
+Taphiassa Evo
+Thomisidae
+Mallinella
+Nothing
+-----------------
+Thomisidae Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Mallinella Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Araneus Evo
+Argiope
+Latrodectus
+Nothing
+-----------------
+Argiope Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Latrodectus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Telamonia Evo
+Hogna
+Peucetia
+Phoneutria
+-----------------
+Hogna Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Peucetia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Phoneutria Evo
+Nothing
+Nothing
+Nothing
+-----------------
+========= Centipede =======
+-----------------
+Scutigera Evo
+
+
+
+-----------------
+========= Crab ============
+-----------------
+Artemia Evo
+
+
+
+Orchesella
+-----------------
+========= Insect ==========
+-----------------
+Orchesella Evo
 
 
 
