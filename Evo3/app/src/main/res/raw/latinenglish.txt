@@ -444,3 +444,126 @@ Ground Spider
 ------------------
 Latrodectus
 Black Widow Spider
+------------------
+Thelyphonida
+Whip Scorpion
+------------------
+Tyrophagus
+Cheese Mite
+------------------
+Amblyomma
+Lone Star Tick
+------------------
+Dermacentor
+Pacific Coast Tick
+------------------
+Otobius
+Soft Tick
+------------------
+Otodectes
+Ear Mite
+------------------
+Phthiracarid
+Beetle Mite
+------------------
+Acarus
+Grain Mite
+------------------
+Lithobius
+Stone Centipede
+------------------
+Scolopendra
+Amazon Giant Centipede
+------------------
+Scolopendrapolymorpha
+Banded Desert Centipede
+------------------
+Scolopendrasubspinipes
+Vietnamese Centipede
+------------------
+Polyxenus
+Bristly Millipede
+------------------
+Glomeris
+Pill Millipede
+------------------
+Pillmillipede
+Giant Pill Millipede
+------------------
+Orthoporus
+Desert Millipede
+------------------
+Argulus
+Fish Lice
+------------------
+Linguatula
+Tongue Worm
+------------------
+Daphnia
+Water Flea
+------------------
+Ostracod
+Seed Shrimp
+------------------
+Odontodactylus
+Peacock Mantis Shrimp
+------------------
+Hemimysis
+Opossum Shrimp
+------------------
+Bodotria
+Comma Shrimp
+------------------
+Armadillidium
+Pill Bug
+------------------
+Meganyctiphanes
+Northern Krill
+------------------
+Euphausia
+Antarctic Krill
+------------------
+Heterocarpus
+Armed Nylon Shrimp
+------------------
+Enoplometopus
+Reef Lobster
+------------------
+Austropotamobius
+White-clawed Crayfish
+------------------
+Nephrops
+Norway Lobster
+------------------
+Homarus
+European Lobster
+------------------
+Axius
+Mud Lobster
+------------------
+Palinurus
+Spiny Lobster
+------------------
+Scyllarides
+Slipper Lobster
+------------------
+Eumunida
+Squat Lobster
+------------------
+Neopetrolisthes
+Porcelain Crab
+------------------
+Blepharipoda
+Mole Crab
+------------------
+Dromia
+Sponge Crab
+------------------
+Pilumnus
+Bristly Crab
+------------------
+Entenmuscheln
+Gooseneck Barnacle
+------------------
+Barnacle
+Acorn Barnacle

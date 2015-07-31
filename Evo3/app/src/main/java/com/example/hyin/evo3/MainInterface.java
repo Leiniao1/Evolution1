@@ -5,22 +5,51 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.media.Image;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import java.io.OutputStreamWriter;
 
 
 public class MainInterface extends ActionBarActivity {
 
+    public Bitmap bitmap1 = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTitle("Darwin's Tree");
         setContentView(R.layout.activity_main_interface);
+        ImageView IV = (ImageView) findViewById(R.id.imageView11);
+        int res = getResources().getIdentifier("darwinbackground", "drawable", getPackageName());
+        bitmap1 = decodeSampledBitmapFromResource(getResources(), res, IV.getWidth(), IV.getHeight(), 1);
+        IV.setImageBitmap(bitmap1);
+        return;
+    }
+
+    public static Bitmap decodeSampledBitmapFromResource(Resources res, int resId,
+                                                         int reqWidth, int reqHeight, int samplerate) {
+        // First decode with inJustDecodeBounds=true to check dimensions
+        final BitmapFactory.Options options = new BitmapFactory.Options();
+        //options.inJustDecodeBounds = true;
+        // BitmapFactory.decodeResource(res, resId, options);
+
+        // Calculate inSampleSize
+        // options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
+        options.inSampleSize = samplerate;
+
+        // Decode bitmap with inSampleSize set
+        options.inJustDecodeBounds = false;
+        return BitmapFactory.decodeResource(res, resId, options);
     }
 
     public void ResetRecord(View view) {
@@ -77,6 +106,18 @@ public class MainInterface extends ActionBarActivity {
         return;
     }
 
+    public void recycleBackground(){
+        // Reset background image first
+        ImageView IVmain = (ImageView) findViewById(R.id.imageView11);
+        IVmain.setImageResource(android.R.color.transparent);
+        // Recycle the Bitmap
+        if(bitmap1!=null && !bitmap1.isRecycled()){
+            bitmap1.recycle();
+            bitmap1 = null;
+        }
+        return;
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -97,5 +138,12 @@ public class MainInterface extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        recycleBackground();
+        return;
     }
 }

@@ -1677,7 +1677,7 @@ Nothing
 Eukoenenia Evo
 Buthus
 Ryuthela
-
+Tyrophagus
 -----------------
 Buthus Evo
 Hadrurus
@@ -1747,7 +1747,7 @@ Nothing
 Ryuthela Evo
 Atypus
 Hypochilus
-Nothing
+Amblypygi
 -----------------
 Atypus Evo
 Megahexura
@@ -1904,20 +1904,539 @@ Nothing
 Nothing
 Nothing
 -----------------
+Amblypygi Evo
+Thelyphonida
+Hubbardia
+Nothing
+-----------------
+Thelyphonida Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Hubbardia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Tyrophagus Evo
+Mesostigmata
+Trombidium
+Nothing
+-----------------
+Mesostigmata Evo
+Nuttalliella
+Ixodus
+Otobius
+-----------------
+Nuttalliella Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Ixodus Evo
+Amblyomma
+Hyalomma
+Dermacentor
+-----------------
+Amblyomma Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Hyalomma Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Dermacentor Evo
+Rhipicephalus
+Nothing
+Nothing
+-----------------
+Rhipicephalus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Otobius Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Trombidium Evo
+Otodectes
+Acarus
+Phthiracarid
+-----------------
+Otodectes Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Acarus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Phthiracarid Evo
+Nothing
+Nothing
+Nothing
+-----------------
 ========= Centipede =======
 -----------------
 Scutigera Evo
-
-
-
+Lithobius
+Symphyla
+Eurypauropodid
+-----------------
+Lithobius Evo
+Scolopendra
+Cryptops
+Nothing
+-----------------
+Scolopendra Evo
+Scolopendrapolymorpha
+Scolopendrasubspinipes
+Nothing
+-----------------
+Scolopendrapolymorpha Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Scolopendrasubspinipes Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Cryptops Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Symphyla Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Eurypauropodid Evo
+Polyxenus
+Glomeris
+Brachycybe
+-----------------
+Polyxenus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Glomeris Evo
+Pillmillipede
+Nothing
+Nothing
+-----------------
+Pillmillipede Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Brachycybe Evo
+Octoglena
+Craspedosoma
+Nothing
+-----------------
+Octoglena Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Craspedosoma Evo
+Tetracion
+Tasmaniosoma
+Tachypodoiulus
+-----------------
+Tetracion Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Tasmaniosoma Evo
+Midoribaba
+Oxidus
+Polydesmus
+-----------------
+Midoribaba Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Oxidus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Polydesmus Evo
+Harpaphe
+Nothing
+Nothing
+-----------------
+Harpaphe Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Tachypodoiulus Evo
+Californiulus
+Narceus
+Orthoporus
+-----------------
+Californiulus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Narceus Evo
+Anadenobolus
+Nothing
+Nothing
+-----------------
+Orthoporus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Anadenobolus Evo
+Nothing
+Nothing
+Nothing
 -----------------
 ========= Crab ============
 -----------------
 Artemia Evo
-
-
-
+Triops
+Argulus
 Orchesella
+-----------------
+Triops Evo
+Daphnia
+Ostracod
+Nebalia
+-----------------
+Daphnia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Ostracod Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Nebalia Evo
+Gonodactylus
+Gnathophausia
+Meganyctiphanes
+-----------------
+Gonodactylus Evo
+Odontodactylus
+Lysiosquilla
+Squilla
+-----------------
+Odontodactylus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Lysiosquilla Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Squilla Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Gnathophausia Evo
+Hemimysis
+Mictocaris
+Eurydice
+-----------------
+Hemimysis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Mictocaris Evo
+Talitrus
+Pariambus
+Bodotria
+-----------------
+Talitrus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pariambus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Bodotria Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Eurydice Evo
+Armadillidium
+Szemercses
+Ligia
+-----------------
+Armadillidium Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Szemercses Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Ligia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Meganyctiphanes Evo
+Euphausia
+Penaeus
+Nothing
+-----------------
+Euphausia Evo
+Thysanoessa
+Nothing
+Nothing
+-----------------
+Thysanoessa Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Penaeus Evo
+Sicyonia
+Stenopus
+Eumunida
+-----------------
+Sicyonia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Stenopus Evo
+Heterocarpus
+Austropotamobius
+Palinurus
+-----------------
+Heterocarpus Evo
+Lysmata
+Rhynchocinetes
+Hymenodora
+-----------------
+Lysmata Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Rhynchocinetes Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Hymenodora Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Austropotamobius Evo
+Enoplometopus
+Homarus
+Procambarus
+-----------------
+Enoplometopus Evo
+Axius
+Nothing
+Nothing
+-----------------
+Axius Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Homarus Evo
+Nephropsis
+Nephrops
+Nothing
+-----------------
+Nephropsis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Nephrops Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Procambarus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Palinurus Evo
+Scyllarides
+Nothing
+Nothing
+-----------------
+Scyllarides Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Eumunida Evo
+Neopetrolisthes
+Dromia
+Nothing
+-----------------
+Neopetrolisthes Evo
+Blepharipoda
+Dessus
+Coenobita
+-----------------
+Blepharipoda Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Dessus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Coenobita Evo
+Paguristes
+Ciliopagurus
+Calcinus
+-----------------
+Paguristes Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Ciliopagurus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Calcinus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Dromia Evo
+Hepatus
+Hemigrapsus
+Nothing
+-----------------
+Hepatus Evo
+Corystes
+Eriphia
+Parthenope
+-----------------
+Corystes Evo
+Gecarcinus
+Goneplax
+Xantho
+-----------------
+Gecarcinus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Goneplax Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Xantho Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Eriphia Evo
+Macropodia
+Portumnus
+Pilumnus
+-----------------
+Macropodia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Portumnus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pilumnus EVo
+Nothing
+Nothing
+Nothing
+-----------------
+Parthenope Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Hemigrapsus Evo
+Ocypode
+Heloecius
+Nothing
+-----------------
+Ocypode Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Heloecius Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Argulus Evo
+Linguatula
+Sacculina
+Nothing
+-----------------
+Linguatula Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Sacculina Evo
+Entenmuscheln
+Barnacle
+Nothing
+-----------------
+Entenmuscheln Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Barnacle Evo
+Nothing
+Nothing
+Nothing
 -----------------
 ========= Insect ==========
 -----------------

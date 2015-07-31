@@ -46,6 +46,7 @@ public class MainActivity extends ActionBarActivity {
     public Specie otherSpecie[] = new Specie[9];
     public int DNA = 1200, DNA_rate = 2; // TODO: change DNA back to 200 after testing
     public int EvoLevel_DNA_Table[] = new int[200];
+    public Bitmap bitmap1 = null, bitmap2 = null, bitmap3 = null, bitmap4 = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -143,6 +144,8 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void animal_update(String s){
+        // Image Recycle
+        recycleAll();
         try{
             // Open File
             InputStream in = getResources().openRawResource(R.raw.index);
@@ -196,6 +199,9 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void ResetEvoCore(){
+        // Image Recycle
+        recycleAll ();
+        // Reset Everything
         String origin1 = "Cyanobacteria", origin2 = "Euglena", origin3 = "Amoeba", origin4 = "Tintinnids";
         TextView txV1 = (TextView) findViewById(R.id.textView);
         TextView txV2 = (TextView) findViewById(R.id.textView2);
@@ -241,11 +247,11 @@ public class MainActivity extends ActionBarActivity {
                                                          int reqWidth, int reqHeight, int samplerate) {
         // First decode with inJustDecodeBounds=true to check dimensions
         final BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inJustDecodeBounds = true;
-        BitmapFactory.decodeResource(res, resId, options);
+        //options.inJustDecodeBounds = true;
+        // BitmapFactory.decodeResource(res, resId, options);
 
         // Calculate inSampleSize
-        //options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
+        // options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
         options.inSampleSize = samplerate;
 
         // Decode bitmap with inSampleSize set
@@ -256,28 +262,28 @@ public class MainActivity extends ActionBarActivity {
     private void setImage1(String origin1){
         ImageButton IBmain = (ImageButton) findViewById(R.id.imageButton);
         int res = getResources().getIdentifier(origin1, "drawable", getPackageName());
-        IBmain.setImageBitmap(decodeSampledBitmapFromResource(getResources(), res, IBmain.getWidth(), IBmain.getHeight(),1));
+        IBmain.setImageBitmap(bitmap1 = decodeSampledBitmapFromResource(getResources(), res, IBmain.getWidth(), IBmain.getHeight(),1));
         return;
     }
 
     private void setImage2(String origin2){
         ImageButton IBsub2 = (ImageButton) findViewById(R.id.imageButton2);
         int res = getResources().getIdentifier(origin2,"drawable", getPackageName());
-        IBsub2.setImageBitmap(decodeSampledBitmapFromResource(getResources(), res, IBsub2.getWidth(), IBsub2.getHeight(),4));
+        IBsub2.setImageBitmap(bitmap2 = decodeSampledBitmapFromResource(getResources(), res, IBsub2.getWidth(), IBsub2.getHeight(),5));
         return;
     }
 
     private void setImage3(String origin3){
         ImageButton IBsub3 = (ImageButton) findViewById(R.id.imageButton3);
         int res = getResources().getIdentifier(origin3,"drawable", getPackageName());
-        IBsub3.setImageBitmap(decodeSampledBitmapFromResource(getResources(), res, IBsub3.getWidth(), IBsub3.getHeight(),4));
+        IBsub3.setImageBitmap(bitmap3 = decodeSampledBitmapFromResource(getResources(), res, IBsub3.getWidth(), IBsub3.getHeight(),5));
         return;
     }
 
     private void setImage4(String origin4) {
         ImageButton IBsub4 = (ImageButton) findViewById(R.id.imageButton4);
         int res = getResources().getIdentifier(origin4,"drawable", getPackageName());
-        IBsub4.setImageBitmap(decodeSampledBitmapFromResource(getResources(), res, IBsub4.getWidth(), IBsub4.getHeight(),4));
+        IBsub4.setImageBitmap(bitmap4 = decodeSampledBitmapFromResource(getResources(), res, IBsub4.getWidth(), IBsub4.getHeight(),5));
         return;
     }
 
@@ -332,6 +338,36 @@ public class MainActivity extends ActionBarActivity {
         // Picture Process
         setImage1(s.toLowerCase());
         write2File();
+        return;
+    }
+
+    public void recycleAll () {
+        // Reset the images to transparent first
+        ImageButton IBmain = (ImageButton) findViewById(R.id.imageButton);
+        IBmain.setImageResource(android.R.color.transparent);
+        ImageButton IBsub2 = (ImageButton) findViewById(R.id.imageButton2);
+        IBsub2.setImageResource(android.R.color.transparent);
+        ImageButton IBsub3 = (ImageButton) findViewById(R.id.imageButton3);
+        IBsub3.setImageResource(android.R.color.transparent);
+        ImageButton IBsub4 = (ImageButton) findViewById(R.id.imageButton4);
+        IBsub4.setImageResource(android.R.color.transparent);
+        // Recycle the Bitmaps
+        if(bitmap1 !=null && !bitmap1.isRecycled()){
+            bitmap1.recycle();
+            bitmap1 = null;
+        }
+        if(bitmap2 !=null && !bitmap2.isRecycled()) {
+            bitmap2.recycle();
+            bitmap3 = null;
+        }
+        if(bitmap3 !=null && !bitmap3.isRecycled()) {
+            bitmap3.recycle();
+            bitmap3 = null;
+        }
+        if(bitmap4 !=null && !bitmap4.isRecycled()) {
+            bitmap4.recycle();
+            bitmap4 = null;
+        }
         return;
     }
 
@@ -442,5 +478,12 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        recycleAll();
+        return;
     }
 }

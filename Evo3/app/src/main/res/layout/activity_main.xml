@@ -61,7 +61,7 @@
                 android:layout_height="match_parent"
                 android:id="@+id/imageButton"
                 android:layout_gravity="center_horizontal|top"
-                android:src="@drawable/cyanobacteria"
+                android:src="@drawable/nothing"
                 android:scaleType="fitXY"
                 android:onClick="goParty" />
         </LinearLayout>
@@ -137,7 +137,7 @@
                     android:layout_gravity="left|bottom"
                     android:onClick="Generation2"
                     android:scaleType="fitXY"
-                    android:src="@drawable/euglena" />
+                    android:src="@drawable/nothing" />
             </LinearLayout>
 
 
@@ -175,7 +175,7 @@
                     android:layout_gravity="center_horizontal|bottom"
                     android:onClick="Generation3"
                     android:scaleType="fitXY"
-                    android:src="@drawable/amoeba" />
+                    android:src="@drawable/nothing" />
             </LinearLayout>
 
             <LinearLayout
@@ -212,7 +212,7 @@
                     android:layout_gravity="right|bottom"
                     android:onClick="Generation4"
                     android:scaleType="fitXY"
-                    android:src="@drawable/tintinnids" />
+                    android:src="@drawable/nothing" />
             </LinearLayout>
         </LinearLayout>
 

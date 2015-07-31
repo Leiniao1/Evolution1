@@ -82,7 +82,7 @@
                         android:layout_weight="0.4"
                         android:id="@+id/imageView11"
                         android:layout_column="1"
-                        android:src="@drawable/cyanobacteria"
+                        android:src="@drawable/nothing"
                         android:scaleType="fitXY"
                         android:layout_gravity="top|center_vertical"
                         android:layout_marginBottom="2dp" />
@@ -483,7 +483,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:id="@+id/imageView5"
-                    android:src="@drawable/cyanobacteria"
+                    android:src="@drawable/nothing"
                     android:scaleType="fitXY"
                     android:layout_gravity="left|center_vertical"
                     android:layout_margin="3dp" />
