@@ -1,5 +1,6 @@
 package com.example.hyin.evo3;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
@@ -13,8 +14,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.view.View;
 import android.app.AlertDialog;
@@ -28,6 +33,8 @@ import java.lang.String;
 public class MainActivity extends ActionBarActivity {
 
     public final static String EXTRA_MESSAGE = "Go to party interface";
+
+    public boolean AchievementRecord[] = new boolean[200];
 
     public class Specie {
         String latin; // record the latin name
@@ -43,10 +50,10 @@ public class MainActivity extends ActionBarActivity {
     public String English_Name[] = new String[200];
     public String Latin_Name[] = new String[200];
     public Specie currMainSpecie = new Specie();
-    public Specie otherSpecie[] = new Specie[9];
+    public Specie otherSpecie[] = new Specie[15];
     public int DNA = 1200, DNA_rate = 2; // TODO: change DNA back to 200 after testing
     public int EvoLevel_DNA_Table[] = new int[200];
-    public Bitmap bitmap1 = null, bitmap2 = null, bitmap3 = null, bitmap4 = null;
+    public Bitmap bitmap1 = null, bitmap2 = null, bitmap3 = null, bitmap4 = null, bitmap5=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +63,7 @@ public class MainActivity extends ActionBarActivity {
         readLatinEnglishFile();
         readEvoLevelFile();
         currMainSpecie.latin = "Cyanobacteria"; currMainSpecie.english = "Cyanobacteria"; currMainSpecie.Evo_level = 0;
-        for(int i=0; i<9; i++) {otherSpecie[i]=new Specie();}
+        for(int i=0; i<15; i++) {otherSpecie[i]=new Specie();}
         read2App(); // reload user information data, read animal party and current DNA amount
         initialSet(); // set current animal
         DNA_reload();// reload DNA_rate according to DNA_rate_table, and show them on screen
@@ -126,7 +133,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public String Latin2English(String s){
-        for(int i=0; i<100; i++){
+        for(int i=0; i<200; i++){
             if(Latin_Name[i].equals(s)){
                 return English_Name[i];
             }
@@ -135,7 +142,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public String English2Latin(String s){
-        for(int i=0; i<100; i++){
+        for(int i=0; i<200; i++){
             if(English_Name[i].equals(s)){
                 return Latin_Name[i];
             }
@@ -145,7 +152,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void animal_update(String s){
         // Image Recycle
-        recycleAll();
+        recycleAll(0);
         try{
             // Open File
             InputStream in = getResources().openRawResource(R.raw.index);
@@ -181,6 +188,113 @@ public class MainActivity extends ActionBarActivity {
         return;
     }
 
+    private void ReadAchievementRecord(){
+        try {
+            BufferedReader inputReader = new BufferedReader(new InputStreamReader(
+                    openFileInput("achievementinformation")));
+            for(int i=0; i<200; i++) {
+                String temp = (inputReader.readLine());
+                if(temp.equals("No")) {AchievementRecord[i]=false;}
+                else {AchievementRecord[i]=true;}
+            }
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+        return;
+    }
+
+    private void WriteAchievementRecord(){
+        // Clear up achievement as well
+        try {
+            OutputStreamWriter fos = new OutputStreamWriter(openFileOutput("achievementinformation", Context.MODE_PRIVATE));
+            for(int i=0; i<200; i++) {
+                if(AchievementRecord[i]) {
+                    fos.write("Yes");fos.write('\n'); // Set every achievement as not complete
+                }
+                else{
+                    fos.write("No");fos.write('\n'); // Set every achievement as not complete
+                }
+            }
+            fos.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void AchievementAlert(int N){
+        String s_temp = null, sub2="", sub3="", sub4="";
+        int num=0, achievement_num=0, prize=0;
+        String title="", icon="";
+        try{
+            // Open File
+            InputStream in = getResources().openRawResource(R.raw.achievement);
+            BufferedReader dataIO = new BufferedReader(new InputStreamReader(in));
+            // Find the index from document file
+            while((s_temp = dataIO.readLine())!=null){
+                if(num%5==1 && achievement_num==N){
+                    title = s_temp;}
+                else if(num%5==2 && achievement_num==N){
+                    icon = s_temp;}
+                else if(num%5==3 && achievement_num==N){
+                    prize = Integer.parseInt(s_temp);}
+                else if(num%5==4){
+                    achievement_num++;
+                }
+                num++;
+            }
+            // Close File
+            dataIO.close();
+            in.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
+        DNA+=prize;
+
+        final Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.dialogachievement);
+        dialog.setTitle("You Got A Prize...");
+
+        TextView text = (TextView) dialog.findViewById(R.id.text);
+        text.setText("You completed the achievement: " + title + " You get " + prize + " DNA as prize");
+        ImageView image = (ImageView) dialog.findViewById(R.id.image);
+        int res = getResources().getIdentifier(icon,"drawable", getPackageName());
+        image.setImageBitmap(bitmap5 = decodeSampledBitmapFromResource(getResources(), res, 5, 5, 4));
+
+        Button dialogButton = (Button) dialog.findViewById(R.id.dialogButtonOK);
+        dialogButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DNA_reload();
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+
+        return;
+    }
+
+    public void achievement_check(){
+        ReadAchievementRecord();
+        if(AchievementRecord[0]==false && currMainSpecie.Evo_level>=2){
+            AchievementRecord[0]=true;
+            AchievementAlert(0);
+        }
+        if(AchievementRecord[3]==false && currMainSpecie.latin.equals("Euspongia")){
+            AchievementRecord[3]=true;
+            AchievementAlert(3);
+        }
+        if(AchievementRecord[4]==false && currMainSpecie.latin.equals("Physalia")){
+            AchievementRecord[4]=true;
+            AchievementAlert(4);
+        }
+        WriteAchievementRecord();
+        return;
+    }
+
     public void evo_update(String s){
         animal_update(s);
         // Update Curr Main Specie Structure
@@ -190,6 +304,7 @@ public class MainActivity extends ActionBarActivity {
         // Update DNA coefficients
         DNA = DNA-DNA_rate;
         DNA_reload();
+        achievement_check();
         return;
     }
 
@@ -200,7 +315,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void ResetEvoCore(){
         // Image Recycle
-        recycleAll ();
+        recycleAll (0);
         // Reset Everything
         String origin1 = "Cyanobacteria", origin2 = "Euglena", origin3 = "Amoeba", origin4 = "Tintinnids";
         TextView txV1 = (TextView) findViewById(R.id.textView);
@@ -341,16 +456,24 @@ public class MainActivity extends ActionBarActivity {
         return;
     }
 
-    public void recycleAll () {
-        // Reset the images to transparent first
-        ImageButton IBmain = (ImageButton) findViewById(R.id.imageButton);
-        IBmain.setImageResource(android.R.color.transparent);
-        ImageButton IBsub2 = (ImageButton) findViewById(R.id.imageButton2);
-        IBsub2.setImageResource(android.R.color.transparent);
-        ImageButton IBsub3 = (ImageButton) findViewById(R.id.imageButton3);
-        IBsub3.setImageResource(android.R.color.transparent);
-        ImageButton IBsub4 = (ImageButton) findViewById(R.id.imageButton4);
-        IBsub4.setImageResource(android.R.color.transparent);
+    public void recycleAll (int clear) {
+        if(clear == 2){
+            turnoffLight(clear);
+        }
+        else if(clear==1){
+            turnoffLight(clear);
+        }
+        else if(clear==0){
+            // Reset the images to transparent first
+            ImageButton IBmain = (ImageButton) findViewById(R.id.imageButton);
+            IBmain.setImageResource(android.R.color.transparent);
+            ImageButton IBsub2 = (ImageButton) findViewById(R.id.imageButton2);
+            IBsub2.setImageResource(android.R.color.transparent);
+            ImageButton IBsub3 = (ImageButton) findViewById(R.id.imageButton3);
+            IBsub3.setImageResource(android.R.color.transparent);
+            ImageButton IBsub4 = (ImageButton) findViewById(R.id.imageButton4);
+            IBsub4.setImageResource(android.R.color.transparent);
+        }
         // Recycle the Bitmaps
         if(bitmap1 !=null && !bitmap1.isRecycled()){
             bitmap1.recycle();
@@ -368,6 +491,11 @@ public class MainActivity extends ActionBarActivity {
             bitmap4.recycle();
             bitmap4 = null;
         }
+        if(bitmap5!=null && !bitmap5.isRecycled()){
+            bitmap5.recycle();
+            bitmap5 = null;
+        }
+        System.gc();
         return;
     }
 
@@ -410,6 +538,7 @@ public class MainActivity extends ActionBarActivity {
     public void goParty(View view){
         Intent intent = new Intent(this, MainActivity2Activity.class);
         write2File();
+        recycleAll(2);
         startActivity(intent);
         finish();
         return;
@@ -417,6 +546,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void goMainMenu(View view){
         Intent intent = new Intent(this, MainInterface.class);
+        recycleAll(1);
         startActivity(intent);
         finish();
         return;
@@ -428,7 +558,7 @@ public class MainActivity extends ActionBarActivity {
             fos.write(Integer.toString(DNA)); fos.write('\n');
             fos.write(currMainSpecie.latin); fos.write('\n');
             fos.write(Integer.toString(currMainSpecie.Evo_level)); fos.write('\n');
-            for(int i=0; i<9; i++) {
+            for(int i=0; i<15; i++) {
                 fos.write(otherSpecie[i].latin);fos.write('\n'); // Set Animal Latin Name
                 fos.write(Integer.toString(otherSpecie[i].Evo_level)); fos.write('\n'); //Set Evo_level
             }
@@ -447,7 +577,7 @@ public class MainActivity extends ActionBarActivity {
             currMainSpecie.latin = inputReader.readLine();
             currMainSpecie.english = Latin2English(currMainSpecie.latin);
             currMainSpecie.Evo_level = Integer.parseInt(inputReader.readLine());
-            for(int i=0; i<9; i++) {
+            for(int i=0; i<15; i++) {
                 otherSpecie[i].latin = inputReader.readLine();
                 otherSpecie[i].english = Latin2English(otherSpecie[i].latin);
                 otherSpecie[i].Evo_level = Integer.parseInt(inputReader.readLine());
@@ -483,7 +613,31 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onDestroy(){
         super.onDestroy();
-        recycleAll();
         return;
     }
+
+    public void turnoffLight(int clear){
+        RelativeLayout RL = (RelativeLayout) findViewById(R.id.RL2);
+        RL.setBackgroundResource(android.R.color.black);
+        TextView TV2 = (TextView) findViewById(R.id.textViewDisplayLoading2);
+        if(clear==1)
+            TV2.setText("Exit to Main Menu...");
+        else if(clear==2)
+            TV2.setText("Manage Your Party...");
+        View TX5 = (View) findViewById(R.id.textView5);
+        TX5.setVisibility(View.GONE);
+        View TX23 = (View) findViewById(R.id.textView23);
+        TX23.setVisibility(View.GONE);
+        LinearLayout LO1 = (LinearLayout) findViewById(R.id.LO1);
+        LinearLayout LO2 = (LinearLayout) findViewById(R.id.LO2);
+        LinearLayout LO3 = (LinearLayout) findViewById(R.id.LO3);
+        LO1.removeAllViews();
+        LO2.removeAllViews();
+        LO3.removeAllViews();
+        RL.removeView(LO1);
+        RL.removeView(LO2);
+        RL.removeView(LO3);
+        return;
+    }
+
 }

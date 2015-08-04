@@ -6,4 +6,5 @@
     <string name="title_activity_main_activity2">MainActivity2Activity</string>
     <string name="title_activity_main_activity22">MainActivity22Activity</string>
     <string name="title_activity_main_interface">MainInterface</string>
+    <string name="title_activity_achievement">Achievement</string>
 </resources>

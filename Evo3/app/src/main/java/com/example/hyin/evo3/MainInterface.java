@@ -14,8 +14,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import java.io.OutputStreamWriter;
 
@@ -82,7 +84,7 @@ public class MainInterface extends ActionBarActivity {
             fos.write(Integer.toString(1200)); fos.write('\n'); // TODO: change this number back to 200 after testing
             fos.write("Cyanobacteria"); fos.write('\n');
             fos.write(Integer.toString(0)); fos.write('\n');
-            for(int i=0; i<9; i++) {
+            for(int i=0; i<15; i++) {
                 fos.write("Nothing");fos.write('\n'); // Set Animal Latin Name
                 fos.write(Integer.toString(0)); fos.write('\n'); //Set Evo_level
             }
@@ -90,9 +92,24 @@ public class MainInterface extends ActionBarActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        // Clear up achievement as well
+        try {
+            OutputStreamWriter fos = new OutputStreamWriter(openFileOutput("achievementinformation", Context.MODE_PRIVATE));
+            for(int i=0; i<200; i++) {
+                fos.write("No");fos.write('\n'); // Set every achievement as not complete
+            }
+            fos.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         // Launch Evo activity
         Intent intent = new Intent(this, MainActivity.class);
         String message = "Manage your party";
+        // Change Interface to "Loading..." display
+        turnoffLight();
+        recycleBackground();
         startActivity(intent);
         finish();
         return;
@@ -101,20 +118,32 @@ public class MainInterface extends ActionBarActivity {
     public void goEvo(View view){
         Intent intent = new Intent(this, MainActivity.class);
         String message = "Manage your party";
+        // Change Interface to "Loading..." display
+        turnoffLight();
+        recycleBackground();
+        startActivity(intent);
+        finish();
+        return;
+    }
+
+    public void goAchievement(View view){
+        Intent intent = new Intent(this, Achievement.class);
+        String message = "See your uncompleted achievement";
+        // Change Interface to "Loading..." display
+        turnoffLight();
+        recycleBackground();
         startActivity(intent);
         finish();
         return;
     }
 
     public void recycleBackground(){
-        // Reset background image first
-        ImageView IVmain = (ImageView) findViewById(R.id.imageView11);
-        IVmain.setImageResource(android.R.color.transparent);
         // Recycle the Bitmap
         if(bitmap1!=null && !bitmap1.isRecycled()){
             bitmap1.recycle();
             bitmap1 = null;
         }
+        System.gc();
         return;
     }
 
@@ -143,7 +172,25 @@ public class MainInterface extends ActionBarActivity {
     @Override
     protected void onDestroy(){
         super.onDestroy();
-        recycleBackground();
         return;
     }
+
+    public void turnoffLight(){
+        ImageView IVmain = (ImageView) findViewById(R.id.imageView11);
+        IVmain.setImageResource(android.R.color.black);
+        View TV1 = (View) findViewById(R.id.textView10);
+        TV1.setVisibility(View.GONE);
+        TextView TV2 = (TextView) findViewById(R.id.textViewDisplayLoading);
+        TV2.setText("Loading...");
+        View B1 = (View) findViewById(R.id.button4);
+        B1.setVisibility(View.GONE);
+        View B2 = (View) findViewById(R.id.button5);
+        B2.setVisibility(View.GONE);
+        View B3 = (View) findViewById(R.id.button6);
+        B3.setVisibility(View.GONE);
+        View B4 = (View) findViewById(R.id.button7);
+        B4.setVisibility(View.GONE);
+        return;
+    }
+
 }

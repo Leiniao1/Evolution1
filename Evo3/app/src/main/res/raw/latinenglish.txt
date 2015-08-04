@@ -567,3 +567,309 @@ Gooseneck Barnacle
 ------------------
 Barnacle
 Acorn Barnacle
+------------------
+Protura
+Conehead
+------------------
+Archaeognatha
+Rock Bristletail
+------------------
+Lepisma
+Silverfish
+------------------
+Ephemeroptera
+Stream Mayfly
+------------------
+Cloeon
+Small Minnow Mayfly
+------------------
+Caenis
+Small Squaregill Mayfly
+------------------
+Atalophlebia
+Prong-gilled Mayfly
+------------------
+Meganisoptera
+Griffinfly
+------------------
+Hemiphlebia
+Ancient Greenling
+------------------
+Lestes
+Spreadwings
+------------------
+Protosticta
+Shadow Damsel
+------------------
+Calopteryx
+Jewelwing
+------------------
+Euphaea
+Gossamerwing
+------------------
+Platycnemis
+White-legged Damselfly
+------------------
+Ischunura
+Blue-tailed Damselfly
+------------------
+Austroagrion
+Eastern Billabong
+------------------
+Coenagrion
+Azure Damselfly
+------------------
+Ictinogomphus
+Common Clubtail
+------------------
+Austroaeschna
+Tasmanian Darner
+------------------
+Anotogaster
+Spiketail
+------------------
+Macromia
+Illinois River Cruiser
+------------------
+Somatochlora
+Northern Emerald
+------------------
+Choristhemis
+Yellow-tipped Tigertail
+------------------
+Pantala
+Wandering Glider
+------------------
+Osaundersii
+Webspinner
+------------------
+Nemoura
+Spring Stonefly
+------------------
+Chloroperlidae
+Green Stonefly
+------------------
+Leuctra
+Needlefly
+------------------
+Isoperla
+Stripetail
+------------------
+Pteronarcys
+Salmonfly
+------------------
+Forficula
+Common Earwig
+------------------
+Labidura
+Striped Earwig
+------------------
+Labia
+Little Earwig
+------------------
+Leptynia
+Spanish Walkingstick
+------------------
+Phyllium
+Leaf Insect
+------------------
+Pseudophasma
+Stick Insect
+------------------
+Cratomelus
+Chilean King Cricket
+------------------
+Stenopelmatus
+Jerusalem Cricket
+------------------
+Scudderia
+Katydid
+------------------
+Oecanthus
+Tree Cricket
+------------------
+Nemobius
+Ground Cricket
+------------------
+Gryllotalpa
+Mole Cricket
+------------------
+Mogoplistes
+Scaly Cricket
+------------------
+Ceuthophilus
+Camel Cricket
+------------------
+Coryphistes
+Bark Mimicking Grasshopper
+------------------
+Tropidacris
+Lubber Grasshopper
+------------------
+Stethophyma
+Slant-faced Grasshopper
+------------------
+Schistocerca
+American Bird Grasshopper
+------------------
+Chorthippus
+Acridid Grasshopper
+------------------
+Parapodisma
+Spur-throated Grasshopper
+------------------
+Phyllochoreia
+Leaf Grasshopper
+------------------
+Eumastax
+Colored Grasshopper
+------------------
+Monistria
+Blistered Pyrgomorph
+------------------
+Tetrix
+Grouse Locust
+------------------
+Gromphadorhina
+Hissing Cockroach
+------------------
+Nauphoeta
+Lobster Cockroach
+------------------
+Loboptera
+Wood Cockroach
+------------------
+Periplaneta
+American Cockroach
+------------------
+Parcoblatta
+Virginia Wood Cockroach
+------------------
+Blattodea
+German Cockroach
+------------------
+Polyzosteria
+Botany Bay Coackroach
+------------------
+Mastotermes
+Giant Northern Termite
+------------------
+Hodotermes
+Harvester Termite
+------------------
+Psocoptera
+Book Lice
+------------------
+Hundelaus
+Sucking Lice
+------------------
+Pediculus
+Body Lice
+------------------
+Pthius
+Crab Lice
+------------------
+Haematomyzus
+Elephant Lice
+------------------
+Strigiphilus
+Chewing Lice
+------------------
+Orius
+Minute Pirate Bug
+------------------
+Cimex
+Bed Bug
+------------------
+Rhabdomiris
+Striped Oak Bug
+------------------
+Nabis
+Damsel Bug
+------------------
+Reduviidae
+Assassin Bug
+------------------
+Corythucha
+Lace Bug
+------------------
+Ploiaria
+Thread-legged Bug
+------------------
+Arilus
+Wheel Bug
+------------------
+Gerris
+Water Strider
+------------------
+Abedus
+Giant Water Bug
+------------------
+Nepa
+Water Scorpion
+------------------
+Hesperocorixa
+Water Boatman
+------------------
+Notonecta
+Backswimmer
+------------------
+Cingulatus
+Red Cotton Stainer Bug
+------------------
+Elasmucha
+Shield Bug
+------------------
+Cydnus
+Burrowing Bug
+------------------
+Nezara
+Stink Bug
+------------------
+Scutiphora
+Jewel Bug
+------------------
+Amorbus
+Leaf-footed Bug
+------------------
+Rhopalus
+Scentless Plant Bug
+------------------
+Oncopeltus
+Milkweed Bug
+------------------
+Prosapia
+Two-lined Spittlebug
+------------------
+Tibicen
+Annual Cicada
+------------------
+Kikihia
+New Zealand Cicada
+------------------
+Ceresa
+Treehopper
+------------------
+Laternaria
+Lantern Bug
+------------------
+Acyrthosiphon
+Pea aphid
+------------------
+Icerya
+Cottony Cushion Scale
+------------------
+Porphyrophora
+Ground Pearl
+------------------
+Coccus
+Green Scale
+------------------
+Formica
+Mealy Bug
+------------------
+Psyllidae
+Jumping Plant Lice
+------------------
+Ampulex
+Cockroach Wasp
