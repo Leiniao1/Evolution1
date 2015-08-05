@@ -137,6 +137,17 @@ public class MainInterface extends ActionBarActivity {
         return;
     }
 
+    public void goAbout(View view){
+        Intent intent = new Intent(this, about.class);
+        String message = "Going to the About Page";
+        // Change Interface to "Loading..." display
+        turnoffLight();
+        recycleBackground();
+        startActivity(intent);
+        finish();
+        return;
+    }
+
     public void recycleBackground(){
         // Recycle the Bitmap
         if(bitmap1!=null && !bitmap1.isRecycled()){

@@ -53,8 +53,8 @@ public class MainActivity2Activity extends ActionBarActivity {
         }
     }
 
-    public String English_Name[] = new String[200];
-    public String Latin_Name[] = new String[200];
+    public String English_Name[] = new String[500];
+    public String Latin_Name[] = new String[500];
     public Specie currMainSpecie = new Specie();
     public Specie otherSpecie[] = new Specie[15];
     public int DNA = 1200, DNA_rate = 2; // TODO: change DNA back to 200 after testing
@@ -82,7 +82,7 @@ public class MainActivity2Activity extends ActionBarActivity {
             InputStream in = getResources().openRawResource(R.raw.latinenglish);
             BufferedReader dataIO = new BufferedReader(new InputStreamReader(in));
             String s_temp;
-            for(int i=0; i<200; i++) {English_Name[i]=""; Latin_Name[i]="";}
+            for(int i=0; i<500; i++) {English_Name[i]=""; Latin_Name[i]="";}
             int cnt=0;
             while ((s_temp = dataIO.readLine()) != null) {
                 if (s_temp.equals("------------------")) {
@@ -113,7 +113,7 @@ public class MainActivity2Activity extends ActionBarActivity {
     }
 
     public String Latin2English(String s){
-        for(int i=0; i<200; i++){
+        for(int i=0; i<500; i++){
             if(Latin_Name[i].equals(s)){
                 return English_Name[i];
             }
@@ -122,7 +122,7 @@ public class MainActivity2Activity extends ActionBarActivity {
     }
 
     public String English2Latin(String s){
-        for(int i=0; i<200; i++){
+        for(int i=0; i<500; i++){
             if(English_Name[i].equals(s)){
                 return Latin_Name[i];
             }
@@ -277,7 +277,15 @@ public class MainActivity2Activity extends ActionBarActivity {
         Intent intent = new Intent(this, MainActivity.class);
         write2File();
         recycleAll(1);
-        String message = "Manage your party";
+        startActivity(intent);
+        finish();
+        return;
+    }
+
+    public void goSurvival(View view){
+        Intent intent = new Intent(this, Survival.class);
+        write2File();
+        recycleAll(2);
         startActivity(intent);
         finish();
         return;
@@ -693,9 +701,9 @@ public class MainActivity2Activity extends ActionBarActivity {
         // Set the loading text
         TextView TV2 = (TextView) findViewById(R.id.textView9);
         if(clear==1)
-            TV2.setText("Go to the evolution interface...");
+            TV2.setText("Go to the evolution page...");
         else if(clear==2)
-            TV2.setText("Go to the survival interface...");
+            TV2.setText("Go to the survival page...");
         TV2.setTextColor(0xFFFFFFFF);
         // Reset the images to transparent first
         ImageView IBmain = (ImageView) findViewById(R.id.imageView5);

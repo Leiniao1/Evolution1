@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.hyin.evo3" >
+    package="com.example.hyin.evo3"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="preferExternal"    >
 
     <application
         android:allowBackup="true"
@@ -30,6 +33,14 @@
         <activity
             android:name=".Achievement"
             android:label="@string/title_activity_achievement" >
+        </activity>
+        <activity
+            android:name=".about"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name=".Survival"
+            android:label="@string/title_activity_survival" >
         </activity>
     </application>
 

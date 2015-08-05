@@ -34,6 +34,12 @@ Mushroom Cap Jellyfish
 Mastigias
 Lagoon Jellyfish
 ------------------
+Cyanea
+Lion's Mane Jellyfish
+------------------
+Phyllorhiza
+Spotted Jellyfish
+------------------
 Cavernularia
 Sea Finger
 ------------------
@@ -873,3 +879,204 @@ Jumping Plant Lice
 ------------------
 Ampulex
 Cockroach Wasp
+------------------
+Tachysphex
+Sand Wasp
+------------------
+Colletes
+Plasterer Bee
+------------------
+Anthidium
+Leafcutter Bee
+------------------
+Ammophila
+Digger Wasp
+------------------
+Amegilla
+Blue Banded Bee
+------------------
+Andrena
+Minning Bee
+------------------
+Bumbus
+Bumble Bee
+------------------
+Apis
+Honey Bee
+------------------
+Euglossa
+Orchid Bee
+------------------
+Chrysura
+Cuckoo Wasp
+------------------
+Mutillidae
+Velvet Ant
+------------------
+Anoplius
+Spider Wasp
+------------------
+Iridomyrmex
+Erratic Ant
+------------------
+Rhytidoponera
+Green-head Ant
+------------------
+Camponotus
+Carpenter Ant
+------------------
+Oecophylla
+Weaver Ant
+------------------
+Eciton
+Army Ant
+------------------
+Solenopsis
+Fire Ant
+------------------
+Paraponera
+Bullet Ant
+------------------
+Euodynerus
+Potter Wasp
+------------------
+Pseudomasaris
+Pollen Wasp
+------------------
+Polistes
+Paper Wasp
+------------------
+Vespula
+Yellowjacket
+------------------
+Dolichovespula
+Bald-faced Hornet
+------------------
+Vespa
+European Hornet
+------------------
+Gonatocerus
+Fairyfly
+------------------
+Labrador
+Horntail
+------------------
+Lophyrotoma
+Melaleuca Sawfly
+------------------
+Pamphilius
+Leaf-rolling Sawfly
+------------------
+Lophyra
+Tiger Beetle
+------------------
+Calosoma
+Searcher
+------------------
+Omophron
+Round Sand Beetle
+------------------
+Harpalus
+Harp Beetle
+------------------
+Gyrinus
+Whirligig Beetle
+------------------
+Dytiscidae
+Diving Beetle
+------------------
+Hydroscapha
+Skiff Beetle
+------------------
+Anobium
+Furniture Beetle
+------------------
+Leptinotarsa
+Colorado Potato Beetle
+------------------
+Anoplophora
+Longhorn Beetle
+------------------
+Lilioceris
+Leaf Beetle
+------------------
+Trogodendron
+Clerid Beetle
+------------------
+Anthocomus
+Soft-wing Flower Beetle
+------------------
+Anthicid
+Ant Beetle
+------------------
+Hycleus
+Blister Beetle
+------------------
+Oedemerid
+False Blister Beetle
+------------------
+Pyrochroa
+Fire-colored Beetle
+------------------
+Anthribus
+Fungus Weevile
+------------------
+Rhinotia
+Primitive Weevile
+------------------
+Apoderus
+Giraffe Weevile
+------------------
+Lixus
+True Weevile
+------------------
+Buprestidae
+Jewel Beetle
+------------------
+Denticollis
+Click Beetle
+------------------
+Chauliognathus
+Soldier Beetle
+------------------
+Lycid
+Net-winged Beetle
+------------------
+Photinus
+Firefly
+------------------
+Geotrupes
+Earth-boring Dung Beetle
+------------------
+Lamprima
+Golden Stag Beetle
+------------------
+Dorcus
+Lesser Stag Beetle
+------------------
+Odontotaenius
+Bess Beetle
+------------------
+Circellium
+Flightless Dung Beetle
+------------------
+Cetoinedoree
+Flower Chafer
+------------------
+Hercules
+Hercules Beetle
+------------------
+Allomyrina
+Rhinoceros Beetle
+------------------
+Hydrous
+Water Scavenger Beetle
+------------------
+Nicrophorus
+Carrion Beetle
+------------------
+Ocypus
+Rove Beetle
+------------------
+Lytta
+Spanish Fly

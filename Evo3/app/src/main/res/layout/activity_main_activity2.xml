@@ -46,6 +46,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="0.25"
                 android:text="Survival"
+                android:onClick="goSurvival"
                 android:id="@+id/button3"
                 android:textSize="@dimen/abc_edit_text_inset_top_material" />
         </LinearLayout>

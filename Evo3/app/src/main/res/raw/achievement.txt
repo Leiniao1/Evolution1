@@ -15,7 +15,7 @@ dna
 Clone any of your party member in the party page
 ----------------
 Sponge for Bath!
-euspongia
+spongia
 100
 Evo to the specie "bath sponge"
 ----------------

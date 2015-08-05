@@ -47,8 +47,8 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
-    public String English_Name[] = new String[200];
-    public String Latin_Name[] = new String[200];
+    public String English_Name[] = new String[500];
+    public String Latin_Name[] = new String[500];
     public Specie currMainSpecie = new Specie();
     public Specie otherSpecie[] = new Specie[15];
     public int DNA = 1200, DNA_rate = 2; // TODO: change DNA back to 200 after testing
@@ -85,7 +85,7 @@ public class MainActivity extends ActionBarActivity {
             InputStream in = getResources().openRawResource(R.raw.latinenglish);
             BufferedReader dataIO = new BufferedReader(new InputStreamReader(in));
             String s_temp;
-            for(int i=0; i<200; i++) {English_Name[i]=""; Latin_Name[i]="";}
+            for(int i=0; i<500; i++) {English_Name[i]=""; Latin_Name[i]="";}
             int cnt=0;
             while ((s_temp = dataIO.readLine()) != null) {
                 if (s_temp.equals("------------------")) {
@@ -133,7 +133,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public String Latin2English(String s){
-        for(int i=0; i<200; i++){
+        for(int i=0; i<500; i++){
             if(Latin_Name[i].equals(s)){
                 return English_Name[i];
             }
@@ -142,7 +142,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public String English2Latin(String s){
-        for(int i=0; i<200; i++){
+        for(int i=0; i<500; i++){
             if(English_Name[i].equals(s)){
                 return Latin_Name[i];
             }
@@ -283,7 +283,7 @@ public class MainActivity extends ActionBarActivity {
             AchievementRecord[0]=true;
             AchievementAlert(0);
         }
-        if(AchievementRecord[3]==false && currMainSpecie.latin.equals("Euspongia")){
+        if(AchievementRecord[3]==false && currMainSpecie.latin.equals("Spongia")){
             AchievementRecord[3]=true;
             AchievementAlert(3);
         }

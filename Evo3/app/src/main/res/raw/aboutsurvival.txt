@@ -1,0 +1,46 @@
+9 Kinds of Environment:
+
+Wetland
+Ocean
+Seashore
+Forest
+Jungle
+Grassland
+Mountain
+Tundra
+Desert
+
+3 Kinds of Diet:
+
+Herbivore (recover 10 Health Each Turn)
+Parasitic (leech some objects when attack)
+Carnivore (eat some objects when attack)
+
+10 Labels (These labels have no systemetic biology meaning):
+
+1, plankton
+2, insect
+3, worm
+4, mammal
+5, bird
+6, fish (include octopus)
+7, shell (include crab and big shrimp)
+8, coral 
+9, reptile
+10, amphibian
+
+if the target is more specific, just list their names
+
+9 Kinds of Size:
+
+Micro 	(Mi): 	~um
+XSmall	(XS): 	~mm
+Small 	(S): 	~1cm
+Small+	(S+): 	~3cm
+Medium	(M):	~1dm
+Medium+	(M+):	~3dm
+Large   (L):	~1m
+XLarge	(XL):	~3m
+Huge	(H):	~10m
+
+Except for eating each can only attack those equals to or 1 greater/less than its own size

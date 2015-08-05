@@ -152,6 +152,7 @@
                 android:layout_weight="0.35"
                 android:text="About"
                 android:id="@+id/button7"
+                android:onClick="goAbout"
                 android:layout_gravity="center_horizontal"
                 android:background="#c191ca46" />
             <TextView
