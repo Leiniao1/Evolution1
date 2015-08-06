@@ -41,7 +41,7 @@ public class Survival extends ActionBarActivity {
 
     public void initialSet(){
         ImageView IVBackground = (ImageView) findViewById(R.id.imageViewEnvironment);
-        setImage("ocean", 1, IVBackground, bitmapEnviron);
+        setImage("ocean", 4, IVBackground, bitmapEnviron);
         return;
     }
 

@@ -218,10 +218,9 @@
                 android:layout_height="0dip"
                 android:layout_weight="0.04"
                 android:text="Select your members fit for this level"
-                android:layout_gravity="center"
+                android:layout_gravity="top|center"
                 android:paddingTop="2dp"
-                android:paddingBottom="2dp"
-                android:gravity="center"></TextView>
+                android:gravity="top|center"></TextView>
 
             <LinearLayout
                 android:layout_width="match_parent"
