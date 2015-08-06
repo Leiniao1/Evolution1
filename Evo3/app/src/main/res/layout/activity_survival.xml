@@ -61,6 +61,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:scaleType="fitXY"
                 android:id = "@+id/imageViewEnvironment"/>
 
         <LinearLayout
@@ -203,14 +204,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.06"/>
+            android:layout_weight="0.03"/>
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="0dip"
             android:layout_marginTop="5dp"
-            android:layout_weight="0.47">
+            android:layout_weight="0.50">
 
             <TextView
                 android:layout_width="wrap_content"

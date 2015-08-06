@@ -1080,3 +1080,219 @@ Rove Beetle
 ------------------
 Lytta
 Spanish Fly
+------------------
+Rapisma
+Moth Lacewing
+------------------
+Chrysopa
+Green Lacewing
+------------------
+Micromus
+Brown Lacewing
+------------------
+Sisyra
+Spongefly
+------------------
+Mantispa
+Mantidfly
+------------------
+Distoleon
+Antlion
+------------------
+Libelloides
+Owlfly
+------------------
+Dichrostigma
+Snakefly
+------------------
+Sialis
+Alderfly
+------------------
+Panorpa
+Scorpion Fly
+------------------
+Ctenocephalides
+Dog Flea
+------------------
+Xenopsylla
+Oriental Rat Flea
+------------------
+Sylvicola
+Wood Gnat
+------------------
+Cecidomyiidae
+Gall Midge
+------------------
+Clogmia
+Moth Fly
+------------------
+Ptychoptera
+Phantom Crane Fly
+------------------
+Tipulidae
+Spotted Crane Fly
+------------------
+Trichocera
+Winter Crane Fly
+------------------
+Empis
+Dance Fly
+------------------
+Leptogaster
+Robber Fly
+------------------
+Villa
+Bee Fly
+------------------
+Thereva
+Stiletto Fly
+------------------
+Tabanus
+Horse Fly
+------------------
+Lonchoptera
+Spear-winged Fly
+------------------
+Polyporivora
+Flat-footed Fly
+------------------
+Conopid
+Thick-headed Fly
+------------------
+Bactrocera
+Fruit Fly
+------------------
+Pogonortalis
+Signal Fly
+------------------
+Lonchaea
+Lance Fly
+------------------
+Adia
+Cabbage Fly
+------------------
+Musca
+House Fly
+------------------
+Chrysomya
+Blow Fly
+------------------
+Hermetia
+Black Soldier Fly
+------------------
+Athericidae
+Ibis Fly
+------------------
+Rhagio
+Snipe Fly
+------------------
+Coenomyia
+Awl Fly
+------------------
+Micropterix
+Mandibulate Archaic Moth
+------------------
+Iphierga
+Bagworm Moth
+------------------
+Plutella
+Diamondback Moth
+------------------
+Yponomeuta
+Ermine Moth
+------------------
+Atteva
+Ailanthus Webworm
+------------------
+Stathmopoda
+Concealer Moth
+------------------
+Zygaena
+Fiery Clearwing Moth
+------------------
+Adoxophyes
+Summer Fruit Tortrix
+------------------
+Pterophoridae
+Plume Moth
+------------------
+Hyblaea
+Teak Moth
+------------------
+Ostrinia
+Pyraloid Moth
+------------------
+Glanycus
+Picture-winged Leaf Moth
+------------------
+Lasiocampa
+Lappet Moth
+------------------
+Egybolis
+Owlet Moth
+------------------
+Bena
+Tuft Moth
+------------------
+Tetragonus
+Callidulid Moth
+------------------
+Scopula
+Creamy Wave
+------------------
+Timandra
+Blood-vein Moth
+------------------
+Pelopidas
+Skipper Butterfly
+------------------
+Parnassius
+Mountain Apollo
+------------------
+Iphiclides
+Scarce Swallowtail
+------------------
+Papilio
+Lime Butterfly
+------------------
+Catopsilia
+Sulfur
+------------------
+Pieris
+Large White Butterfly
+------------------
+Delias
+Common Jezebel
+------------------
+Byblia
+Joker
+------------------
+Danaus
+Milkweed Butterfly
+------------------
+Cethosia
+Leopard Lacewing
+------------------
+Inachis
+European Peacock Butterfly
+------------------
+Kallima
+Oakleaf Butterfly
+------------------
+Phyciodes
+Pearl Crescent
+------------------
+Heliophorus
+Sapphire
+------------------
+Curetis
+Angled Sunbeam
+------------------
+Hamearis
+Duke of Burgundy
+------------------
+Diaethria
+Cramer's Eighty-eight
+------------------
+Vindula
+Cruiser Butterfly

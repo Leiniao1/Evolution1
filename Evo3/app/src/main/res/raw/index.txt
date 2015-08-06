@@ -3166,7 +3166,7 @@ Nothing
 Ampulex Evo
 Tachysphex
 Lophyra
-
+Rapisma
 -----------------
 Tachysphex Evo
 Colletes
@@ -3561,6 +3561,555 @@ Nothing
 Nothing
 -----------------
 Ocypus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+======== Insect Branch Fly ====
+-----------------
+Rapisma Evo
+Stenosmylus
+Panorpa
+Hydropsyche
+-----------------
+Stenosmylus Evo
+Chrysopa
+Sialis
+Dichrostigma
+-----------------
+Chrysopa Evo
+Micromus
+Nymphes
+Nothing
+-----------------
+Micromus Evo
+Sisyra
+Mantispa
+Nothing
+-----------------
+Sisyra Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Mantispa Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Nymphes Evo
+Distoleon
+Libelloides
+Nothing
+-----------------
+Distoleon Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Libelloides Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Sialis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Dichrostigma Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Panorpa Evo
+Ctenocephalides
+Sylvicola
+Empis
+-----------------
+Ctenocephalides Evo
+Xenopsylla
+Nothing
+Nothing
+-----------------
+Xenopsylla Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Sylvicola Evo
+Cecidomyiidae
+Chironomus
+Clogmia
+-----------------
+Chironomus Evo
+Aedes
+Nothing
+Nothing
+-----------------
+Aedes Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Clogmia Evo
+Ptychoptera
+Tipulidae
+Trichocera
+-----------------
+Ptychoptera Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Tipulidae Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Trichocera Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Empis Evo
+Leptogaster
+Lonchoptera
+Lampromyia
+-----------------
+Leptogaster Evo
+Villa
+Clintonia
+Nothing
+-----------------
+Villa Evo
+Thereva
+Nothing
+Nothing
+-----------------
+Thereva Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Clintonia Evo
+Tabanus
+Nothing
+Nothing
+-----------------
+Tabanus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Lonchoptera Evo
+Polyporivora
+Conopid
+Athericidae
+-----------------
+Polyporivora Evo
+Scaeva
+Nothing
+Nothing
+-----------------
+Scaeva Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Conopid Evo
+Bactrocera
+Adia
+Hermetia
+-----------------
+Bactrocera Evo
+Tritoxa
+Pogonortalis
+Lonchaea
+-----------------
+Tritoxa Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pogonortalis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Lonchaea Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Adia Evo
+Musca
+Sarcophaga
+Chrysomya
+-----------------
+Musca Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Sarcophaga Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Chrysomya Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Hermetia Evo
+Beris
+Nothing
+Nothing
+-----------------
+Beris Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Athericidae Evo
+Rhagio
+Nothing
+Nothing
+-----------------
+Rhagio Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Lampromyia Evo
+Coenomyia
+Nothing
+Nothing
+-----------------
+Coenomyia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+======== Insect Branch Butterfly ====
+-----------------
+Hydropsyche Evo
+Rhyacophila
+Micropterix
+Nothing
+-----------------
+Rhyacophila Evo
+Sericostoma
+Nothing
+Nothing
+-----------------
+Sericostoma Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Micropterix Evo
+Eriocrania
+Iphierga
+Nemophora
+-----------------
+Eriocrania Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Iphierga Evo
+Caloptilia
+Plutella
+Homadaula
+-----------------
+Caloptilia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Plutella Evo
+Yponomeuta
+Stathmopoda
+Nothing
+-----------------
+Yponomeuta Evo
+Atteva
+Nothing
+Nothing
+-----------------
+Atteva Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Stathmopoda Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Homadaula Evo
+Zygaena
+Pterophoridae
+Hyblaea
+-----------------
+Zygaena Evo
+Pyropteron
+Isotrias
+Adoxophyes
+-----------------
+Pyropteron Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Isotrias Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Adoxophyes Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pterophoridae Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Hyblaea Evo
+Ostrinia
+Glanycus
+Lasiocampa
+-----------------
+Ostrinia Evo
+Elophila
+Aethaloessa
+Nothing
+-----------------
+Elophila Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Aethaloessa Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Glanycus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Lasiocampa Evo
+Acanthobrahmaea
+Egybolis
+Nothing
+-----------------
+Acanthobrahmaea Evo
+Endromis
+Saturnia
+Nothing
+-----------------
+Endromis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Saturnia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Egybolis Evo
+Bena
+Achlya
+Pelopidas
+-----------------
+Bena Evo
+Tetragonus
+Nothing
+Nothing
+-----------------
+Tetragonus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Achlya Evo
+Tetracis
+Acropteris
+Nothing
+-----------------
+Tetracis Evo
+Rhodometra
+Scopula
+Timandra
+-----------------
+Rhodometra Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Scopula Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Timandra Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Acropteris Evo
+Urania
+Nothing
+Nothing
+-----------------
+Urania Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pelopidas Evo
+Parnassius
+Catopsilia
+Byblia
+-----------------
+Parnassius Evo
+Luehdorfia
+Graphium
+Nothing
+-----------------
+Luehdorfia Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Graphium Evo
+Iphiclides
+Papilio
+Pachliopta
+-----------------
+Iphiclides Evo
+Protographium
+Nothing
+Nothing
+-----------------
+Protographium Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Papilio Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Pachliopta Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Catopsilia Evo
+Pieris
+Delias
+Nothing
+-----------------
+Pieris Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Delias Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Byblia Evo
+Danaus
+Curetis
+Hamearis
+-----------------
+Danaus Evo
+Cethosia
+Hamanumida
+Inachis
+-----------------
+Cethosia Evo
+Morpho
+Diaethria
+Vindula
+-----------------
+Hamanumida Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Inachis Evo
+Kallima
+Siproeta
+Phyciodes
+-----------------
+Kallima Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Siproeta Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Phyciodes Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Curetis Evo
+Heliophorus
+Taraka
+Nothing
+-----------------
+Heliophorus Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Taraka Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Hamearis Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Morpho Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Diaethria Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Vindula Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Nemophora Evo
+Cauchas
+Nothing
+Nothing
+-----------------
+Cauchas Evo
 Nothing
 Nothing
 Nothing
