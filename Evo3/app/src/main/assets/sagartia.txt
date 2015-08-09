@@ -1,0 +1,27 @@
+Sagartia
+Sagartia
+14
+18
+Medium
+Carnivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Still
+Poison Defense
+No
+No
+Coral
+X
+X
+X
+X
+Plankton
+O

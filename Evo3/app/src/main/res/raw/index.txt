@@ -10,9 +10,14 @@ Trichonympha
 Nothing
 -----------------
 Amoeba Evo
-Raphidiophrys
+Radiolarian
 Entamoeba
 Plasmodium
+-----------------
+Radiolarian Evo
+Raphidiophrys
+Nothing
+Nothing
 -----------------
 Tintinnids Evo
 Colpoda
@@ -126,11 +131,16 @@ Nothing
 Nothing
 -----------------
 Cliona Evo
-Nothing
+Xestospongia
 Nothing
 Nothing
 -----------------
 Tedania Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Xestospongia Evo
 Nothing
 Nothing
 Nothing

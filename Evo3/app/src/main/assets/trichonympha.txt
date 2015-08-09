@@ -1,0 +1,27 @@
+Trichonympha
+Trichonympha
+10
+3
+Micro
+Parasitic
+Wetland
+Grassland
+Jungle
+Forest
+Mountain
+Tundra
+Desert
+Void
+Void
+Inner Parasitic
+No
+No
+No
+No
+Plankton
+X
+X
+X
+X
+Bug
+O

@@ -1,0 +1,26 @@
+Acropora
+Staghorn Coral
+2
+45
+Large
+Herbivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Still
+Coral Reef
+No
+No
+Coral
+X
+X
+X
+X
+O

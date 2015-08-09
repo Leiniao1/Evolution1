@@ -1,0 +1,27 @@
+Archaeocyatha
+Anchient Cup
+1
+35
+Small
+Carnivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Still
+Anti-Poison
+No
+No
+No
+Coral
+Sponge
+X
+X
+X
+Plankton
+O

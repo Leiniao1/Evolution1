@@ -1,0 +1,26 @@
+Meandrina
+Maze Coral
+3
+36
+Medium+
+Herbivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Still
+Coral Reef
+No
+No
+Coral
+X
+X
+X
+X
+O

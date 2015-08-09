@@ -19,15 +19,15 @@ Carnivore (eat some objects when attack)
 10 Labels (These labels have no systemetic biology meaning):
 
 1, plankton
-2, insect
+2, coral
 3, worm
-4, mammal
-5, bird
+4, bug
+5, shell (include crab and big shrimp)
 6, fish (include octopus)
-7, shell (include crab and big shrimp)
-8, coral 
-9, reptile
-10, amphibian
+7, amphibian
+8, reptile
+9, bird
+10, mammal
 
 if the target is more specific, just list their names
 

@@ -97,7 +97,19 @@ public class MainInterface extends ActionBarActivity {
         try {
             OutputStreamWriter fos = new OutputStreamWriter(openFileOutput("achievementinformation", Context.MODE_PRIVATE));
             for(int i=0; i<200; i++) {
-                fos.write("No");fos.write('\n'); // Set every achievement as not complete
+                fos.write("No");fos.write('\n'); // Set every achievement as not completed
+            }
+            fos.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        // Write player's Survival Level Infromation
+        try {
+            OutputStreamWriter fos = new OutputStreamWriter(openFileOutput("survivalinformation", Context.MODE_PRIVATE));
+            fos.write(Integer.toString(0)); fos.write('\n');
+            for(int i=0; i<100; i++) {
+                fos.write("No"); fos.write('\n'); // Set every survival level as not completed
             }
             fos.close();
         } catch (Exception e) {

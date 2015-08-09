@@ -1,0 +1,27 @@
+Craspedacusta
+Craspedacusta
+10
+8
+Small+
+Carnivore
+Wetland
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Poisonous Attack
+Poisonous Defense
+Anti-Posion
+No
+No
+Jellyfish
+X
+X
+X
+X
+Plankton
+O

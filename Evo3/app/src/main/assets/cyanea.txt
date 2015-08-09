@@ -1,0 +1,28 @@
+Cyanea
+Lion's Mane Jellyfish
+10
+24
+Huge
+Carnivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Poisonous Attack
+Poisonous Defense
+Sniper
+Anti-Poison
+No
+Jellyfish
+X
+X
+X
+X
+Fish
+Shell
+O

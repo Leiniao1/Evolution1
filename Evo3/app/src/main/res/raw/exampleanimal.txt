@@ -1,0 +1,46 @@
+This document describe the animal format (All word start with Upper Letter)
+Line1: Latin Name (Also as file name)
+Line2: English Name (doesn't matter if it has or not, we are going to use latin2english anyway)
+Line3: Attack (Average is about 25, can sometimes be more than 100)
+Line4: Defense (Average is about 25, can sometimes be more than 100)
+Line5: Size: 1 of the following 3
+	Micro 	(Mi): 	~100um
+	XSmall	(XS): 	~mm
+	Small 	(S): 	~1cm
+	Small+	(S+): 	~3cm
+	Medium	(M):	~1dm
+	Medium+	(M+):	~3dm
+	Large   (L):	~1m
+	XLarge	(XL):	~3m
+	Huge	(H):	~10m
+Line6: Diet: 1 of the following 3
+	Herbivore (recover 10 Health Each Turn)
+	Parasitic (leech some objects when attack, leech value = attack value, usually about 15 )
+	Carnivore (eat some objects when attack, damage = I.attack/U.defense*40 )
+Line7~Line15: Environment: Just List the Environment it fits. For the rest space type anything
+
+Line16~Line20: Special Ability
+         
+Line20~Line25: Labels (Including 1 of the 10), and any other labels:
+	1, plankton
+	2, coral
+	3, worm
+	4, bug
+	5, shell (include crab and big shrimp)
+	6, fish (include octopus)
+	7, amphibian
+	8, reptile
+	9, bird
+	10, mammal
+
+All Below: Eat what:
+        You can put the following label or even latin name of the animal, at least 1 "O" even if it doesn't eat anything
+
+Suggested: if you want to leave a space line, type "Void" for environment, type "No" for special ability
+	type "X" for Labels, type "O" for Eat Labels
+
+
+All labels needed to take care:
+1, Shrimp (Because Venus's Flower Basket preys them)
+2, Sponge (I already used to label, but may not be targeted)
+3, Jellyfish (Can not belong to anything but just jellyfish)

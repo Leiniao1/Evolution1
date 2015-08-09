@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hyin.evo3"
+    android:installLocation="auto"
     android:versionCode="1"
-    android:versionName="1.0"
-    android:installLocation="auto">
+    android:versionName="1.0" >
 
     <application
         android:allowBackup="true"
@@ -41,6 +41,10 @@
         <activity
             android:name=".Survival"
             android:label="@string/title_activity_survival" >
+        </activity>
+        <activity
+            android:name=".Battle"
+            android:label="@string/title_activity_battle" >
         </activity>
     </application>
 

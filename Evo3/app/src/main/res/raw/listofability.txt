@@ -1,0 +1,60 @@
+---------------
+Aerial
+After first attack, animals with this ability could only be affected by their predators or those with the same ability
+---------------
+Inner Parasitic
+When leeching its target, animals with this ability cannot be affected by others
+---------------
+Toxic Body
+Animals who attack those with this ability dies instantly
+---------------
+Toxic Shock
+Animals that have been attacked by those with this ability dies instantly
+---------------
+Poisonous Defense
+Animals that attack those with this ability get poisoned
+---------------
+Poisonous Attack
+Animals that have been attacked by those with this ability get poisoned
+---------------
+Anti-Poison
+Animals with this ability doesn't affected by those with the abilities "Toxic" and "Poisonous Attack" and "Poisonous Defense"
+---------------
+Coral Reef
+Every team members get 10 extra health each turn if the team has a member with this ability
+---------------
+Electrical Shock
+Animals that have been attacked by those with this ability get extra 25 health off instantly
+---------------
+Sponge Reef
+Every team members get defense doubled if the team has a member with this ability
+---------------
+Social
+Animals with this ability get attack and defense doubled if there's more than one member of the same specie in the team
+---------------
+Trap
+Animals with this ability eat preys if the preys go attack
+---------------
+Mimicry
+Animals with this ability doesn't shown to opposite until its first attack
+---------------
+Spiky Body
+Animals attack those with this ability get 25 health off
+---------------
+Hole Digger
+Before first attack, animals with this ability could only be affected by their predators or those with the same ability
+---------------
+Intelligence
+Animals with this ability can attack any target by using tools
+---------------
+Still
+Animals with this ability never attack, except for their preys
+---------------
+Sniper
+Animals with this ability can attack those size 2 levels smaller than it is, but cannot attack those larger than it is
+---------------
+Illuminator
+Animals with this ability can make their predators miss eating them at their first try
+---------------
+About Poisoned
+A -> poisoned -> B, result in B get N health off each turn. N = 2^(Asize-Bsize)*20

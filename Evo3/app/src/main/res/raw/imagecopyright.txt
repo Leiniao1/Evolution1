@@ -12,6 +12,8 @@ Leishmania
 "Leishmania donovani 01" by CDC/Dr. L.L. Moore, Jr. - This media comes from the Centers for Disease Control and Prevention's Public Health Image Library (PHIL), with identification number #468.Note: Not all PHIL images are public domain; be sure to check copyright status and credit authors and content providers.English | Slovenšcina | +/-http://phil.cdc.gov/PHIL_Images/10231998/00019/05G0001_lores.jpg. Licensed under Public Domain via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Leishmania_donovani_01.png#/media/File:Leishmania_donovani_01.png
 Amoeba
 "Amoeba (Amöbe) 02" by Picturepest - https://www.flickr.com/photos/picksfromoutthere/10891717213. Licensed under CC BY 2.0 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Amoeba_(Am%C3%B6be)_02.jpg#/media/File:Amoeba_(Am%C3%B6be)_02.jpg
+Radiolarian
+"Aulacanthas 01" by The original uploader was Richard Arthur Norton (1958- ) at English Wikipedia - Transferred from en.wikipedia to Commons.. Licensed under Public Domain via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Aulacanthas_01.jpg#/media/File:Aulacanthas_01.jpg
 Colpoda
 "Colpoda inflata" by Dr. Eugen Lehle - Eigenes Werk (own work) http://bodenlabor.de. Licensed under CC BY-SA 3.0 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Colpoda_inflata.jpg#/media/File:Colpoda_inflata.jpg
 Paramecium
@@ -28,6 +30,8 @@ Clathrina
 "Clathrina clathrus" by Original uploader was Elapied at fr.wikipedia - Transferred from fr.wikipedia; transfered to Commons by User:Padawane using CommonsHelper.. Licensed under CC BY-SA 2.0 fr via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Clathrina_clathrus.jpg#/media/File:Clathrina_clathrus.jpg
 Euplectella
 "91 ANM Glass sponge 1" by Randolph Femmer - National Biological Information Infrastructure. Licensed under Public Domain via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:91_ANM_Glass_sponge_1.jpg#/media/File:91_ANM_Glass_sponge_1.jpg
+Xestospongia
+"Reef3860 - Flickr - NOAA Photo Library" by Twilight Zone Expedition Team 2007, NOAA-OE . - NOAA Photo Library: reef3860. Licensed under Public Domain via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Reef3860_-_Flickr_-_NOAA_Photo_Library.jpg#/media/File:Reef3860_-_Flickr_-_NOAA_Photo_Library.jpg
 Staurocalyptus
 https://www.flickr.com/photos/noaaphotolib/9734070751/
 Hyalonema
@@ -1245,7 +1249,7 @@ Grassland
 Ocean
 "Biscayne underwater NPS1" by National Park Service - http://www.nps.gov/bisc/images/20100429090848.jpg. Licensed under Public Domain via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Biscayne_underwater_NPS1.jpg#/media/File:Biscayne_underwater_NPS1.jpg
 Wetland
-"Tourbière 03 - Parc de Frontenac - Juillet 2008" by Boréal - Own work. Licensed under CC BY-SA 3.0 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Tourbi%C3%A8re_03_-_Parc_de_Frontenac_-_Juillet_2008.jpg#/media/File:Tourbi%C3%A8re_03_-_Parc_de_Frontenac_-_Juillet_2008.jpg
+"Wetland Hong Kong" by Leonardolo at the English language Wikipedia. Licensed under CC BY-SA 3.0 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Wetland_Hong_Kong.jpg#/media/File:Wetland_Hong_Kong.jpg
 Tundra
 "Nunavut tundra -c" by ADialla - Flickr: My Nunavut 7. Licensed under CC BY 2.0 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Nunavut_tundra_-c.jpg#/media/File:Nunavut_tundra_-c.jpg
 Tachysphex

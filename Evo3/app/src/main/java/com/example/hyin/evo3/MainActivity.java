@@ -94,6 +94,8 @@ public class MainActivity extends ActionBarActivity {
                     cnt++;
                 }
             }
+            dataIO.close();
+            in.close();
         }
         catch(Exception e){
             e.printStackTrace();
@@ -112,6 +114,8 @@ public class MainActivity extends ActionBarActivity {
                 EvoLevel_DNA_Table[cnt] = Integer.parseInt(s_temp);
                 cnt++;
             }
+            dataIO.close();
+            in.close();
         }
         catch(Exception e){
             e.printStackTrace();
@@ -283,13 +287,17 @@ public class MainActivity extends ActionBarActivity {
             AchievementRecord[0]=true;
             AchievementAlert(0);
         }
-        if(AchievementRecord[3]==false && currMainSpecie.latin.equals("Spongia")){
-            AchievementRecord[3]=true;
-            AchievementAlert(3);
-        }
         if(AchievementRecord[4]==false && currMainSpecie.latin.equals("Physalia")){
             AchievementRecord[4]=true;
             AchievementAlert(4);
+        }
+        if(AchievementRecord[5]==false && currMainSpecie.Evo_level>=5){
+            AchievementRecord[5]=true;
+            AchievementAlert(5);
+        }
+        if(AchievementRecord[6]==false && currMainSpecie.latin.equals("Cestum")){
+            AchievementRecord[6]=true;
+            AchievementAlert(6);
         }
         WriteAchievementRecord();
         return;

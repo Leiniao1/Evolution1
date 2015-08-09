@@ -1,0 +1,27 @@
+Xestospongia
+Giant Barrel Sponge
+1
+32
+Huge
+Carnivore
+Ocean
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Sponge Reef
+Still
+Anti-Poison
+No
+No
+Coral
+Sponge
+X
+X
+X
+Plankton
+O

@@ -1,0 +1,27 @@
+Cerianthus
+Cerianthus
+24
+10
+Medium
+Carnivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Poison Attack
+Poison Defense
+No
+No
+Coral
+X
+X
+X
+X
+Plankton
+O

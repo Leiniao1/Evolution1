@@ -1,0 +1,27 @@
+Meandrina
+Maze Coral
+4
+60
+Large
+Carnivore
+Ocean
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Still
+Coral Reef
+No
+No
+Coral
+X
+X
+X
+X
+Plankton
+O

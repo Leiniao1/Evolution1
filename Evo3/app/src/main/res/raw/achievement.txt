@@ -2,7 +2,7 @@
 Get Evo Level 2!
 dna
 50
-Get Evo Level 2 by two consistant evolution from Cyanobacteria!
+Get evo level 2 by two consistant evolution from Cyanobacteria!
 ----------------
 Manage Your Party!
 darwin2
@@ -10,17 +10,27 @@ darwin2
 Go to party page by click the major animal image in the evo page
 ----------------
 Expand Your Party!
-dna
+euglena
 50
 Clone any of your party member in the party page
 ----------------
-Sponge for Bath!
-spongia
-100
-Evo to the specie "bath sponge"
+Die Out An Animal!
+archaeocyatha
+50
+Die out any of your party member in the party page
 ----------------
 Man-O-War the great horror!
 physalia
 120
 Evo to the specie "man-o-war"
+----------------
+Get Evo Level 5!
+dna
+200
+Get to evo level 5!
+----------------
+In The Great Joint!
+cestum
+200
+The next evo path from cestum makes great difference to the game
 ----------------

@@ -16,6 +16,9 @@ Encrusting Sponge
 Euspongia
 Bath Sponge
 ------------------
+Xestospongia
+Giant Barrel Sponge
+------------------
 Tedania
 Fire Sponge
 ------------------
@@ -43,6 +46,9 @@ Spotted Jellyfish
 Cavernularia
 Sea Finger
 ------------------
+Alcyonium
+Dead Man's Finger
+------------------
 Virgularia
 Sea Pen
 ------------------
@@ -54,6 +60,12 @@ Maze Coral
 ------------------
 Platygyra
 Brain Coral
+------------------
+Fungia
+Plate Coral
+------------------
+Corallium
+Red Coral
 ------------------
 Antipathes
 Black Coral

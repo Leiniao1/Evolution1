@@ -91,6 +91,8 @@ public class MainActivity2Activity extends ActionBarActivity {
                     cnt++;
                 }
             }
+            dataIO.close();
+            in.close();
         }
         catch(Exception e){
             e.printStackTrace();
@@ -98,6 +100,62 @@ public class MainActivity2Activity extends ActionBarActivity {
         return;
     }
 
+
+    public void readAnimal(String animal) {
+        boolean findIt=false;
+
+        try {
+            InputStream in = getResources().openRawResource(R.raw.listofbattleanimal);
+            BufferedReader dataIO = new BufferedReader(new InputStreamReader(in));
+            String s_temp;
+
+            while ((s_temp = dataIO.readLine()) != null) {
+                if (s_temp.equals(animal)) {
+                    findIt=true;
+                    break;
+                }
+            }
+            dataIO.close();
+            in.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
+        if(!findIt) {
+            TextView TV21 = (TextView) findViewById(R.id.textView21);
+            TV21.setText("Not Available for Survival Mode");
+            return;
+        }
+
+        String Attack="", Defense="", Size="", Diet="", Environ="";
+
+        try {
+            InputStream in = getResources().getAssets().open(animal.toLowerCase()+".txt");
+            BufferedReader dataIO = new BufferedReader(new InputStreamReader(in));
+            String s_temp;
+            int cnt=0;
+            while ((s_temp = dataIO.readLine()) != null) {
+                if(cnt==2) {Attack = s_temp;}
+                else if(cnt==3) {Defense=s_temp;}
+                else if(cnt==4) {Size=s_temp;}
+                else if(cnt==5) {Diet=s_temp;}
+                else if(cnt<15 && (s_temp.equals("Ocean")||s_temp.equals("Seashore")||s_temp.equals("Wetland")||s_temp.equals("Forest")||s_temp.equals("Jungle")||s_temp.equals("Grassland")||s_temp.equals("Tundra")||s_temp.equals("Mountain")||s_temp.equals("Desert")))
+                {Environ = Environ+s_temp+" ";}
+                cnt++;
+            }
+            dataIO.close();
+            in.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
+        TextView TV21 = (TextView) findViewById(R.id.textView21);
+        TV21.setText("Attack: "+Attack+" Defense: "+Defense+'\n'+"Size: "+Size+ '\n'+"Diet: "+Diet+'\n'+"Living Environment: " + Environ);
+
+        return;
+    }
 
     public void initialSet(){
         for(int i=0; i<16; i++) {bitmapArray[i] = null;}
@@ -273,6 +331,16 @@ public class MainActivity2Activity extends ActionBarActivity {
         return;
     }
 
+    public void achievement_check3(){
+        ReadAchievementRecord();
+        if(AchievementRecord[3]==false){
+            AchievementRecord[3]=true;
+            AchievementAlert(3);
+        }
+        WriteAchievementRecord();
+        return;
+    }
+
     public void goEvo(View view){
         Intent intent = new Intent(this, MainActivity.class);
         write2File();
@@ -343,10 +411,11 @@ public class MainActivity2Activity extends ActionBarActivity {
         return;
     }
 
-    public void loadImage(){
+    public void loadImage() {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVMain = (TextView) findViewById(R.id.textView25);
         TVMain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         for(int i=0; i<16; i++) {
             String viewName = "imageView" + (i+11) ;
             ImageView IMtemp = (ImageView) findViewById(getResources().getIdentifier(viewName, "id", getPackageName()));
@@ -436,11 +505,12 @@ public class MainActivity2Activity extends ActionBarActivity {
     }
 
     public void dieOut(View view){
-        clearPadding();
         if(otherSpecie[0].latin.equals("Nothing")){
             alert2();
         }
         else {
+            clearPadding();
+            achievement_check3();
             int toIndex = 14;
             for(int i=0; i<15; i++){
                 if(otherSpecie[i].latin.equals("Nothing")){
@@ -510,6 +580,7 @@ public class MainActivity2Activity extends ActionBarActivity {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVmain = (TextView) findViewById(R.id.textView25);
         TVmain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         write2File();
         return;
     }
@@ -522,6 +593,7 @@ public class MainActivity2Activity extends ActionBarActivity {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVmain = (TextView) findViewById(R.id.textView25);
         TVmain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         write2File();
         return;
     }
@@ -534,6 +606,7 @@ public class MainActivity2Activity extends ActionBarActivity {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVmain = (TextView) findViewById(R.id.textView25);
         TVmain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         write2File();
         return;
     }
@@ -546,6 +619,7 @@ public class MainActivity2Activity extends ActionBarActivity {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVmain = (TextView) findViewById(R.id.textView25);
         TVmain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         write2File();
         return;
     }
@@ -558,6 +632,7 @@ public class MainActivity2Activity extends ActionBarActivity {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVmain = (TextView) findViewById(R.id.textView25);
         TVmain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         write2File();
         return;
     }
@@ -570,6 +645,7 @@ public class MainActivity2Activity extends ActionBarActivity {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVmain = (TextView) findViewById(R.id.textView25);
         TVmain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         write2File();
         return;
     }
@@ -582,6 +658,7 @@ public class MainActivity2Activity extends ActionBarActivity {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVmain = (TextView) findViewById(R.id.textView25);
         TVmain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         write2File();
         return;
     }
@@ -594,6 +671,7 @@ public class MainActivity2Activity extends ActionBarActivity {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVmain = (TextView) findViewById(R.id.textView25);
         TVmain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         write2File();
         return;
     }
@@ -606,6 +684,7 @@ public class MainActivity2Activity extends ActionBarActivity {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVmain = (TextView) findViewById(R.id.textView25);
         TVmain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         write2File();
         return;
     }
@@ -618,6 +697,7 @@ public class MainActivity2Activity extends ActionBarActivity {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVmain = (TextView) findViewById(R.id.textView25);
         TVmain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         write2File();
         return;
     }
@@ -630,6 +710,7 @@ public class MainActivity2Activity extends ActionBarActivity {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVmain = (TextView) findViewById(R.id.textView25);
         TVmain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         write2File();
         return;
     }
@@ -642,6 +723,7 @@ public class MainActivity2Activity extends ActionBarActivity {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVmain = (TextView) findViewById(R.id.textView25);
         TVmain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         write2File();
         return;
     }
@@ -654,6 +736,7 @@ public class MainActivity2Activity extends ActionBarActivity {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVmain = (TextView) findViewById(R.id.textView25);
         TVmain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         write2File();
         return;
     }
@@ -666,6 +749,7 @@ public class MainActivity2Activity extends ActionBarActivity {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVmain = (TextView) findViewById(R.id.textView25);
         TVmain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         write2File();
         return;
     }
@@ -678,6 +762,7 @@ public class MainActivity2Activity extends ActionBarActivity {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVmain = (TextView) findViewById(R.id.textView25);
         TVmain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         write2File();
         return;
     }
@@ -690,6 +775,7 @@ public class MainActivity2Activity extends ActionBarActivity {
         setImageMain(English2Latin(currMainSpecie.latin).toLowerCase());
         TextView TVmain = (TextView) findViewById(R.id.textView25);
         TVmain.setText(Latin2English(currMainSpecie.english));
+        readAnimal(English2Latin(currMainSpecie.latin));
         write2File();
         return;
     }

@@ -1,0 +1,27 @@
+Corallium
+Red Coral
+4
+42
+Medium+
+Carnivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Still
+Coral Reef
+No
+No
+Coral
+X
+X
+X
+X
+Plankton
+O

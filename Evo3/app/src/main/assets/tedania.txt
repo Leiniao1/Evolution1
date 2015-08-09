@@ -1,0 +1,27 @@
+Tedania
+Fire Sponge
+4
+25
+Medium
+Carnivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Poisonous Defense
+Still
+Anti-Poison
+No
+No
+Coral
+Sponge
+X
+X
+X
+Plankton
+O
