@@ -32,9 +32,6 @@ Every team members get defense doubled if the team has a member with this abilit
 Social
 Animals with this ability get attack and defense doubled if there's more than one member of the same specie in the team
 ---------------
-Trap
-Animals with this ability eat preys if the preys go attack
----------------
 Mimicry
 Animals with this ability doesn't shown to opposite until its first attack
 ---------------
@@ -54,7 +51,13 @@ Sniper
 Animals with this ability can attack those size 2 levels smaller than it is, but cannot attack those larger than it is
 ---------------
 Illuminator
-Animals with this ability can make their predators miss eating them at their first try
+Animals with this ability can make opposite's predators miss attack it at the first turn
+---------------
+Regenerator
+Animals with this ability can recover 15 health after under attack
+---------------
+Sucker
+Animals with this ability can attack target no matter how large, and they recover how much target loses by the attack
 ---------------
 About Poisoned
 A -> poisoned -> B, result in B get N health off each turn. N = 2^(Asize-Bsize)*20

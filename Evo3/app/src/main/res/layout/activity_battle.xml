@@ -25,7 +25,7 @@
                 android:layout_width="0dip"
                 android:layout_height="fill_parent"
                 android:layout_weight="0.25"
-                android:text="Surrender"
+                android:text="Go Back"
                 android:id="@+id/button20"
                 android:onClick="goSurvival"
                 android:textSize="@dimen/abc_edit_text_inset_top_material" />
@@ -46,10 +46,11 @@
                 android:layout_width="0dip"
                 android:layout_height="fill_parent"
                 android:layout_weight="0.25"
-                android:text="Survival"
+                android:text="Next Turn"
                 android:id="@+id/button21"
-                android:visibility="invisible"
-                android:textSize="@dimen/abc_edit_text_inset_top_material" />
+                android:visibility="visible"
+                android:textSize="@dimen/abc_edit_text_inset_top_material"
+                android:onClick="AIAttack" />
 
         </LinearLayout>
 
@@ -527,7 +528,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:id ="@+id/textViewRecord"
-                        android:layout_margin="2dp"/>
+                        android:layout_margin="2dp"
+                        android:textSize="12dp" />
 
                 </ScrollView>
 

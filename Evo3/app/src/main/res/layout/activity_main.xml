@@ -96,7 +96,8 @@
                 android:text="Cyanobacteria"
                 android:id="@+id/textView"
                 android:layout_gravity="center_horizontal|top"
-                android:gravity="top|center_horizontal" />
+                android:gravity="top|center_horizontal"
+                android:textSize="19dp" />
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dip"

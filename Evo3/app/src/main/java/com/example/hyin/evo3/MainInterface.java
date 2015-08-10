@@ -81,7 +81,7 @@ public class MainInterface extends ActionBarActivity {
         // Clear up and initialize the record
         try {
             OutputStreamWriter fos = new OutputStreamWriter(openFileOutput("playerinformation", Context.MODE_PRIVATE));
-            fos.write(Integer.toString(1200)); fos.write('\n'); // TODO: change this number back to 200 after testing
+            fos.write(Integer.toString(200)); fos.write('\n'); // TODO: change this number back to 200 after testing
             fos.write("Cyanobacteria"); fos.write('\n');
             fos.write(Integer.toString(0)); fos.write('\n');
             for(int i=0; i<15; i++) {

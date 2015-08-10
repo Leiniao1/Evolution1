@@ -51,7 +51,7 @@ public class MainActivity extends ActionBarActivity {
     public String Latin_Name[] = new String[500];
     public Specie currMainSpecie = new Specie();
     public Specie otherSpecie[] = new Specie[15];
-    public int DNA = 1200, DNA_rate = 2; // TODO: change DNA back to 200 after testing
+    public int DNA = 200, DNA_rate = 2;
     public int EvoLevel_DNA_Table[] = new int[200];
     public Bitmap bitmap1 = null, bitmap2 = null, bitmap3 = null, bitmap4 = null, bitmap5=null;
 
@@ -287,17 +287,21 @@ public class MainActivity extends ActionBarActivity {
             AchievementRecord[0]=true;
             AchievementAlert(0);
         }
-        if(AchievementRecord[4]==false && currMainSpecie.latin.equals("Physalia")){
-            AchievementRecord[4]=true;
-            AchievementAlert(4);
-        }
         if(AchievementRecord[5]==false && currMainSpecie.Evo_level>=5){
             AchievementRecord[5]=true;
             AchievementAlert(5);
         }
-        if(AchievementRecord[6]==false && currMainSpecie.latin.equals("Cestum")){
+        if(AchievementRecord[6]==false && currMainSpecie.latin.equals("Physalia")){
             AchievementRecord[6]=true;
             AchievementAlert(6);
+        }
+        if(AchievementRecord[7]==false && currMainSpecie.latin.equals("Cestum")){
+            AchievementRecord[7]=true;
+            AchievementAlert(7);
+        }
+        if(AchievementRecord[8]==false && currMainSpecie.Evo_level>=10){
+            AchievementRecord[8]=true;
+            AchievementAlert(8);
         }
         WriteAchievementRecord();
         return;

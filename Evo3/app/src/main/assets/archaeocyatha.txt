@@ -2,7 +2,7 @@ Archaeocyatha
 Anchient Cup
 1
 35
-Small
+Large
 Carnivore
 Ocean
 Seashore
@@ -15,7 +15,7 @@ Void
 Void
 Still
 Anti-Poison
-No
+Sponge Reef
 No
 No
 Coral

@@ -213,6 +213,7 @@ public class MainActivity2Activity extends ActionBarActivity {
                 if(temp.equals("No")) {AchievementRecord[i]=false;}
                 else {AchievementRecord[i]=true;}
             }
+            inputReader.close();
         }
         catch(Exception e){
             e.printStackTrace();

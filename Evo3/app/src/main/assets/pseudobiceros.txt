@@ -1,0 +1,27 @@
+Pseudobiceros
+Bedford's Flatworm
+6
+5
+Small
+Carnivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Regenerator
+Sucker
+No
+No
+No
+Worm
+X
+X
+X
+X
+Prankton
+O

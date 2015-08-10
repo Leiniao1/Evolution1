@@ -1,0 +1,26 @@
+Cestum
+Venus Girdle
+9
+9
+Large
+Carnivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Illuminator
+Sniper
+No
+No
+No
+Jellyfish
+X
+X
+X
+X
+O

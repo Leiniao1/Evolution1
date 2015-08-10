@@ -159,6 +159,7 @@ public class Survival extends ActionBarActivity {
                 TeamSpecie[i].english = Latin2English(TeamSpecie[i].latin);
                 TeamSpecie[i].Evo_level = Integer.parseInt(inputReader.readLine());
             }
+            inputReader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -269,6 +270,7 @@ public class Survival extends ActionBarActivity {
                 if(temp.equals("No")) {SurvivalRecord[i]=false;}
                 else {SurvivalRecord[i]=true;}
             }
+            inputReader.close();
         }
         catch(Exception e){
             e.printStackTrace();
@@ -401,7 +403,7 @@ public class Survival extends ActionBarActivity {
             OutputStreamWriter fos = new OutputStreamWriter(openFileOutput("survivalinformation", Context.MODE_PRIVATE));
             fos.write(Integer.toString(currLevel)); fos.write('\n');
             for(int i=0; i<100; i++) {
-                if(SurvivalRecord[i]=false){fos.write("No");}
+                if(SurvivalRecord[i]==false){fos.write("No");}
                 else {fos.write("Yes");}
                 fos.write('\n'); // Set every achievement as not complete
             }

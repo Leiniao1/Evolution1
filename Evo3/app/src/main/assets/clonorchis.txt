@@ -1,0 +1,28 @@
+Clonorchis
+Chinese Liver Fluke
+16
+8
+XSmall
+Parasitic
+Wetland
+Grassland
+Jungle
+Forest
+Void
+Void
+Void
+Void
+Void
+Inner Parasitic
+No
+No
+No
+No
+Worm
+X
+X
+X
+X
+Mammal
+Snail
+O
