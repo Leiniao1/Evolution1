@@ -1,0 +1,26 @@
+Semicassis
+Helmet Shell
+8
+48
+Medium
+Herbivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+No
+No
+No
+No
+Shell
+Snail
+X
+X
+X
+O

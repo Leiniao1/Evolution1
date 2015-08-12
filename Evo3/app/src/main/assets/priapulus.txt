@@ -1,0 +1,26 @@
+Priapulus
+Priapulid Worm
+16
+9
+Medium
+Carnivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+No
+No
+No
+No
+No
+Worm
+X
+X
+X
+X
+O

@@ -1,0 +1,28 @@
+Telamonia
+Jumping Spider
+25
+16
+Small
+Carnivore
+Mountain
+Forest
+Grassland
+Jungle
+Void
+Void
+Void
+Void
+Void
+High Jumping
+Anti-Poison
+No
+No
+No
+Insect
+Spider
+X
+X
+X
+Butterfly
+Fly
+O

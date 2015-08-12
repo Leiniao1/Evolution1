@@ -1,0 +1,26 @@
+Amynthas
+Giant Earthworm
+12
+9
+Large
+Herbivore
+Forest
+Grassland
+Jungle
+Wetland
+Void
+Void
+Void
+Void
+Void
+Hole Digger
+Regenerator
+No
+No
+No
+Worm
+Earthworm
+X
+X
+X
+O

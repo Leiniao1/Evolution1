@@ -1,0 +1,26 @@
+Lambis
+Spider Conch
+10
+36
+Medium
+Herbivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Spiky Body
+No
+No
+No
+Shell
+Snail
+X
+X
+X
+O

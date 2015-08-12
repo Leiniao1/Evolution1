@@ -1,0 +1,28 @@
+Hottentotta
+Indian Red Scorpion
+40
+32
+Medium
+Carnivore
+Forest
+Jungle
+Grassland
+Void
+Void
+Void
+Void
+Void
+Void
+Toxic Shock
+Toxic Body
+Anti-Poison
+No
+No
+Insect
+Spider
+X
+X
+X
+Insect
+Worm
+O

@@ -23,5 +23,4 @@ Sponge
 X
 X
 X
-Plankton
 O

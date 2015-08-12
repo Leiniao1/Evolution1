@@ -1,0 +1,27 @@
+Tucetona
+Dog Cockle
+2
+72
+Small+
+Herbivore
+Seashore
+Ocean
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Still
+No
+No
+No
+Shell
+X
+X
+X
+X
+Plankton
+O

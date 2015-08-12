@@ -1,0 +1,27 @@
+Hogna
+Wolf Spider
+45
+18
+Small
+Carnivore
+Mountain
+Forest
+Grassland
+Jungle
+Tundra
+Desert
+Void
+Void
+Void
+Camouflage
+Anti-Poison
+Poison Attack
+Poison Defense
+No
+Insect
+Spider
+X
+X
+X
+Insect
+O

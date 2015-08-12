@@ -1,0 +1,27 @@
+Vampyroteuthis
+Vampire Squid
+28
+18
+Medium+
+Carnivore
+Ocean
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Illuminator
+No
+No
+No
+No
+Fish
+X
+X
+X
+X
+Shrimp
+O

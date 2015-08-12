@@ -125,7 +125,7 @@
                 android:onClick="goAchievement"
                 android:layout_gravity="center_horizontal"
                 android:background="#c191ca46"
-                android:text="Achievement" />
+                android:text="Objective" />
             <TextView
                 android:layout_width="0dip"
                 android:layout_height="fill_parent"

@@ -1,0 +1,27 @@
+Cryptoconchus
+Butterfly Chiton
+5
+60
+Small+
+Herbivore
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Still
+No
+No
+No
+Shell
+X
+X
+X
+X
+Plankton
+O

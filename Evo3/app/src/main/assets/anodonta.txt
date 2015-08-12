@@ -1,0 +1,27 @@
+Anodonta
+Duck Mussel
+5
+55
+Medium
+Herbivore
+Wetland
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Still
+No
+No
+No
+Shell
+X
+X
+X
+X
+Plankton
+O

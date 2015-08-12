@@ -1,0 +1,27 @@
+Pristionchus
+Pristionchus
+6
+16
+XSmall
+Parasitic
+Grassland
+Wetland
+Jungle
+Forest
+Desert
+Mountain
+Void
+Void
+Void
+Inner Parasitic
+No
+No
+No
+No
+Worm
+X
+X
+X
+X
+Insect
+O

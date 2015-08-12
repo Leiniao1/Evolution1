@@ -1,0 +1,27 @@
+Orchesella
+Springtail
+10
+7
+XSmall
+Carnivore
+Forest
+Jungle
+Grassland
+Tundra
+Mountain
+Void
+Void
+Void
+Void
+High Jumping
+No
+No
+No
+No
+Insect
+X
+X
+X
+X
+Plankton
+O

@@ -1,0 +1,26 @@
+Spirorbis
+Spirorbis
+2
+40
+XSmall
+Herbivore
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Still
+Shell Colony
+No
+No
+No
+Worm
+X
+X
+X
+X
+O

@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -28,6 +29,7 @@ public class MainInterface extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setTitle("Darwin's Tree");
         setContentView(R.layout.activity_main_interface);
@@ -140,7 +142,7 @@ public class MainInterface extends ActionBarActivity {
 
     public void goAchievement(View view){
         Intent intent = new Intent(this, Achievement.class);
-        String message = "See your uncompleted achievement";
+        String message = "See your game objectives";
         // Change Interface to "Loading..." display
         turnoffLight();
         recycleBackground();
@@ -151,7 +153,7 @@ public class MainInterface extends ActionBarActivity {
 
     public void goAbout(View view){
         Intent intent = new Intent(this, about.class);
-        String message = "Going to the About Page";
+        String message = "Going to the about page";
         // Change Interface to "Loading..." display
         turnoffLight();
         recycleBackground();

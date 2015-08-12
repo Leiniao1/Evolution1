@@ -1,0 +1,27 @@
+Scutigera
+House Centipede
+14
+18
+Small+
+Carnivore
+Forest
+Jungle
+Grassland
+Mountain
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Sniper
+Poison Attack
+No
+No
+Insect
+Centipede
+X
+X
+X
+Insect
+O

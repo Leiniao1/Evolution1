@@ -1,0 +1,29 @@
+Pandinus
+Emperor Scorpion
+35
+30
+Medium+
+Carnivore
+Forest
+Jungle
+Grassland
+Desert
+Mountain
+Void
+Void
+Void
+Void
+Poison Attack
+Poison Defense
+Anti-Poison
+Hole Digger
+No
+Insect
+Spider
+X
+X
+X
+Termite
+Cockroach
+Butterfly
+O

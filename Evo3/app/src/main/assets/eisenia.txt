@@ -1,0 +1,26 @@
+Eisenia
+Redwiggler
+10
+8
+Medium
+Herbivore
+Forest
+Grassland
+Jungle
+Mountain
+Tundra
+Wetland
+Void
+Void
+Void
+Hole Digger
+Regenerator
+No
+No
+No
+Worm
+Earthworm
+X
+X
+X
+O

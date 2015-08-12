@@ -1,0 +1,28 @@
+Brachypelma
+Redknee Birdeater
+48
+20
+Medium
+Carnivore
+Desert
+Mountain
+Forest
+Grassland
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Hole Digger
+Poison Attack
+Poison Defense
+No
+Insect
+Spider
+X
+X
+X
+Insect
+Bird
+O

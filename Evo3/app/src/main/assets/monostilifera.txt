@@ -1,0 +1,27 @@
+Monostilifera
+Ribbon Worm
+18
+9
+Small+
+Carnivore
+Wetland
+Jungle
+Forest
+Seashore
+Ocean
+Void
+Void
+Void
+Void
+No
+No
+No
+No
+No
+Worm
+X
+X
+X
+X
+Plankton
+O

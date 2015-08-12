@@ -57,6 +57,7 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setTitle("Darwin's Tree");
         setContentView(R.layout.activity_main);
@@ -67,6 +68,24 @@ public class MainActivity extends ActionBarActivity {
         read2App(); // reload user information data, read animal party and current DNA amount
         initialSet(); // set current animal
         DNA_reload();// reload DNA_rate according to DNA_rate_table, and show them on screen
+        return;
+    }
+
+    @Override
+    public void onBackPressed(){
+
+        int count = getFragmentManager().getBackStackEntryCount();
+
+        if (count == 0) {
+            super.onBackPressed();
+            Intent myIntent = new Intent(getApplicationContext(), MainInterface.class);
+            recycleAll(1);
+            startActivityForResult(myIntent, 0);
+            finish();
+        } else {
+            getFragmentManager().popBackStack();
+        }
+
         return;
     }
 
@@ -302,6 +321,34 @@ public class MainActivity extends ActionBarActivity {
         if(AchievementRecord[8]==false && currMainSpecie.Evo_level>=10){
             AchievementRecord[8]=true;
             AchievementAlert(8);
+        }
+        if(AchievementRecord[10]==false && currMainSpecie.latin.equals("Dugesia")){
+            AchievementRecord[10]=true;
+            AchievementAlert(10);
+        }
+        if(AchievementRecord[11]==false && currMainSpecie.latin.equals("Paragordius")){
+            AchievementRecord[11]=true;
+            AchievementAlert(11);
+        }
+        if(AchievementRecord[12]==false && currMainSpecie.Evo_level>=15){
+            AchievementRecord[12]=true;
+            AchievementAlert(12);
+        }
+        if(AchievementRecord[14]==false && currMainSpecie.latin.equals("Alvinellidae")){
+            AchievementRecord[14]=true;
+            AchievementAlert(14);
+        }
+        if(AchievementRecord[15]==false && currMainSpecie.latin.equals("Gari")){
+            AchievementRecord[15]=true;
+            AchievementAlert(15);
+        }
+        if(AchievementRecord[16]==false && currMainSpecie.latin.equals("Thecosomata")){
+            AchievementRecord[16]=true;
+            AchievementAlert(16);
+        }
+        if(AchievementRecord[17]==false && currMainSpecie.latin.equals("Sepiapharaonis")){
+            AchievementRecord[17]=true;
+            AchievementAlert(17);
         }
         WriteAchievementRecord();
         return;
@@ -649,6 +696,57 @@ public class MainActivity extends ActionBarActivity {
         RL.removeView(LO1);
         RL.removeView(LO2);
         RL.removeView(LO3);
+        return;
+    }
+
+    public void checkInfo(View view){
+
+        String animal = currMainSpecie.latin;
+        String output = "Thanks so much to the attribution of the image source:"+'\n';
+        boolean find = false;
+
+        // Read in License Information
+        try{
+            // Open File
+            InputStream in = getResources().openRawResource(R.raw.imagecopyright);
+            BufferedReader dataIO = new BufferedReader(new InputStreamReader(in,"UTF8"));
+            // Find the index from document file
+            String s_temp = "";
+            int num=0;
+            while((s_temp = dataIO.readLine())!=null){
+                if(s_temp.equals(animal)){
+                    num++;
+                    s_temp = dataIO.readLine();
+                    output = output + s_temp;
+                    find = true;
+                }
+                num++;
+            }
+            // Close File
+            dataIO.close();
+            in.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
+        if(find){
+            alertThanks(output);
+        }
+
+        return;
+    }
+
+    public void alertThanks(String sentence){
+        AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+        alertDialog.setTitle("Thanks to the author");
+        alertDialog.setMessage(sentence);
+        alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                return;
+            }
+        });
+        alertDialog.show();
         return;
     }
 

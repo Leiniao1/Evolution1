@@ -1,0 +1,26 @@
+Eukoenenia
+Microwhip Scorpion
+10
+7
+XSmall
+Carnivore
+Forest
+Jungle
+Grassland
+Seashore
+Void
+Void
+Void
+Void
+Void
+No
+No
+No
+No
+No
+Insect
+X
+X
+X
+X
+O

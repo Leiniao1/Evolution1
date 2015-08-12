@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
@@ -32,6 +33,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Random;
 
 public class Battle extends ActionBarActivity {
 
@@ -64,6 +68,7 @@ public class Battle extends ActionBarActivity {
         int Attack, Defence;
         String Size, Diet, Food[] = new String[9], Environ[] = new String[9], Ability[] = new String[5], Label[] = new String[5];
         boolean available;
+        String MimicTarget;
         Specie(){
             latin = "Nothing";
             english = "Nothing";
@@ -75,6 +80,7 @@ public class Battle extends ActionBarActivity {
             for(int i=0; i<9; i++) {Food[i]=""; Environ[i]="";}
             for(int i=0; i<5; i++) {Ability[i]=""; Label[i]="";}
             available = false;
+            MimicTarget = "";
         }
     }
 
@@ -187,6 +193,7 @@ public class Battle extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setTitle("Darwin's Tree");
         setContentView(R.layout.activity_battle);
@@ -208,6 +215,148 @@ public class Battle extends ActionBarActivity {
             }
         });
 
+        AnimalInitialSet();
+    }
+
+    @Override
+    public void onBackPressed(){
+
+        int count = getFragmentManager().getBackStackEntryCount();
+
+        if (count == 0) {
+            super.onBackPressed();
+            if(Result.equals("Unknown"))    alertBack();
+            if(Result.equals("Win"))  {writeSurvivalRecord(); readAndWriteDNA(survivals[currLevel].Prize);goSurvival1();}
+            if(Result.equals("Lose")) {goSurvival1();}
+        } else {
+            getFragmentManager().popBackStack();
+        }
+
+        return;
+    }
+
+    public void AnimalInitialSet(){
+        for(int i=0; i<5; i++){
+            for(int j=0; j<5; j++){
+                if(MySpecie[i].Ability[j].equals("Camouflage")){
+                    MyStatus[i].hide = true;
+                }
+                if(AISpecie[i].Ability[j].equals("Camouflage")){
+                    AIStatus[i].hide = true;
+                    String HPName = "HPAI" + (i+1);
+                    TextView TV = (TextView) findViewById(getResources().getIdentifier(HPName,"id",getPackageName()));
+                    TV.setVisibility(View.INVISIBLE);
+                    String ViewName = "imageViewAI" + (i+1);
+                    ImageView IV = (ImageView) findViewById(getResources().getIdentifier(ViewName,"id",getPackageName()));
+                    IV.setVisibility(View.INVISIBLE);
+                }
+            }
+        }
+
+        HashSet<String> ShellAbilities = new HashSet<String>();
+        for(int i=0; i<5; i++){
+            for(int j=0; j<5; j++){
+                if(MySpecie[i].Label[j].equals("Shell")){
+                    for(int k=0; k<5; k++){
+                        if(MySpecie[i].Ability[k].equals("Shell Collector")) continue;
+                        ShellAbilities.add(MySpecie[i].Ability[k]);
+                    }
+                }
+                if(AISpecie[i].Label[j].equals("Shell")){
+                    for(int k=0; k<5; k++){
+                        if(AISpecie[i].Ability[k].equals("Shell Collector")) continue;
+                        ShellAbilities.add(AISpecie[i].Ability[k]);
+                    }
+                }
+            }
+        }
+
+        String Shells[] = ShellAbilities.toArray(new String[ShellAbilities.size()]);
+
+        for(int i=0; i<5; i++){
+            for(int j=0; j<5; j++){
+                if(MySpecie[i].Ability[j].equals("Shell Collector")){
+                    for(int k=j; k<5 && k<Shells.length; k++){
+                        MySpecie[i].Ability[k] = Shells[k];
+                    }
+                }
+                if(AISpecie[i].Ability[j].equals("Shell Collector")){
+                    for(int k=j; k<5 && k<Shells.length; k++){
+                        AISpecie[i].Ability[k] = Shells[k];
+                    }
+                }
+            }
+        }
+
+        for(int i=0; i<5; i++){
+            for(int j=0; j<5; j++){
+                if(MySpecie[i].Ability[j].equals("Owl Mimicry")){
+                    // TODO: Do something
+                }
+                else if(MySpecie[i].Ability[j].equals("Snake Mimicry")){
+                    // TODO: Do something
+                }
+                else if(MySpecie[i].Ability[j].equals("Ant Mimicry")){
+                    Random rd = new Random();
+                    int next = rd.nextInt()%5;
+                    switch(next) {
+                        case 0: MySpecie[i].MimicTarget = "Camponotus";break;
+                        case 1: MySpecie[i].MimicTarget = "Iridomyrmex";break;
+                        case 2: MySpecie[i].MimicTarget = "Oecophylla";break;
+                        case 3: MySpecie[i].MimicTarget = "Eciton";break;
+                        case 4: MySpecie[i].MimicTarget = "Solenopsis";break;
+                    }
+                }
+                else if(MySpecie[i].Ability[j].equals("Vary Mimicry")){
+                    ArrayList<String> targets = new ArrayList<String>();
+                    for(int k=0; k<5; k++){
+                        if(MySpecie[i].Size==MySpecie[k].Size && i!=k){
+                            targets.add(MySpecie[k].latin);
+                        }
+                        if(MySpecie[i].Size==AISpecie[k].Size){
+                            targets.add(AISpecie[k].latin);
+                        }
+                    }
+                    Random rd = new Random();
+                    int next = rd.nextInt()%targets.size();
+                    MySpecie[i].MimicTarget = targets.get(next);
+                }
+
+                if(AISpecie[i].Ability[j].equals("Owl Mimicry")){
+                    // TODO: Do something
+                }
+                else if(AISpecie[i].Ability[j].equals("Snake Mimicry")){
+                    // TODO: Do something
+                }
+                else if(AISpecie[i].Ability[j].equals("Ant Mimicry")){
+                    Random rd = new Random();
+                    int next = rd.nextInt()%5;
+                    switch(next) {
+                        case 0: AISpecie[i].MimicTarget = "Camponotus";break;
+                        case 1: AISpecie[i].MimicTarget = "Iridomyrmex";break;
+                        case 2: AISpecie[i].MimicTarget = "Oecophylla";break;
+                        case 3: AISpecie[i].MimicTarget = "Eciton";break;
+                        case 4: AISpecie[i].MimicTarget = "Solenopsis";break;
+                    }
+                }
+                else if(AISpecie[i].Ability[j].equals("Vary Mimicry")){
+                    ArrayList<String> targets = new ArrayList<String>();
+                    for(int k=0; k<5; k++){
+                        if(AISpecie[i].Size==AISpecie[k].Size && i!=k){
+                            targets.add(AISpecie[k].latin);
+                        }
+                        if(AISpecie[i].Size==MySpecie[k].Size){
+                            targets.add(MySpecie[k].latin);
+                        }
+                    }
+                    Random rd = new Random();
+                    int next = rd.nextInt()%targets.size();
+                    AISpecie[i].MimicTarget = targets.get(next);
+                }
+            }
+        }
+
+        return;
     }
 
     public void readSurvivalInfo() {
@@ -235,6 +384,14 @@ public class Battle extends ActionBarActivity {
         if(AchievementRecord[4]==false){
             AchievementRecord[4]=true;
             AchievementAlert(4);
+        }
+        if(AchievementRecord[9]==false && currLevel>=5){
+            AchievementRecord[9] = true;
+            AchievementAlert(9);
+        }
+        if(AchievementRecord[13]==false && currLevel>=10){
+            AchievementRecord[13] = true;
+            AchievementAlert(13);
         }
         WriteAchievementRecord();
         return;
@@ -541,6 +698,10 @@ public class Battle extends ActionBarActivity {
             String ViewName = "imageViewMy" + (i+1);
             ImageView IV = (ImageView) findViewById(getResources().getIdentifier(ViewName,"id",getPackageName()));
             setImage(MySpecie[i].latin.toLowerCase(),4,IV,MyBitmap[i]);
+            if(MyStatus[i].hide || MySpecie[i].latin.equals("") || MySpecie[i].latin.equals("Nothing") || MyHP[i]<=0) {TV.setVisibility(View.INVISIBLE);IV.setVisibility(View.INVISIBLE);}
+            else {TV.setVisibility(View.VISIBLE);IV.setVisibility(View.VISIBLE);}
+            if(MySpecie[i].MimicTarget.equals("")|| MySpecie[i].MimicTarget.equals("Nothing")) {}
+            else {setImage(MySpecie[i].MimicTarget.toLowerCase(),4,IV,MyBitmap[i]);}
         }
 
         for(int i=0; i<5; i++){
@@ -557,6 +718,10 @@ public class Battle extends ActionBarActivity {
             String ViewName = "imageViewAI" + (i+1);
             ImageView IV = (ImageView) findViewById(getResources().getIdentifier(ViewName,"id",getPackageName()));
             setImage(AISpecie[i].latin.toLowerCase(),4,IV,AIBitmap[i]);
+            if(AIStatus[i].hide || AISpecie[i].latin.equals("") || AISpecie[i].latin.equals("Nothing") || AIHP[i]<=0) {TV.setVisibility(View.INVISIBLE);IV.setVisibility(View.INVISIBLE);}
+            else {TV.setVisibility(View.VISIBLE);IV.setVisibility(View.VISIBLE);}
+            if(AISpecie[i].MimicTarget.equals("")|| AISpecie[i].MimicTarget.equals("Nothing")) {}
+            else {setImage(AISpecie[i].MimicTarget.toLowerCase(),4,IV,AIBitmap[i]);}
         }
 
         for(int i=0; i<5; i++){
@@ -610,15 +775,15 @@ public class Battle extends ActionBarActivity {
         Ability.setText(CurrAbility);
 
         TextView Label = (TextView) findViewById(R.id.textViewLabel);
-        String CurrLabel = "Labels:   ";
+        String CurrLabel = "Foods:   ";
         cnt = 0;
-        for(int i=0; i<5; i++) {
-            String label = MySpecie[currAnimal].Label[i];
-            if(label.equals("")||label.equals("X")||label.equals("Nothing")) break;
-            CurrLabel = CurrLabel+"["+label+"]  ";
+        for(int i=0; i<9; i++) {
+            String food = MySpecie[currAnimal].Food[i];
+            if(food.equals("")||food.equals("O")||food.equals("Nothing")) break;
+            CurrLabel = CurrLabel+"["+food+"]  ";
             cnt++;
         }
-        if(cnt==0) CurrLabel = CurrLabel+"No Label";
+        if(cnt==0) CurrLabel = CurrLabel+"Not indicated";
         Label.setText(CurrLabel);
 
         // Highlight All Attackable Target
@@ -942,12 +1107,14 @@ public class Battle extends ActionBarActivity {
         final LinearLayout LLback = (LinearLayout) findViewById(R.id.LL11);
         final ImageView TempTo = new ImageView(this),  TempFrom = new ImageView(this);
         //LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT);
-        LLback.addView(TempTo); RLback.addView(TempFrom);
+        LLback.addView(TempTo);
+        RLback.addView(TempFrom);
         //TempFrom.layout(X1, Y1, X1 + fromView.getWidth(), Y1 + fromView.getHeight()); TempTo.layout(X2, Y2, X2 + toView.getWidth(), Y2 + toView.getHeight());
         TempFrom.setVisibility(View.INVISIBLE); TempTo.setVisibility(View.INVISIBLE);
         TempFrom.setScaleType(ImageView.ScaleType.FIT_XY); TempTo.setScaleType(ImageView.ScaleType.FIT_XY);
         TempFrom.getLayoutParams().height = fromView.getHeight(); TempFrom.getLayoutParams().width = fromView.getWidth(); TempTo.getLayoutParams().height = toView.getHeight(); TempTo.getLayoutParams().width = toView.getWidth();
-        setImage(MySpecie[from].latin.toLowerCase(), 2, TempFrom, bitmapFrom); setImage(AISpecie[to].latin.toLowerCase(), 2, TempTo, bitmapTo);
+        setImage(MySpecie[from].latin.toLowerCase(), 2, TempFrom, bitmapFrom);
+        setImage(AISpecie[to].latin.toLowerCase(), 2, TempTo, bitmapTo);
 
         final TranslateAnimation stay1 = new TranslateAnimation((float)X2,  (float)X2, (float)Y2, (float)Y2);
         stay1.setZAdjustment(Animation.ZORDER_BOTTOM);
@@ -1231,6 +1398,11 @@ public class Battle extends ActionBarActivity {
     public void StatusProcess(){
 
         for(int i=0; i<5; i++){
+            MyStatus[i].HP_up=0;
+            AIStatus[i].HP_up=0;
+        }
+
+        for(int i=0; i<5; i++){
             if(MySpecie[i].Diet.equals("Herbivore")) {MyStatus[i].HP_up = 10;}
             if(AISpecie[i].Diet.equals("Herbivore")) {AIStatus[i].HP_up = 10;}
         }
@@ -1239,6 +1411,8 @@ public class Battle extends ActionBarActivity {
             for(int j=0; j<5; j++){
                 if(MySpecie[i].Ability[j].equals("Coral Reef")) {MyCoralCoe = 10;}
                 if(AISpecie[i].Ability[j].equals("Coral Reef")) {AICoralCoe = 10;}
+                if(MySpecie[i].Ability[j].equals("Chemosynthesis")) {MyStatus[i].HP_up=20;}
+                if(AISpecie[i].Ability[j].equals("Chemosynthesis")) {AIStatus[i].HP_up=20;}
             }
         }
         for(int i=0; i<5; i++){
@@ -1267,14 +1441,14 @@ public class Battle extends ActionBarActivity {
         processDeath();
 
         for(int i=0; i<5; i++){
-            if(MyStatus[i].To_leech>0) {
+            if(MyStatus[i].To_leech>=0) {
                 int ind = MyStatus[i].To_leech;
                 MyHP[i] += (AIStatus[ind].HP_leeched[i] > AIHP[ind])? AIHP[ind]:AIStatus[ind].HP_leeched[i];
                 AIHP[ind] -= (AIStatus[ind].HP_leeched[i] > AIHP[ind])? AIHP[ind]:AIStatus[ind].HP_leeched[i];
                 BattleRecord[0] = BattleRecord[0] + "Turn "+turn + ": Our " + MySpecie[i].english + " leeches enemy's " + AISpecie[ind].english + "!"+ '\n';
             }
 
-            if(AIStatus[i].To_leech>0) {
+            if(AIStatus[i].To_leech>=0) {
                 int ind = AIStatus[i].To_leech;
                 AIHP[i] += (MyStatus[ind].HP_leeched[i] > MyHP[ind])? MyHP[ind]:MyStatus[ind].HP_leeched[i];
                 MyHP[ind] -= (MyStatus[ind].HP_leeched[i] > MyHP[ind])? MyHP[ind]:MyStatus[ind].HP_leeched[i];
@@ -1302,11 +1476,32 @@ public class Battle extends ActionBarActivity {
             if(AIHP[i]>100) AIHP[i] = 100;
         }
 
+        for(int i=0; i<5; i++){
+            if(MyStatus[i].hide) {
+                String viewName1 = "imageViewMy" + (i + 1);
+                ImageView View1 = (ImageView) findViewById(getResources().getIdentifier(viewName1, "id", getPackageName()));
+                View1.setVisibility(View.INVISIBLE);
+                String viewName2 = "HPMy" + (i + 1);
+                TextView View2 = (TextView) findViewById(getResources().getIdentifier(viewName2, "id", getPackageName()));
+                View2.setVisibility(View.INVISIBLE);
+            }
+            if(AIStatus[i].hide){
+                String viewName1 = "imageViewAI" + (i + 1);
+                ImageView View1 = (ImageView) findViewById(getResources().getIdentifier(viewName1, "id", getPackageName()));
+                View1.setVisibility(View.INVISIBLE);
+                String viewName2 = "HPAI" + (i + 1);
+                TextView View2 = (TextView) findViewById(getResources().getIdentifier(viewName2, "id", getPackageName()));
+                View2.setVisibility(View.INVISIBLE);
+            }
+        }
+
         judgeWinOrLose();
 
         updateHP();
 
         turn++;
+
+        refresh();
 
         switch2Record();
 
@@ -1382,36 +1577,42 @@ public class Battle extends ActionBarActivity {
 
         for (int i = 0; i < 5; i++) {
             if (MyHP[i] <= 0) {
-                for (int j = 0; j < 5; j++) {
-                    if (MyStatus[i].Be_leeched[j]) {
-                        AIStatus[j].To_leech = -1;
-                        AIStatus[j].To_leech_HP = 0;
+                if(MySpecie[i].latin.equals("")||MySpecie[i].latin.equals("Nothing")) {}
+                else{
+                    for (int j = 0; j < 5; j++) {
+                        if (MyStatus[i].Be_leeched[j]) {
+                            AIStatus[j].To_leech = -1;
+                            AIStatus[j].To_leech_HP = 0;
+                        }
                     }
-                }
 
-                String viewName1 = "imageViewMy" + (i + 1);
-                ImageView View1 = (ImageView) findViewById(getResources().getIdentifier(viewName1, "id", getPackageName()));
-                View1.setVisibility(View.INVISIBLE);
-                String viewName2 = "HPMy" + (i + 1);
-                TextView View2 = (TextView) findViewById(getResources().getIdentifier(viewName2, "id", getPackageName()));
-                View2.setVisibility(View.INVISIBLE);
-                MySpecie[i] = new Specie();
+                    String viewName1 = "imageViewMy" + (i + 1);
+                    ImageView View1 = (ImageView) findViewById(getResources().getIdentifier(viewName1, "id", getPackageName()));
+                    View1.setVisibility(View.INVISIBLE);
+                    String viewName2 = "HPMy" + (i + 1);
+                    TextView View2 = (TextView) findViewById(getResources().getIdentifier(viewName2, "id", getPackageName()));
+                    View2.setVisibility(View.INVISIBLE);
+                    MySpecie[i] = new Specie();
+                }
             }
             if (AIHP[i] <= 0) {
-                for (int j = 0; j < 5; j++) {
-                    if (AIStatus[i].Be_leeched[j]) {
-                        MyStatus[j].To_leech = -1;
-                        MyStatus[j].To_leech_HP = 0;
+                if(AISpecie[i].latin.equals("")||AISpecie[i].latin.equals("Nothing")) {}
+                else {
+                    for (int j = 0; j < 5; j++) {
+                        if (AIStatus[i].Be_leeched[j]) {
+                            MyStatus[j].To_leech = -1;
+                            MyStatus[j].To_leech_HP = 0;
+                        }
                     }
-                }
 
-                String viewName1 = "imageViewAI" + (i + 1);
-                ImageView View1 = (ImageView) findViewById(getResources().getIdentifier(viewName1, "id", getPackageName()));
-                View1.setVisibility(View.INVISIBLE);
-                String viewName2 = "HPAI" + (i + 1);
-                TextView View2 = (TextView) findViewById(getResources().getIdentifier(viewName2, "id", getPackageName()));
-                View2.setVisibility(View.INVISIBLE);
-                AISpecie[i] = new Specie();
+                    String viewName1 = "imageViewAI" + (i + 1);
+                    ImageView View1 = (ImageView) findViewById(getResources().getIdentifier(viewName1, "id", getPackageName()));
+                    View1.setVisibility(View.INVISIBLE);
+                    String viewName2 = "HPAI" + (i + 1);
+                    TextView View2 = (TextView) findViewById(getResources().getIdentifier(viewName2, "id", getPackageName()));
+                    View2.setVisibility(View.INVISIBLE);
+                    AISpecie[i] = new Specie();
+                }
             }
         }
 
@@ -1447,13 +1648,44 @@ public class Battle extends ActionBarActivity {
     public int AIDamage(int from, int to){
         if(!AIAttackable(from, to)) {return 0;}
 
+        for(int i=0; i<5; i++){
+            for(int j=0; j<5; j++){
+                if(MySpecie[i].Ability[j].equals("Trap") && MyEatable(i,from)){
+                    MyHP[i] += AIHP[from];
+                    if(MyHP[i]>100) MyHP[i] = 100;
+                    AIHP[from] = 0;
+                    BattleRecord[0] = BattleRecord[0] + "Turn "+turn+ ": Enemy's "+ AISpecie[from].english + " falls into the trap of "+ MySpecie[i].english + " and is killed!"+ '\n';
+                    return 0;
+                }
+            }
+        }
+
+        if(AIStatus[from].hide) {
+            AIStatus[from].hide=false;
+            String viewName1 = "imageViewAI" + (from + 1);
+            ImageView View1 = (ImageView) findViewById(getResources().getIdentifier(viewName1, "id", getPackageName()));
+            View1.setVisibility(View.VISIBLE);
+            String viewName2 = "HPAI" + (from + 1);
+            TextView View2 = (TextView) findViewById(getResources().getIdentifier(viewName2, "id", getPackageName()));
+            View2.setVisibility(View.VISIBLE);
+        }
+        for(int i=0; i<5; i++){
+            if(MySpecie[to].Ability[i].equals("Smog")){
+                MyStatus[to].hide = true;
+            }
+        }
+        if(AISpecie[from].MimicTarget.equals("") || AISpecie[from].MimicTarget.equals("Nothing")){}
+        else {AISpecie[from].MimicTarget = "";}
+
         int realAIAttack = AISpecie[from].Attack, realAIDefense = AISpecie[from].Defence;
         int realMyAttack = MySpecie[to].Attack, realMyDefense = MySpecie[to].Defence;
-        int SpongeCoe = 1, SocialCoe=1;
+        int SpongeCoe = 1, SocialCoe=1,CryptobiosisCoe=1, ShellCoe=1;
         for(int i=0; i<5; i++){
             for(int j=0; j<5; j++){
                 if(MySpecie[i].Ability[j].equals("Sponge Reef")) {SpongeCoe=2;break;}
+                if(MySpecie[i].Ability[j].equals("Shell Colony") && (AISpecie[from].Size.equals("Huge")||AISpecie[from].Size.equals("XLarge")) ) {ShellCoe=2;break;}
             }
+            if(MyHP[to]<100 && MySpecie[to].Ability.equals("Cryptobiosis")) CryptobiosisCoe=2;
         }
         for(int i=0; i<5; i++){
             if(i==from) continue;
@@ -1462,12 +1694,13 @@ public class Battle extends ActionBarActivity {
                 if(MySpecie[i].Ability[j].equals("Social")) {SocialCoe=2;break;}
             }
         }
-        realMyAttack *= SocialCoe; realMyDefense *=SocialCoe*SpongeCoe;
-        SpongeCoe = 1; SocialCoe=1;
+        realMyAttack *= SocialCoe; realMyDefense *=SocialCoe*SpongeCoe*CryptobiosisCoe*ShellCoe;
+        SpongeCoe = 1; SocialCoe=1;CryptobiosisCoe=1;;
         for(int i=0; i<5; i++){
             for(int j=0; j<5; j++){
                 if(AISpecie[i].Ability[j].equals("Sponge Reef")) {SpongeCoe=2;break;}
             }
+            if(AIHP[from]<100 && AISpecie[from].Ability.equals("Cryptobiosis")) CryptobiosisCoe=2;
         }
         for(int i=0; i<5; i++){
             if(i==from) continue;
@@ -1476,7 +1709,7 @@ public class Battle extends ActionBarActivity {
                 if(AISpecie[i].Ability[j].equals("Social")) {SocialCoe=2;break;}
             }
         }
-        realAIAttack *= SocialCoe; realAIDefense *=SocialCoe*SpongeCoe;
+        realAIAttack *= SocialCoe; realAIDefense *=SocialCoe*SpongeCoe*CryptobiosisCoe;
 
         for(int i=0; i<5; i++){
             if(MySpecie[to].Ability[i].equals("Spiky Body")) {AIHP[from]-=25;}
@@ -1589,15 +1822,45 @@ public class Battle extends ActionBarActivity {
     }
 
     public int MyDamage(int from, int to){
-        if(!MyAttackable(from, to)) {return 0;}
+        if (!MyAttackable(from, to)) {return 0;}
+
+        for(int i=0; i<5; i++){
+            for(int j=0; j<5; j++){
+                if(AISpecie[i].Ability[j].equals("Trap") && AIEatable(i, from)){
+                    AIHP[i] += MyHP[from];
+                    if(AIHP[i]>100) AIHP[i] = 100;
+                    MyHP[from] = 0;
+                    BattleRecord[0] = BattleRecord[0] + "Turn "+turn+ ": Our "+ MySpecie[from].english + " falls into the trap of "+ AISpecie[i].english + " and is killed!"+ '\n';
+                    return 0;
+                }
+            }
+        }
+
+        if(MyStatus[from].hide) {
+            MyStatus[from].hide=false;
+            String viewName1 = "imageViewMy" + (from + 1);
+            ImageView View1 = (ImageView) findViewById(getResources().getIdentifier(viewName1, "id", getPackageName()));
+            View1.setVisibility(View.VISIBLE);
+            String viewName2 = "HPMy" + (from + 1);
+            TextView View2 = (TextView) findViewById(getResources().getIdentifier(viewName2, "id", getPackageName()));
+            View2.setVisibility(View.VISIBLE);
+        }
+        for(int i=0; i<5; i++){
+            if(AISpecie[to].Ability[i].equals("Smog")){
+                AIStatus[to].hide = true;
+            }
+        }
+        if(MySpecie[from].MimicTarget.equals("") || MySpecie[from].MimicTarget.equals("Nothing")){}
+        else {MySpecie[from].MimicTarget = "";}
 
         int realMyAttack = MySpecie[from].Attack, realMyDefense = MySpecie[from].Defence;
         int realAIAttack = AISpecie[to].Attack, realAIDefense = AISpecie[to].Defence;
-        int SpongeCoe = 1, SocialCoe=1;
+        int SpongeCoe = 1, SocialCoe=1, CryptobiosisCoe = 1, ShellCoe=1;
         for(int i=0; i<5; i++){
             for(int j=0; j<5; j++){
                 if(MySpecie[i].Ability[j].equals("Sponge Reef")) {SpongeCoe=2;break;}
             }
+            if(MyHP[from]<100 && MySpecie[from].Ability[i].equals("Cryptobiosis")) {CryptobiosisCoe=2; break;}
         }
         for(int i=0; i<5; i++){
             if(i==from) continue;
@@ -1606,12 +1869,14 @@ public class Battle extends ActionBarActivity {
                 if(MySpecie[i].Ability[j].equals("Social")) {SocialCoe=2;break;}
             }
         }
-        realMyAttack *= SocialCoe; realMyDefense *=SocialCoe*SpongeCoe;
-        SpongeCoe = 1; SocialCoe=1;
+        realMyAttack *= SocialCoe; realMyDefense *=SocialCoe*SpongeCoe*CryptobiosisCoe;
+        SpongeCoe = 1; SocialCoe=1; CryptobiosisCoe = 1;
         for(int i=0; i<5; i++){
             for(int j=0; j<5; j++){
                 if(AISpecie[i].Ability[j].equals("Sponge Reef")) {SpongeCoe=2;break;}
+                if(AISpecie[i].Ability[j].equals("Shell Colony") && (MySpecie[from].Size.equals("Huge")||MySpecie[from].Size.equals("XLarge")) ) {ShellCoe=2;break;}
             }
+            if(AIHP[to]<100 && AISpecie[to].Ability[i].equals("Cryptobiosis")) {CryptobiosisCoe=2; break;}
         }
         for(int i=0; i<5; i++){
             if(i==from) continue;
@@ -1620,7 +1885,7 @@ public class Battle extends ActionBarActivity {
                 if(AISpecie[i].Ability[j].equals("Social")) {SocialCoe=2;break;}
             }
         }
-        realAIAttack *= SocialCoe; realAIDefense *=SocialCoe*SpongeCoe;
+        realAIAttack *= SocialCoe; realAIDefense *=SocialCoe*SpongeCoe*CryptobiosisCoe*ShellCoe;
 
         for(int i=0; i<5; i++){
             if(AISpecie[to].Ability[i].equals("Spiky Body")) {MyHP[from]-=25;}
@@ -1689,13 +1954,12 @@ public class Battle extends ActionBarActivity {
                 AIStatus[ind].Be_leeched[from]=false; AIStatus[ind].HP_leeched[from] = 0;
             }
             AIStatus[to].Be_leeched[from] = true;
-            AIStatus[to].HP_leeched[from] = realAIAttack;
+            AIStatus[to].HP_leeched[from] = realMyAttack;
             MyStatus[from].To_leech = to;
-            MyStatus[from].To_leech_HP = realAIAttack;
+            MyStatus[from].To_leech_HP = realMyAttack;
             BattleRecord[0] = BattleRecord[0] + "Turn "+turn+ ": Enemy's "+ AISpecie[to].english + " get parasitic by our " + MySpecie[from].english + '\n';
             return 0;
-        }
-        else if(MyEatable(from, to)) {
+        } else if (MyEatable(from, to)) {
             MyHP[from]+=AIHP[to]; AIHP[to] = 0;
             BattleRecord[0] = BattleRecord[0] + "Turn "+turn+ ": Enemy's "+ AISpecie[to].english + " get eaten by our " + MySpecie[from].english + '\n';
             return 100;
@@ -1764,11 +2028,35 @@ public class Battle extends ActionBarActivity {
         }
         if(MyEatable(from, to)) return true;
         for(int i=0; i<5; i++) {if(MySpecie[from].Ability[i].equals("Still")) return false;}
-        boolean Sniper = false, Sucker = false;
+        for(int i=0; i<5; i++) {
+            if(AISpecie[to].Ability[i].equals("Aerial")){
+                boolean fly=false;
+                for(int j=0; j<5; j++){
+                    if(MySpecie[from].Ability[j].equals("Aerial")){
+                        fly=true;
+                    }
+                }
+                if(fly==false) return false;
+            }
+        }
+        for(int i=0; i<5; i++) {
+            if(AISpecie[to].Ability[i].equals("Hole Digger")){
+                boolean ground=false;
+                for(int j=0; j<5; j++){
+                    if(MySpecie[from].Ability[j].equals("Hole Digger")){
+                        ground=true;
+                    }
+                }
+                if(ground==false) return false;
+            }
+        }
+        boolean Sniper = false, Sucker = false, HighJumping = false;
         for(int i=0; i<5; i++) {if(MySpecie[from].Ability[i].equals("Sniper")) {Sniper=true; break;}}
         for(int i=0; i<5; i++) {if(MySpecie[from].Ability[i].equals("Sucker")) {Sucker=true;break;}}
+        for(int i=0; i<5; i++) {if(AISpecie[to].Ability[i].equals("High Jumping")) {HighJumping=true;break;}}
         if(Sniper) return AttackableTableSniper(MySpecie[from].Size,AISpecie[to].Size);
         if(Sucker) return AttackableTableSucker(MySpecie[from].Size, AISpecie[to].Size);
+        if(HighJumping) return AttackableTableHighJumping(MySpecie[from].Size, AISpecie[to].Size);
         return AttackableTable(MySpecie[from].Size,AISpecie[to].Size);
     }
 
@@ -1802,33 +2090,71 @@ public class Battle extends ActionBarActivity {
             }
             return false;
         }
-        if(AIEatable(from, to)) return  true;
+        if (AIEatable(from, to)) return  true;
         for(int i=0; i<5; i++) {if(AISpecie[from].Ability[i].equals("Still")) return false;}
-        boolean Sniper = false, Sucker = false;
+        for(int i=0; i<5; i++) {
+            if(MySpecie[to].Ability[i].equals("Aerial")){
+                boolean fly=false;
+                for(int j=0; j<5; j++){
+                    if(AISpecie[from].Ability[j].equals("Aerial")){
+                        fly=true;
+                    }
+                }
+                if(fly==false) return false;
+            }
+        }
+        for(int i=0; i<5; i++) {
+            if(MySpecie[to].Ability[i].equals("Hole Digger")){
+                boolean ground=false;
+                for(int j=0; j<5; j++){
+                    if(AISpecie[from].Ability[j].equals("Hole Digger")){
+                        ground=true;
+                    }
+                }
+                if(ground==false) return false;
+            }
+        }
+        boolean Sniper = false, Sucker = false, HighJumping = false;
         for(int i=0; i<5; i++) {if(AISpecie[from].Ability[i].equals("Sniper")) {Sniper=true; break;}}
         for(int i=0; i<5; i++) {if(AISpecie[from].Ability[i].equals("Sucker")) {Sucker=true; break;}}
+        for(int i=0; i<5; i++) {if(MySpecie[to].Ability[i].equals("High Jumping")) {HighJumping=true; break;}}
         if(Sniper) return AttackableTableSniper(AISpecie[from].Size, MySpecie[to].Size);
-        if(Sucker) return AttackableTableSucker(MySpecie[from].Size,AISpecie[to].Size);
+        if(Sucker) return AttackableTableSucker(AISpecie[from].Size, MySpecie[to].Size);
+        if(HighJumping) return AttackableTableHighJumping(AISpecie[from].Size, MySpecie[to].Size);
         return AttackableTable(AISpecie[from].Size, MySpecie[to].Size);
     }
 
     public boolean MyEatable(int from, int to){
+        for(int i=0; i<5; i++){
+            if(MySpecie[from].Ability[i].equals("Big Swallow") && Size2Num(MySpecie[from].Size)-Size2Num(AISpecie[to].Size)>=4 ){return true;}
+        }
         for(int i=0; i<9; i++){
             if(MySpecie[from].Food[i].equals("") || MySpecie[from].Food[i].equals("O") || MySpecie[from].Food[i].equals("Nothing")) {continue;}
             for(int j=0; j<5; j++) {
-                if(MySpecie[from].Food[i].equals(AISpecie[to].Label[j]))
-                    return true;
+                if(MySpecie[from].Food[i].equals(AISpecie[to].Label[j])) {
+                    //exceptions for those can be eaten by much smaller animals, those never move or not so large as it looks like
+                    if(AISpecie[to].Label[j].equals("Coral")||AISpecie[to].Label[j].equals("Sponge")  || AISpecie[to].Label[j].equals("Jellyfish")) return true;
+                    //Normally Case
+                    if(Size2Num(AISpecie[to].Size)-Size2Num(MySpecie[from].Size)<=0)  return true;
+                }
             }
         }
         return false;
     }
 
     public boolean AIEatable(int from, int to){
+        for(int i=0; i<5; i++){
+            if(AISpecie[from].Ability[i].equals("Big Swallow") && Size2Num(AISpecie[from].Size)-Size2Num(MySpecie[to].Size)>=4 ){return true;}
+        }
         for(int i=0; i<9; i++){
             if(AISpecie[from].Food[i].equals("") || AISpecie[from].Food[i].equals("O") || AISpecie[from].Food[i].equals("Nothing")) {continue;}
             for(int j=0; j<5; j++) {
-                if(AISpecie[from].Food[i].equals(MySpecie[to].Label[j]))
-                    return true;
+                if(AISpecie[from].Food[i].equals(MySpecie[to].Label[j])) {
+                    //exceptions for those can be eaten by much smaller animals, those never move or not so large as it looks like
+                    if(MySpecie[to].Label[j].equals("Coral") ||MySpecie[to].Label[j].equals("Sponge") || MySpecie[to].Label[j].equals("Jellyfish")) return true;
+                    //Normally Case
+                    if(Size2Num(MySpecie[to].Size)-Size2Num(AISpecie[from].Size)<=0)  return true;
+                }
             }
         }
         return false;
@@ -1849,6 +2175,11 @@ public class Battle extends ActionBarActivity {
         return false;
     }
 
+    public boolean AttackableTableHighJumping(String sizeFrom, String sizeTo){
+        if((Size2Num(sizeFrom)-Size2Num(sizeTo))>=0 ) return true;
+        return false;
+    }
+
     public static int Size2Num(String size){
         switch (size){
             case "Micro": return 1;
@@ -1863,5 +2194,4 @@ public class Battle extends ActionBarActivity {
         }
         return 0;
     }
-
 }

@@ -1,6 +1,6 @@
 ---------------
 Aerial
-After first attack, animals with this ability could only be affected by their predators or those with the same ability
+Animals with this ability could only be affected by their predators or those with the same ability
 ---------------
 Inner Parasitic
 When leeching its target, animals with this ability cannot be affected by others
@@ -32,14 +32,26 @@ Every team members get defense doubled if the team has a member with this abilit
 Social
 Animals with this ability get attack and defense doubled if there's more than one member of the same specie in the team
 ---------------
-Mimicry
+Camouflage
 Animals with this ability doesn't shown to opposite until its first attack
+---------------
+Vary Mimicry
+Animals with this ability appears randomly like another animal of the same size on the field to opposite until its first attack
+---------------
+Snake Mimicry
+Animals with this ability appears like snakes to opposite until its first attack
+---------------
+Owl Mimicry
+Animals with this ability appears like owls to opposite until its first attack
+---------------
+Ant Mimicry
+Animals with this ability appears like ants to opposite until its first attack
 ---------------
 Spiky Body
 Animals attack those with this ability get 25 health off
 ---------------
 Hole Digger
-Before first attack, animals with this ability could only be affected by their predators or those with the same ability
+Animals with this ability could only be affected by their predators or those with the same ability
 ---------------
 Intelligence
 Animals with this ability can attack any target by using tools
@@ -58,6 +70,30 @@ Animals with this ability can recover 15 health after under attack
 ---------------
 Sucker
 Animals with this ability can attack target no matter how large, and they recover how much target loses by the attack
+---------------
+Cryptobiosis
+Animals with this ability double its defense when it's not fully healthy
+---------------
+Chemosynthesis
+Animals with this ability recovers 20 health every turn
+---------------
+Shell Colony
+Animals with this ability halfs damage made by opposite Huge and XLarge size animals
+---------------
+Shell Collector
+Animals with this ability get abilities of shell animals on the field in the first turn
+---------------
+Smog
+Animals with this ability get hide after it is attacked
+---------------
+Big Swallow
+Animals with this ability could eat everything 4 sizes smaller or more than they are
+---------------
+High Jumping
+Animals with this ability cannot be attacked by animals of the same size or smaller
+---------------
+Trap
+Animals with this ability can kill and eat preys when the preys attack from opposite
 ---------------
 About Poisoned
 A -> poisoned -> B, result in B get N health off each turn. N = 2^(Asize-Bsize)*20

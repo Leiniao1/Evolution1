@@ -1,0 +1,27 @@
+Xenophorid
+Carrier Shell
+10
+42
+Medium
+Herbivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Shell Collector
+Anti-Poison
+No
+No
+No
+Shell
+Snail
+X
+X
+X
+Plankton
+O

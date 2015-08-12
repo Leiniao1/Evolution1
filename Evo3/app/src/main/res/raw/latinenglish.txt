@@ -86,7 +86,7 @@ Clonorchis
 Chinese Liver Fluke
 ------------------
 Chaetoblack
-Arrow Worms
+Arrow Worm
 ------------------
 Monostilifera
 Ribbon Worm
@@ -98,10 +98,13 @@ Tardigrade
 Waterbear
 ------------------
 Priapulus
-Priapulid Worms
+Priapulid Worm
 ------------------
 Dirofilaria
 Heartworm
+------------------
+Dracunculus
+Guinea Worm
 ------------------
 Tylenchida
 Soybean Cyst Nematode
@@ -115,11 +118,17 @@ Hair Snake
 Paragordius
 Horsehair Worm
 ------------------
+Phoronid
+Horseshoe Worm
+------------------
 Riftia
 Giant Tube Worm
 ------------------
 Eunice
 Bobbit Worm
+------------------
+Alitta
+Clam Worm
 ------------------
 Spirobranchus
 Christmas Tree Worm
@@ -151,6 +160,9 @@ Giant Earthworm
 Americobdella
 Proboscisless Leech
 ------------------
+Mimobdella
+Kinabalu Giant Red Leech
+------------------
 Euhirudinea
 True Leech
 ------------------
@@ -167,7 +179,7 @@ Antalis
 Tusk Shell
 ------------------
 Arca
-Noah's Ark shell
+Noah's Ark Shell
 ------------------
 Anodonta
 Duck Mussel
@@ -382,7 +394,7 @@ White-spotted Octopus
 Wunderpus
 Wonder Octopus
 ------------------
-Thaumoctopus 
+Thaumoctopus
 Mimic Octopus
 ------------------
 Onychophoran

@@ -1,0 +1,28 @@
+Eunice
+Bobbit Worm
+55
+15
+Large
+Carnivore
+Seashore
+Ocean
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Sniper
+Hole Digger
+Trap
+No
+No
+Worm
+X
+X
+X
+X
+Shrimp
+Worm
+O

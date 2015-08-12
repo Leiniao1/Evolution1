@@ -25,7 +25,7 @@
                 android:layout_width="0dip"
                 android:layout_height="fill_parent"
                 android:layout_weight="0.25"
-                android:text="Go Back"
+                android:text="Levels"
                 android:id="@+id/button20"
                 android:onClick="goSurvival"
                 android:textSize="@dimen/abc_edit_text_inset_top_material" />

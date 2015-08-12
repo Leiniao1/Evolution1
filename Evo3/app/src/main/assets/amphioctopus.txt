@@ -1,0 +1,28 @@
+Amphioctopus
+Coconut Octopus
+30
+18
+Medium
+Carnivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Smog
+Shell Collector
+No
+No
+No
+Fish
+Squid
+X
+X
+X
+Shrimp
+Fish
+O

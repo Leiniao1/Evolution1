@@ -1,0 +1,27 @@
+Arca
+Noah's Ark Shell
+3
+72
+Medium
+Herbivore
+Seashore
+Ocean
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Still
+No
+No
+No
+Shell
+X
+X
+X
+X
+Plankton
+O

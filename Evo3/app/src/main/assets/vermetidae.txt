@@ -1,0 +1,26 @@
+Vermetidae
+Worm Shell
+14
+36
+Medium
+Herbivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Shell Colony
+Anti-Poison
+No
+No
+No
+Shell
+Snail
+X
+X
+X
+O

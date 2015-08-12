@@ -64,6 +64,7 @@ public class MainActivity2Activity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setTitle("Darwin's Tree");
         setContentView(R.layout.activity_main_activity2);
@@ -74,6 +75,25 @@ public class MainActivity2Activity extends ActionBarActivity {
         // reload your party members:
         loadImage();
         achievement_check();
+        return;
+    }
+
+    @Override
+    public void onBackPressed(){
+
+        int count = getFragmentManager().getBackStackEntryCount();
+
+        if (count == 0) {
+            super.onBackPressed();
+            write2File();
+            Intent myIntent = new Intent(getApplicationContext(), MainActivity.class);
+            recycleAll(1);
+            startActivityForResult(myIntent, 0);
+            finish();
+        } else {
+            getFragmentManager().popBackStack();
+        }
+
         return;
     }
 
@@ -152,7 +172,8 @@ public class MainActivity2Activity extends ActionBarActivity {
         }
 
         TextView TV21 = (TextView) findViewById(R.id.textView21);
-        TV21.setText("Attack: "+Attack+" Defense: "+Defense+'\n'+"Size: "+Size+ '\n'+"Diet: "+Diet+'\n'+"Living Environment: " + Environ);
+        //TV21.setText("Attack: "+Attack+" Defense: "+Defense+'\n'+"Size: "+Size+ '\n'+"Diet: "+Diet+'\n'+"Living Environment: " + Environ);
+        TV21.setText("Diet: "+Diet+'\n'+"Living Environment: " + Environ);
 
         return;
     }

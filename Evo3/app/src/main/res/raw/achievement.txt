@@ -32,15 +32,59 @@ Get to evo level 5!
 Man-O-War the great horror!
 physalia
 120
-Evo to the specie "man-o-war"
+Evo to the specie "Man-O-War"
 ----------------
 In The Great Joint!
 cestum
 200
-The next evo path from cestum makes great difference to the game
+The next evo path from cestum makes great difference for your game
 ----------------
 Get Evo Level 10!
 dna
 200
-Get to evo level 5!
+Get to evo level 10!
 ----------------
+Get to survival level 5!
+acropora
+250
+Get to survival level 5!
+----------------
+Dugesia Always Recover!
+dugesia
+275
+Evo to the specie "Dugesia"
+----------------
+Insects Inner Killer!
+paragordius
+275
+Evo to the specie "Horsehair Worm"
+----------------
+Get Evo Level 15!
+dna
+400
+Get to evo level 15!
+----------------
+Get to survival level 10!
+cryptoconchus
+550
+Get to survival level 10!
+----------------
+Evo to Palm Worm!
+alvinellidae
+600
+Evo to Palm Worm!
+----------------
+Evo to Sunset Clam!
+gari
+600
+Evo to Sunset Clam!
+----------------
+Evo to Sea Butterfly!
+thecosomata
+600
+Evo to Sea Butterfly!
+----------------
+Evo to Pharaoh Cuttlefish!
+sepiapharaonis
+600
+Evo to Pharaoh Cuttlefish!

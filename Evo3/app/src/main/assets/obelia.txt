@@ -1,7 +1,7 @@
 Obelia
 Obelia
-20
-4
+21
+6
 Small
 Carnivore
 Seashore
@@ -13,8 +13,8 @@ Void
 Void
 Void
 Void
-Still
 Anti-Poison
+Regenerator
 No
 No
 No

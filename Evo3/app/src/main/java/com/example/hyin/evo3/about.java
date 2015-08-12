@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -18,10 +19,28 @@ public class about extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setTitle("Darwin's Tree");
         setContentView(R.layout.activity_about);
         initialSet();
+        return;
+    }
+
+    @Override
+    public void onBackPressed(){
+
+        int count = getFragmentManager().getBackStackEntryCount();
+
+        if (count == 0) {
+            super.onBackPressed();
+            Intent myIntent = new Intent(getApplicationContext(), MainInterface.class);
+            startActivityForResult(myIntent, 0);
+            finish();
+        } else {
+            getFragmentManager().popBackStack();
+        }
+
         return;
     }
 

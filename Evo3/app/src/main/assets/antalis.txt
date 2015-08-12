@@ -1,0 +1,27 @@
+Antalis
+Tusk Shell
+8
+60
+Medium
+Herbivore
+Seashore
+Ocean
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Hole Digger
+No
+No
+No
+Shell
+X
+X
+X
+X
+Plankton
+O

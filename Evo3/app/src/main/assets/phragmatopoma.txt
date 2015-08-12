@@ -1,0 +1,27 @@
+Phragmatopoma
+Sandcastle Worm
+8
+36
+Small+
+Herbivore
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Shell Colony
+Still
+No
+No
+No
+Worm
+X
+X
+X
+X
+Plankton
+O

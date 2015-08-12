@@ -1,0 +1,26 @@
+Limax
+Great Grey Slug
+15
+15
+Small+
+Herbivore
+Wetland
+Jungle
+Forest
+Grassland
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+No
+No
+No
+No
+Snail
+X
+X
+X
+X
+O

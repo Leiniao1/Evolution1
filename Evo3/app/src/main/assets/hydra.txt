@@ -1,6 +1,6 @@
 Hydra
 Hydra
-25
+18
 4
 XSmall
 Carnivore
@@ -14,7 +14,7 @@ Void
 Void
 Void
 Anti-Poison
-No
+Regenerator
 No
 No
 No

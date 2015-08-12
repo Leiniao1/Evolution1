@@ -43,7 +43,7 @@
             android:onClick="goMainMenu"
             android:textStyle="bold"
             android:textColor="#e3da9509"
-            android:textSize="@dimen/abc_dialog_padding_top_material"
+            android:textSize="14dp"
             android:layout_gravity="right"
             android:gravity="right" />
 
@@ -55,9 +55,9 @@
         android:layout_weight="0.10"
         android:text="About"
         android:layout_gravity="center"
-        android:gravity="center"
+        android:gravity="top|center_horizontal"
         android:textStyle="bold"
-        android:textSize="22dp" />
+        android:textSize="24dp" />
 
 
         <TextView

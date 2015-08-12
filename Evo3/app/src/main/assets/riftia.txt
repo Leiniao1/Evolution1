@@ -1,0 +1,26 @@
+Riftia
+Giant tube worm
+2
+35
+Large
+Carnivore
+Ocean
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Chemosynthesis
+No
+No
+No
+Worm
+X
+X
+X
+X
+O

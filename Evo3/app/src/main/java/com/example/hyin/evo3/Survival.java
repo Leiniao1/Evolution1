@@ -22,6 +22,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
@@ -95,6 +96,7 @@ public class Survival extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setTitle("Darwin's Tree");
         setContentView(R.layout.activity_survival);
@@ -117,6 +119,24 @@ public class Survival extends ActionBarActivity {
 
         return;
 
+    }
+
+    @Override
+    public void onBackPressed(){
+
+        int count = getFragmentManager().getBackStackEntryCount();
+
+        if (count == 0) {
+            super.onBackPressed();
+            Intent myIntent = new Intent(getApplicationContext(), MainActivity2Activity.class);
+            recycleAll(1);
+            startActivityForResult(myIntent, 0);
+            finish();
+        } else {
+            getFragmentManager().popBackStack();
+        }
+
+        return;
     }
 
     @Override
@@ -393,6 +413,17 @@ public class Survival extends ActionBarActivity {
             IVAnimalPost.setBackgroundColor(Color.parseColor(Color1));
         }
 
+        for(int i=0; i<5; i++){
+            currBattleNum = 0;
+            BattleSpecie[i] = new Specie();
+            String ViewName = "imageViewMember" + (i+1);
+            ImageView IV = (ImageView) findViewById(getResources().getIdentifier(ViewName,"id",getPackageName()));
+            setImage("nothing", 6, IV, bitmapParty[i]);
+            String ViewName2 = "textViewDes" + (i+1);
+            TextView TV = (TextView) findViewById(getResources().getIdentifier(ViewName2,"id",getPackageName()));
+            TV.setText("");
+        }
+
         // Finally Write the record
         writeSurvivalRecord();
     }
@@ -453,6 +484,9 @@ public class Survival extends ActionBarActivity {
             String ViewName = "imageViewMember" + (i+1);
             ImageView IV = (ImageView) findViewById(getResources().getIdentifier(ViewName,"id",getPackageName()));
             setImage("nothing", 6, IV, bitmapParty[i]);
+            String ViewName2 = "textViewDes" + (i+1);
+            TextView TV = (TextView) findViewById(getResources().getIdentifier(ViewName2,"id",getPackageName()));
+            TV.setText("");
         }
         return;
     }

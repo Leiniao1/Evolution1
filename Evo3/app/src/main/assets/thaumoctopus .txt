@@ -1,0 +1,28 @@
+Thaumoctopus
+Mimic Octopus
+40
+18
+Medium+
+Carnivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Smog
+Vary Mimicry
+No
+No
+No
+Fish
+Squid
+X
+X
+X
+Shrimp
+Fish
+O

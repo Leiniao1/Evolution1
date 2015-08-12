@@ -1,0 +1,27 @@
+Tresus
+Horse Clam
+5
+52
+Medium
+Herbivore
+Seashore
+Ocean
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Still
+Hole Digger
+No
+No
+Shell
+X
+X
+X
+X
+Plankton
+O

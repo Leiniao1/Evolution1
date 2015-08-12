@@ -1,0 +1,27 @@
+Phoneutria
+Wandering Spider
+57
+18
+Medium
+Carnivore
+Forest
+Grassland
+Jungle
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Toxic Shock
+Toxic Body
+No
+No
+Insect
+Spider
+X
+X
+X
+Insect
+O

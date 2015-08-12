@@ -1,0 +1,27 @@
+Lanice
+Spaghetti Worm
+11
+25
+Small
+Carnivore
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Hole Digger
+No
+No
+No
+No
+Worm
+X
+X
+X
+X
+Plankton
+O

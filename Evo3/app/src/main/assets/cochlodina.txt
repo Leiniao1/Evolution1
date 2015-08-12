@@ -1,0 +1,26 @@
+Cochlodina
+Door Snail
+10
+35
+Small+
+Herbivore
+Wetland
+Jungle
+Forest
+Grassland
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+No
+No
+No
+No
+Snail
+X
+X
+X
+X
+O

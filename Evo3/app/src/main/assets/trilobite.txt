@@ -1,0 +1,27 @@
+Trilobite
+Trilobite
+24
+36
+Small+
+Carnivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Spiky Body
+No
+No
+No
+Insect
+Crab
+X
+X
+X
+Shrimp
+O

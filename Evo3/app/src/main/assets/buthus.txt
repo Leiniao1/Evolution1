@@ -1,0 +1,27 @@
+Buthus
+Thick-tailed Scorpion
+36
+28
+Small+
+Carnivore
+Forest
+Jungle
+Grassland
+Desert
+Mountain
+Void
+Void
+Void
+Void
+Poison Attack
+Poison Defense
+Anti-Poison
+No
+No
+Insect
+Spider
+X
+X
+X
+Insect
+O

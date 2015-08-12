@@ -1,5 +1,6 @@
 package com.example.hyin.evo3;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -13,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
@@ -64,11 +66,32 @@ public class Achievement extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setTitle("Darwin's Tree");
         setContentView(R.layout.activity_achievement);
         ReadAchievementRecord();
         initialSet();
+
+        return;
+    }
+
+
+    @Override
+    public void onBackPressed(){
+
+        int count = getFragmentManager().getBackStackEntryCount();
+
+        if (count == 0) {
+            super.onBackPressed();
+            recycleAll(1);
+            Intent myIntent = new Intent(getApplicationContext(), MainInterface.class);
+            startActivityForResult(myIntent, 0);
+            finish();
+        } else {
+            getFragmentManager().popBackStack();
+        }
+
         return;
     }
 
@@ -345,4 +368,5 @@ public class Achievement extends ActionBarActivity {
         System.gc();
         return;
     }
+
 }

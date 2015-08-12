@@ -1,0 +1,27 @@
+Spondylus
+Thorny Oyster
+5
+60
+Medium
+Herbivore
+Seashore
+Ocean
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Still
+Spiky Body
+No
+No
+Shell
+X
+X
+X
+X
+Plankton
+O

@@ -1,0 +1,27 @@
+Paragordius
+Horsehair Worm
+25
+18
+Medium
+Parasitic
+Grassland
+Forest
+Jungle
+Wetland
+Desert
+Mountain
+Void
+Void
+Void
+Inner Parasitic
+No
+No
+No
+No
+Worm
+X
+X
+X
+X
+Insect
+O

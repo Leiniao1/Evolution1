@@ -1,0 +1,27 @@
+Miesmuscheln
+Blue Mussel
+6
+57
+Small+
+Herbivore
+Seashore
+Ocean
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Still
+Shell Colony
+No
+No
+Shell
+X
+X
+X
+X
+Plankton
+O
