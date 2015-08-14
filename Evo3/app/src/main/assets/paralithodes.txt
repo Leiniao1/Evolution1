@@ -1,0 +1,29 @@
+Paralithodes
+King Crab
+56
+50
+Large
+Carnivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Spiky Body
+No
+No
+No
+Shell
+Crab
+X
+X
+X
+Fish
+Worm
+Shrimp
+O

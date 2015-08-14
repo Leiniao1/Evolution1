@@ -1,0 +1,27 @@
+Blepharipoda
+Mole Crab
+24
+42
+Small
+Herbivore
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Hole Digger
+No
+No
+No
+Shell
+Crab
+X
+X
+X
+Plankton
+O

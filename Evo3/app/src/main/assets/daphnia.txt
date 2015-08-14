@@ -1,0 +1,26 @@
+Daphnia
+Water Flea
+15
+22
+XSmall
+Herbivore
+Wetland
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+No
+No
+No
+No
+No
+Bug
+Shrimp
+Plankton
+X
+X
+O

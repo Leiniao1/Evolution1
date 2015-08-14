@@ -1,0 +1,30 @@
+Paraponera
+Bullet Ant
+45
+34
+Small
+Carnivore
+Jungle
+Forest
+Grassland
+Void
+Void
+Void
+Void
+Void
+Void
+Toxic Body
+Toxic Shock
+Social
+Hole Digger
+Void
+Bug
+Insect
+Ant
+X
+X
+Insect
+Amphibian
+Reptile
+Mammal
+O

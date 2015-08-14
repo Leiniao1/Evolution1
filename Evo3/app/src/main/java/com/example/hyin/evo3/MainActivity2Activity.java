@@ -53,8 +53,8 @@ public class MainActivity2Activity extends ActionBarActivity {
         }
     }
 
-    public String English_Name[] = new String[500];
-    public String Latin_Name[] = new String[500];
+    public String English_Name[] = new String[800];
+    public String Latin_Name[] = new String[800];
     public Specie currMainSpecie = new Specie();
     public Specie otherSpecie[] = new Specie[15];
     public int DNA = 1200, DNA_rate = 2; // TODO: change DNA back to 200 after testing
@@ -102,7 +102,7 @@ public class MainActivity2Activity extends ActionBarActivity {
             InputStream in = getResources().openRawResource(R.raw.latinenglish);
             BufferedReader dataIO = new BufferedReader(new InputStreamReader(in));
             String s_temp;
-            for(int i=0; i<500; i++) {English_Name[i]=""; Latin_Name[i]="";}
+            for(int i=0; i<800; i++) {English_Name[i]=""; Latin_Name[i]="";}
             int cnt=0;
             while ((s_temp = dataIO.readLine()) != null) {
                 if (s_temp.equals("------------------")) {
@@ -144,7 +144,9 @@ public class MainActivity2Activity extends ActionBarActivity {
 
         if(!findIt) {
             TextView TV21 = (TextView) findViewById(R.id.textView21);
-            TV21.setText("Not Available for Survival Mode");
+            TV21.setText("");
+            TextView TV210 = (TextView) findViewById(R.id.textView210);
+            TV210.setText("Not Available for Survival Mode");
             return;
         }
 
@@ -161,7 +163,7 @@ public class MainActivity2Activity extends ActionBarActivity {
                 else if(cnt==4) {Size=s_temp;}
                 else if(cnt==5) {Diet=s_temp;}
                 else if(cnt<15 && (s_temp.equals("Ocean")||s_temp.equals("Seashore")||s_temp.equals("Wetland")||s_temp.equals("Forest")||s_temp.equals("Jungle")||s_temp.equals("Grassland")||s_temp.equals("Tundra")||s_temp.equals("Mountain")||s_temp.equals("Desert")))
-                {Environ = Environ+s_temp+" ";}
+                {Environ = Environ+"["+s_temp+"] ";}
                 cnt++;
             }
             dataIO.close();
@@ -173,7 +175,12 @@ public class MainActivity2Activity extends ActionBarActivity {
 
         TextView TV21 = (TextView) findViewById(R.id.textView21);
         //TV21.setText("Attack: "+Attack+" Defense: "+Defense+'\n'+"Size: "+Size+ '\n'+"Diet: "+Diet+'\n'+"Living Environment: " + Environ);
-        TV21.setText("Diet: "+Diet+'\n'+"Living Environment: " + Environ);
+        TV21.setText("Diet: "+Diet);
+
+        TextView TV210 = (TextView) findViewById(R.id.textView210);
+        //TV21.setText("Attack: "+Attack+" Defense: "+Defense+'\n'+"Size: "+Size+ '\n'+"Diet: "+Diet+'\n'+"Living Environment: " + Environ);
+        TV210.setText("Live in: " + Environ);
+
 
         return;
     }
@@ -192,7 +199,7 @@ public class MainActivity2Activity extends ActionBarActivity {
     }
 
     public String Latin2English(String s){
-        for(int i=0; i<500; i++){
+        for(int i=0; i<800; i++){
             if(Latin_Name[i].equals(s)){
                 return English_Name[i];
             }
@@ -201,7 +208,7 @@ public class MainActivity2Activity extends ActionBarActivity {
     }
 
     public String English2Latin(String s){
-        for(int i=0; i<500; i++){
+        for(int i=0; i<800; i++){
             if(English_Name[i].equals(s)){
                 return Latin_Name[i];
             }

@@ -1,0 +1,26 @@
+Polyzosteria
+Botany Bay Coackroach
+15
+35
+Medium
+Herbivore
+Forest
+Jungle
+Grassland
+Desert
+Mountain
+Void
+Void
+Void
+Void
+Anti-Poison
+Hole Digger
+No
+No
+No
+Bug
+Insect
+Coackroach
+X
+X
+O

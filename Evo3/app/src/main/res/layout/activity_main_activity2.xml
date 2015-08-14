@@ -354,7 +354,7 @@
                 <LinearLayout android:orientation="horizontal"
                     android:layout_width="fill_parent"
                     android:layout_height="0dip"
-                    android:layout_weight="0.35">
+                    android:layout_weight="0.34">
                     <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
@@ -371,14 +371,29 @@
                 <LinearLayout android:orientation="horizontal"
                     android:layout_width="fill_parent"
                     android:layout_height="0dip"
-                    android:layout_weight="0.65">
+                    android:layout_weight="0.14">
                     <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_gravity="center_vertical"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Attack/Defense Size/Diet LiveEnvironment"
+                    android:text="Diet"
                     android:id="@+id/textView21"
+                        android:layout_marginLeft="2dp"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.52">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_vertical"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="LiveEnvironment"
+                        android:id="@+id/textView210"
                         android:layout_marginLeft="2dp"
                         android:textSize="12dp" />
                 </LinearLayout>

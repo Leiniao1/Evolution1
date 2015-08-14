@@ -1,0 +1,26 @@
+Rhopalus
+Scentless Plant Bug
+20
+32
+Small
+Herbivore
+Grassland
+Forest
+Jungle
+Mountain
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Aerial
+No
+No
+No
+Bug
+Insect
+True Bug
+X
+X
+O

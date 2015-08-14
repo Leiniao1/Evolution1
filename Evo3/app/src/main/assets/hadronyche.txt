@@ -16,12 +16,15 @@ Void
 Anti-Poison
 Hole Digger
 Trap
-Poison Attack
-Poison Defense
-Insect
+Poisonous Attack
+Poisonous Defense
+Bug
 Spider
 X
 X
 X
-Insect
+Fly
+Butterfly
+Termite
+Locust
 O

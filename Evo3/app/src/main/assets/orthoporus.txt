@@ -1,0 +1,26 @@
+Orthoporus
+Desert Millipede
+20
+48
+Medium
+Herbivore
+Grassland
+Desert
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Poisonous Defense
+No
+No
+No
+Bug
+Centipede
+X
+X
+X
+O

@@ -44,8 +44,8 @@ public class Survival extends ActionBarActivity {
     public Bitmap[] bitmapParty = new Bitmap[16];
     public Bitmap[] bitmapSelect = new Bitmap[5];
 
-    public String English_Name[] = new String[500];
-    public String Latin_Name[] = new String[500];
+    public String English_Name[] = new String[800];
+    public String Latin_Name[] = new String[800];
 
     public Specie TeamSpecie[] = new Specie[16];
     public Specie BattleSpecie[] = new Specie[5];
@@ -151,7 +151,7 @@ public class Survival extends ActionBarActivity {
             InputStream in = getResources().openRawResource(R.raw.latinenglish);
             BufferedReader dataIO = new BufferedReader(new InputStreamReader(in));
             String s_temp;
-            for(int i=0; i<500; i++) {English_Name[i]=""; Latin_Name[i]="";}
+            for(int i=0; i<800; i++) {English_Name[i]=""; Latin_Name[i]="";}
             int cnt=0;
             while ((s_temp = dataIO.readLine()) != null) {
                 if (s_temp.equals("------------------")) {
@@ -302,7 +302,7 @@ public class Survival extends ActionBarActivity {
     }
 
     public String Latin2English(String s){
-        for(int i=0; i<500; i++){
+        for(int i=0; i<800; i++){
             if(Latin_Name[i].equals(s)){
                 return English_Name[i];
             }
@@ -311,7 +311,7 @@ public class Survival extends ActionBarActivity {
     }
 
     public String English2Latin(String s){
-        for(int i=0; i<500; i++){
+        for(int i=0; i<800; i++){
             if(English_Name[i].equals(s)){
                 return Latin_Name[i];
             }

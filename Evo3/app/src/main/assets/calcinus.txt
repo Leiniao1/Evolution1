@@ -1,0 +1,27 @@
+Calcinus
+Calcinus
+30
+45
+Small+
+Herbivore
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Shell Collector
+No
+Coral Collector
+No
+Shell
+Crab
+X
+X
+X
+Plankton
+O

@@ -15,10 +15,10 @@ Void
 Void
 Camouflage
 Anti-Poison
-Poison Attack
-Poison Defense
+Poisonous Attack
+Poisonous Defense
 No
-Insect
+Bug
 Spider
 X
 X

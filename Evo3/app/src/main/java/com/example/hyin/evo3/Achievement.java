@@ -159,7 +159,7 @@ public class Achievement extends ActionBarActivity {
         if(achievement_num>=1) {
             ImageView IV1 = (ImageView) findViewById(R.id.imageView27);
             int res = getResources().getIdentifier(icon[i], "drawable", getPackageName());
-            IV1.setImageBitmap(bitmap1 = decodeSampledBitmapFromResource(getResources(), res, IV1.getWidth(), IV1.getHeight(), 1));
+            IV1.setImageBitmap(bitmap1 = decodeSampledBitmapFromResource(getResources(), res, IV1.getWidth(), IV1.getHeight(), 2));
             TextView TV1 = (TextView) findViewById(R.id.textView27);
             TV1.setText(title[i]);
             TextView TV2 = (TextView) findViewById(R.id.textView270);
@@ -172,7 +172,7 @@ public class Achievement extends ActionBarActivity {
         if(achievement_num>=2) {
             ImageView IV1 = (ImageView) findViewById(R.id.imageView28);
             int res = getResources().getIdentifier(icon[i], "drawable", getPackageName());
-            IV1.setImageBitmap(bitmap2 = decodeSampledBitmapFromResource(getResources(), res, IV1.getWidth(), IV1.getHeight(), 1));
+            IV1.setImageBitmap(bitmap2 = decodeSampledBitmapFromResource(getResources(), res, IV1.getWidth(), IV1.getHeight(), 2));
             TextView TV1 = (TextView) findViewById(R.id.textView28);
             TV1.setText(title[i]);
             TextView TV2 = (TextView) findViewById(R.id.textView280);
@@ -185,7 +185,7 @@ public class Achievement extends ActionBarActivity {
         if(achievement_num>=3) {
             ImageView IV1 = (ImageView) findViewById(R.id.imageView29);
             int res = getResources().getIdentifier(icon[i], "drawable", getPackageName());
-            IV1.setImageBitmap(bitmap3 = decodeSampledBitmapFromResource(getResources(), res, IV1.getWidth(), IV1.getHeight(), 1));
+            IV1.setImageBitmap(bitmap3 = decodeSampledBitmapFromResource(getResources(), res, IV1.getWidth(), IV1.getHeight(), 2));
             TextView TV1 = (TextView) findViewById(R.id.textView29);
             TV1.setText(title[i]);
             TextView TV2 = (TextView) findViewById(R.id.textView290);
@@ -198,7 +198,7 @@ public class Achievement extends ActionBarActivity {
         if(achievement_num>=4) {
             ImageView IV1 = (ImageView) findViewById(R.id.imageView30);
             int res = getResources().getIdentifier(icon[i], "drawable", getPackageName());
-            IV1.setImageBitmap(bitmap4 = decodeSampledBitmapFromResource(getResources(), res, IV1.getWidth(), IV1.getHeight(), 1));
+            IV1.setImageBitmap(bitmap4 = decodeSampledBitmapFromResource(getResources(), res, IV1.getWidth(), IV1.getHeight(), 2));
             TextView TV1 = (TextView) findViewById(R.id.textView30);
             TV1.setText(title[i]);
             TextView TV2 = (TextView) findViewById(R.id.textView300);
@@ -211,7 +211,7 @@ public class Achievement extends ActionBarActivity {
         if(achievement_num>=5) {
             ImageView IV1 = (ImageView) findViewById(R.id.imageView31);
             int res = getResources().getIdentifier(icon[i], "drawable", getPackageName());
-            IV1.setImageBitmap(bitmap5 = decodeSampledBitmapFromResource(getResources(), res, IV1.getWidth(), IV1.getHeight(), 1));
+            IV1.setImageBitmap(bitmap5 = decodeSampledBitmapFromResource(getResources(), res, IV1.getWidth(), IV1.getHeight(), 2));
             TextView TV1 = (TextView) findViewById(R.id.textView31);
             TV1.setText(title[i]);
             TextView TV2 = (TextView) findViewById(R.id.textView310);

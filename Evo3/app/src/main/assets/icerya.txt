@@ -1,0 +1,26 @@
+Icerya
+Cottony Cushion Scale
+20
+40
+XSmall
+Herbivore
+Forest
+Jungle
+Grassland
+Desert
+Void
+Void
+Void
+Void
+Void
+No
+No
+No
+No
+No
+Bug
+Insect
+Mite
+X
+X
+O

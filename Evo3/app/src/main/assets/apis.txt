@@ -1,0 +1,26 @@
+Apis
+Honey Bee
+36
+45
+Small
+Herbivore
+Grassland
+Mountain
+Forest
+Tundra
+Desert
+Void
+Void
+Void
+Void
+Poisonous Defense
+Aerial
+Social
+No
+No
+Bug
+Insect
+Wasp
+X
+X
+O

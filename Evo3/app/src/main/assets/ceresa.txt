@@ -1,0 +1,26 @@
+Ceresa
+Treehopper
+16
+18
+Small
+Herbivore
+Forest
+Jungle
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Aerial
+Spiky Body
+Camouflage
+No
+No
+Bug
+Insect
+Mite
+X
+X
+O

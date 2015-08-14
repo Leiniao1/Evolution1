@@ -1,0 +1,26 @@
+Cetoinedoree
+Flower Chafer
+21
+46
+Small+
+Herbivore
+Grassland
+Forest
+Desert
+Jungle
+Mountain
+Void
+Void
+Void
+Void
+Anti-Poison
+No
+No
+No
+No
+Bug
+Insect
+Beetle
+X
+X
+O

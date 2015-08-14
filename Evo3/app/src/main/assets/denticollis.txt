@@ -1,0 +1,26 @@
+Denticollis
+Click Beetle
+22
+45
+Small
+Herbivore
+Grassland
+Forest
+Jungle
+Mountain
+Desert
+Void
+Void
+Void
+Void
+Anti-Poison
+No
+No
+No
+No
+Bug
+Insect
+Beetle
+X
+X
+O

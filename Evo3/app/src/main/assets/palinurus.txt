@@ -1,0 +1,29 @@
+Palinurus
+Spiny Lobster
+52
+40
+Medium+
+Carnivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Spiky Body
+No
+No
+No
+Shell
+Crab
+X
+X
+X
+Worm
+Fish
+Shrimp
+O

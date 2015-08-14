@@ -1,0 +1,27 @@
+Vespula
+Yellowjacket
+60
+32
+Small+
+Carnivore
+Jungle
+Forest
+Grassland
+Desert
+Mountain
+Void
+Void
+Void
+Void
+Poisonous Attack
+Poisonous Defense
+Anti-Poison
+Aerial
+Void
+Bug
+Insect
+Ant
+X
+X
+Worm
+O

@@ -1,0 +1,26 @@
+Tibicen
+Annual Cicada
+25
+28
+Medium
+Herbivore
+Forest
+Jungle
+Mountain
+Void
+Void
+Void
+Void
+Void
+Void
+Aerial
+Hole Digger
+No
+No
+No
+Bug
+Insect
+Fly
+X
+X
+O

@@ -1,0 +1,27 @@
+Hemimysis
+Opossum Shrimp
+15
+26
+Small
+Herbivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+No
+No
+No
+No
+Shell
+Shrimp
+X
+X
+X
+Plankton
+O

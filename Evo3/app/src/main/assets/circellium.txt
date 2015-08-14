@@ -1,0 +1,26 @@
+Circellium
+Flightless Dung Beetle
+36
+52
+Small+
+Herbivore
+Grassland
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Hole Digger
+Stink
+Aerial
+No
+Bug
+Insect
+Beetle
+X
+X
+O

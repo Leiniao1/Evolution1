@@ -39,8 +39,8 @@ import java.util.Random;
 
 public class Battle extends ActionBarActivity {
 
-    public String English_Name[] = new String[500];
-    public String Latin_Name[] = new String[500];
+    public String English_Name[] = new String[800];
+    public String Latin_Name[] = new String[800];
     public String Ability_Name[] = new String[200];
     public String Ability_Des[] = new String[200];
     public String Result = "Unknown"; // Can be "Win", "Lose", "Tie" Also
@@ -132,7 +132,7 @@ public class Battle extends ActionBarActivity {
             InputStream in = getResources().openRawResource(R.raw.latinenglish);
             BufferedReader dataIO = new BufferedReader(new InputStreamReader(in));
             String s_temp;
-            for(int i=0; i<500; i++) {English_Name[i]=""; Latin_Name[i]="";}
+            for(int i=0; i<800; i++) {English_Name[i]=""; Latin_Name[i]="";}
             int cnt=0;
             while ((s_temp = dataIO.readLine()) != null) {
                 if (s_temp.equals("------------------")) {
@@ -174,7 +174,7 @@ public class Battle extends ActionBarActivity {
     }
 
     public String Latin2English(String s){
-        for(int i=0; i<500; i++){
+        for(int i=0; i<800; i++){
             if(Latin_Name[i].equals(s)){
                 return English_Name[i];
             }
@@ -183,7 +183,7 @@ public class Battle extends ActionBarActivity {
     }
 
     public String English2Latin(String s){
-        for(int i=0; i<500; i++){
+        for(int i=0; i<800; i++){
             if(English_Name[i].equals(s)){
                 return Latin_Name[i];
             }
@@ -254,24 +254,38 @@ public class Battle extends ActionBarActivity {
         }
 
         HashSet<String> ShellAbilities = new HashSet<String>();
+        HashSet<String> CoralAbilities = new HashSet<String>();
         for(int i=0; i<5; i++){
             for(int j=0; j<5; j++){
                 if(MySpecie[i].Label[j].equals("Shell")){
                     for(int k=0; k<5; k++){
-                        if(MySpecie[i].Ability[k].equals("Shell Collector")) continue;
+                        if(MySpecie[i].Ability[k].equals("Shell Collector")||MySpecie[i].Ability[k].equals("Coral Collector")) continue;
                         ShellAbilities.add(MySpecie[i].Ability[k]);
                     }
                 }
                 if(AISpecie[i].Label[j].equals("Shell")){
                     for(int k=0; k<5; k++){
-                        if(AISpecie[i].Ability[k].equals("Shell Collector")) continue;
+                        if(AISpecie[i].Ability[k].equals("Shell Collector")||AISpecie[i].Ability[k].equals("Coral Collector")) continue;
                         ShellAbilities.add(AISpecie[i].Ability[k]);
+                    }
+                }
+                if(MySpecie[i].Label[j].equals("Coral")){
+                    for(int k=0; k<5; k++){
+                        if(MySpecie[i].Ability[k].equals("Coral Collector")||MySpecie[i].Ability[k].equals("Shell Collector")) continue;
+                        CoralAbilities.add(MySpecie[i].Ability[k]);
+                    }
+                }
+                if(AISpecie[i].Label[j].equals("Coral")){
+                    for(int k=0; k<5; k++){
+                        if(AISpecie[i].Ability[k].equals("Coral Collector")||AISpecie[i].Ability[k].equals("Shell Collector")) continue;
+                        CoralAbilities.add(AISpecie[i].Ability[k]);
                     }
                 }
             }
         }
 
         String Shells[] = ShellAbilities.toArray(new String[ShellAbilities.size()]);
+        String Corals[] = CoralAbilities.toArray(new String[CoralAbilities.size()]);
 
         for(int i=0; i<5; i++){
             for(int j=0; j<5; j++){
@@ -280,9 +294,19 @@ public class Battle extends ActionBarActivity {
                         MySpecie[i].Ability[k] = Shells[k];
                     }
                 }
+                if(MySpecie[i].Ability[j].equals("Coral Collector")){
+                    for(int k=j; k<5 && k<Corals.length; k++){
+                        MySpecie[i].Ability[k] = Corals[k];
+                    }
+                }
                 if(AISpecie[i].Ability[j].equals("Shell Collector")){
                     for(int k=j; k<5 && k<Shells.length; k++){
                         AISpecie[i].Ability[k] = Shells[k];
+                    }
+                }
+                if(AISpecie[i].Ability[j].equals("Coral Collector")){
+                    for(int k=j; k<5 && k<Corals.length; k++){
+                        AISpecie[i].Ability[k] = Corals[k];
                     }
                 }
             }
@@ -305,6 +329,17 @@ public class Battle extends ActionBarActivity {
                         case 2: MySpecie[i].MimicTarget = "Oecophylla";break;
                         case 3: MySpecie[i].MimicTarget = "Eciton";break;
                         case 4: MySpecie[i].MimicTarget = "Solenopsis";break;
+                    }
+                }
+                else if(MySpecie[i].Ability[j].equals("Bee Mimicry")){
+                    Random rd = new Random();
+                    int next = rd.nextInt()%5;
+                    switch(next) {
+                        case 0: MySpecie[i].MimicTarget = "Apis";break;
+                        case 1: MySpecie[i].MimicTarget = "Bumbus";break;
+                        case 2: MySpecie[i].MimicTarget = "Andrena";break;
+                        case 3: MySpecie[i].MimicTarget = "Euglossa";break;
+                        case 4: MySpecie[i].MimicTarget = "Amegilla";break;
                     }
                 }
                 else if(MySpecie[i].Ability[j].equals("Vary Mimicry")){
@@ -337,6 +372,17 @@ public class Battle extends ActionBarActivity {
                         case 2: AISpecie[i].MimicTarget = "Oecophylla";break;
                         case 3: AISpecie[i].MimicTarget = "Eciton";break;
                         case 4: AISpecie[i].MimicTarget = "Solenopsis";break;
+                    }
+                }
+                else if(AISpecie[i].Ability[j].equals("Bee Mimicry")){
+                    Random rd = new Random();
+                    int next = rd.nextInt()%5;
+                    switch(next) {
+                        case 0: AISpecie[i].MimicTarget = "Apis";break;
+                        case 1: AISpecie[i].MimicTarget = "Bumbus";break;
+                        case 2: AISpecie[i].MimicTarget = "Andrena";break;
+                        case 3: AISpecie[i].MimicTarget = "Euglossa";break;
+                        case 4: AISpecie[i].MimicTarget = "Amegilla";break;
                     }
                 }
                 else if(AISpecie[i].Ability[j].equals("Vary Mimicry")){
@@ -392,6 +438,10 @@ public class Battle extends ActionBarActivity {
         if(AchievementRecord[13]==false && currLevel>=10){
             AchievementRecord[13] = true;
             AchievementAlert(13);
+        }
+        if(AchievementRecord[18]==false && currLevel>=25){
+            AchievementRecord[18] = true;
+            AchievementAlert(18);
         }
         WriteAchievementRecord();
         return;
@@ -692,12 +742,12 @@ public class Battle extends ActionBarActivity {
                 TV.getLayoutParams().width = 0;
                 continue;
             }
-            else {
+            else if(turn==0){
                 MyHP[i] = 100;
             }
             String ViewName = "imageViewMy" + (i+1);
             ImageView IV = (ImageView) findViewById(getResources().getIdentifier(ViewName,"id",getPackageName()));
-            setImage(MySpecie[i].latin.toLowerCase(),4,IV,MyBitmap[i]);
+            setImage(MySpecie[i].latin.toLowerCase(), 4, IV, MyBitmap[i]);
             if(MyStatus[i].hide || MySpecie[i].latin.equals("") || MySpecie[i].latin.equals("Nothing") || MyHP[i]<=0) {TV.setVisibility(View.INVISIBLE);IV.setVisibility(View.INVISIBLE);}
             else {TV.setVisibility(View.VISIBLE);IV.setVisibility(View.VISIBLE);}
             if(MySpecie[i].MimicTarget.equals("")|| MySpecie[i].MimicTarget.equals("Nothing")) {}
@@ -712,7 +762,7 @@ public class Battle extends ActionBarActivity {
                 TV.getLayoutParams().width = 0;
                 continue;
             }
-            else {
+            else if(turn==0){
                 AIHP[i] = 100;
             }
             String ViewName = "imageViewAI" + (i+1);
@@ -751,20 +801,12 @@ public class Battle extends ActionBarActivity {
         Name.setText(Latin2English(MySpecie[currAnimal].latin));
 
         TextView Data = (TextView) findViewById(R.id.textViewData);
-        String CurrData = "Attack: "+MySpecie[currAnimal].Attack+ "   Defense: "+MySpecie[currAnimal].Defence + "   Size: "+MySpecie[currAnimal].Size+"\n" + MySpecie[currAnimal].Diet + "   Preys:  ";
-        int cnt = 0;
-        for(int i=0; i<9; i++) {
-            String food = MySpecie[currAnimal].Food[i];
-            if(food.equals("")||food.equals("O")||food.equals("Nothing")) break;
-            CurrData = CurrData+food+"  ";
-            cnt++;
-        }
-        if(cnt==0) CurrData = CurrData+"Nothing";
+        String CurrData = "Attack: "+MySpecie[currAnimal].Attack+ "   Defense: "+MySpecie[currAnimal].Defence + "   Size: "+MySpecie[currAnimal].Size+"\n";
         Data.setText(CurrData);
 
         TextView Ability = (TextView) findViewById(R.id.textViewAbility);
         String CurrAbility = "Ability:   ";
-        cnt = 0;
+        int cnt = 0;
         for(int i=0; i<5; i++) {
             String ability = MySpecie[currAnimal].Ability[i];
             if(ability.equals("")||ability.equals("No")||ability.equals("Nothing")) break;
@@ -775,7 +817,7 @@ public class Battle extends ActionBarActivity {
         Ability.setText(CurrAbility);
 
         TextView Label = (TextView) findViewById(R.id.textViewLabel);
-        String CurrLabel = "Foods:   ";
+        String CurrLabel = MySpecie[currAnimal].Diet + ", Foods: ";
         cnt = 0;
         for(int i=0; i<9; i++) {
             String food = MySpecie[currAnimal].Food[i];
@@ -1178,6 +1220,8 @@ public class Battle extends ActionBarActivity {
                 // Damage Calculation
                 MyDamage(from, to);
 
+                processDeath();
+
                 AIDecision();
             }
 
@@ -1406,11 +1450,13 @@ public class Battle extends ActionBarActivity {
             if(MySpecie[i].Diet.equals("Herbivore")) {MyStatus[i].HP_up = 10;}
             if(AISpecie[i].Diet.equals("Herbivore")) {AIStatus[i].HP_up = 10;}
         }
-        int MyCoralCoe = 0, AICoralCoe = 0;
+        int MyCoralCoe = 0, AICoralCoe = 0, MyTermiteCoe = 0, AITermiteCoe = 0;
         for(int i=0; i<5; i++){
             for(int j=0; j<5; j++){
                 if(MySpecie[i].Ability[j].equals("Coral Reef")) {MyCoralCoe = 10;}
                 if(AISpecie[i].Ability[j].equals("Coral Reef")) {AICoralCoe = 10;}
+                if(MySpecie[i].Ability[j].equals("Termite Mound")) {MyTermiteCoe = 10;}
+                if(AISpecie[i].Ability[j].equals("Termite Mound")) {AITermiteCoe = 10;}
                 if(MySpecie[i].Ability[j].equals("Chemosynthesis")) {MyStatus[i].HP_up=20;}
                 if(AISpecie[i].Ability[j].equals("Chemosynthesis")) {AIStatus[i].HP_up=20;}
             }
@@ -1418,6 +1464,12 @@ public class Battle extends ActionBarActivity {
         for(int i=0; i<5; i++){
             MyStatus[i].HP_up += MyCoralCoe;
             AIStatus[i].HP_up += AICoralCoe;
+            if(Size2Num(MySpecie[i].Size)<=Size2Num("Small")){
+                MyStatus[i].HP_up += MyTermiteCoe;
+            }
+            if(Size2Num(AISpecie[i].Size)<=Size2Num("Small")){
+                AIStatus[i].HP_up += AITermiteCoe;
+            }
         }
         for(int i=0; i<5; i++) {
             if (MyStatus[i].Toxic) {
@@ -1462,18 +1514,17 @@ public class Battle extends ActionBarActivity {
             if(MySpecie[i].english.equals("") || MySpecie[i].english.equals("Nothing")){ continue; }
             if(MyStatus[i].HP_up>0 && MyHP[i]<100){
                 BattleRecord[0] = BattleRecord[0] + "Turn "+turn + ": Our " + MySpecie[i].english + " recovers a little!"+ '\n';
+                MyHP[i] += MyStatus[i].HP_up;
+                if(MyHP[i]>100) MyHP[i] = 100;
             }
-            MyHP[i] += MyStatus[i].HP_up;
-            if(MyHP[i]>100) MyHP[i] = 100;
-
         }
         for(int i=0; i<5; i++){
             if(AISpecie[i].english.equals("") || AISpecie[i].english.equals("Nothing")){ continue; }
             if(AIStatus[i].HP_up>0 && AIHP[i]<100) {
                 BattleRecord[0] = BattleRecord[0] + "Turn " + turn + ": Enemy's " + AISpecie[i].english + " recovers a little!" + '\n';
+                AIHP[i] += AIStatus[i].HP_up;
+                if(AIHP[i]>100) AIHP[i] = 100;
             }
-            AIHP[i] += AIStatus[i].HP_up;
-            if(AIHP[i]>100) AIHP[i] = 100;
         }
 
         for(int i=0; i<5; i++){
@@ -1679,10 +1730,11 @@ public class Battle extends ActionBarActivity {
 
         int realAIAttack = AISpecie[from].Attack, realAIDefense = AISpecie[from].Defence;
         int realMyAttack = MySpecie[to].Attack, realMyDefense = MySpecie[to].Defence;
-        int SpongeCoe = 1, SocialCoe=1,CryptobiosisCoe=1, ShellCoe=1;
+        int SpongeCoe = 1, SocialCoe=1,CryptobiosisCoe=1, ShellCoe=1, TermiteCoe = 1;
         for(int i=0; i<5; i++){
             for(int j=0; j<5; j++){
                 if(MySpecie[i].Ability[j].equals("Sponge Reef")) {SpongeCoe=2;break;}
+                if(MySpecie[i].Ability[j].equals("Termite Mound") && Size2Num(MySpecie[to].Size)<=Size2Num("Small")) {TermiteCoe=2;break;}
                 if(MySpecie[i].Ability[j].equals("Shell Colony") && (AISpecie[from].Size.equals("Huge")||AISpecie[from].Size.equals("XLarge")) ) {ShellCoe=2;break;}
             }
             if(MyHP[to]<100 && MySpecie[to].Ability.equals("Cryptobiosis")) CryptobiosisCoe=2;
@@ -1694,8 +1746,8 @@ public class Battle extends ActionBarActivity {
                 if(MySpecie[i].Ability[j].equals("Social")) {SocialCoe=2;break;}
             }
         }
-        realMyAttack *= SocialCoe; realMyDefense *=SocialCoe*SpongeCoe*CryptobiosisCoe*ShellCoe;
-        SpongeCoe = 1; SocialCoe=1;CryptobiosisCoe=1;;
+        realMyAttack *= SocialCoe; realMyDefense *=SocialCoe*SpongeCoe*CryptobiosisCoe*ShellCoe*TermiteCoe;
+        SpongeCoe = 1; SocialCoe=1;CryptobiosisCoe=1; TermiteCoe = 1;
         for(int i=0; i<5; i++){
             for(int j=0; j<5; j++){
                 if(AISpecie[i].Ability[j].equals("Sponge Reef")) {SpongeCoe=2;break;}
@@ -1715,28 +1767,28 @@ public class Battle extends ActionBarActivity {
             if(MySpecie[to].Ability[i].equals("Spiky Body")) {AIHP[from]-=25;}
         }
         for(int i=0; i<5; i++){
-            if(AISpecie[from].Label[i].equals("Toxic Shock")) {
+            if(AISpecie[from].Ability[i].equals("Toxic Shock")) {
                 boolean anti=false;
                 for(int j=0; j<5; j++){
-                    if(MySpecie[to].Label[j].equals("Anti-Poison")) {anti=true;}
+                    if(MySpecie[to].Ability[j].equals("Anti-Poison")) {anti=true;}
                 }
                 if(anti==false) {MyStatus[to].Toxic=true; BattleRecord[0] = BattleRecord[0] + "Turn "+turn+ ": Our "+ MySpecie[to].english + " touches toxic!" + '\n'; }
             }
         }
         for(int i=0; i<5; i++){
-            if(MySpecie[to].Label[i].equals("Toxic Body")) {
+            if(MySpecie[to].Ability[i].equals("Toxic Body")) {
                 boolean anti=false;
                 for(int j=0; j<5; j++){
-                    if(AISpecie[from].Label[j].equals("Anti-Poison")) {anti=true;}
+                    if(AISpecie[from].Ability[j].equals("Anti-Poison")) {anti=true;}
                 }
                 if(anti==false) {AIStatus[from].Toxic=true; BattleRecord[0] = BattleRecord[0] + "Turn "+turn+ ": Enemy's "+ AISpecie[from].english + " touches toxic!" + '\n';}
             }
         }
         for(int i=0; i<5; i++){
-            if(AISpecie[from].Label[i].equals("Poisonous Attack")) {
+            if(AISpecie[from].Ability[i].equals("Poisonous Attack")) {
                 boolean anti=false;
                 for(int j=0; j<5; j++){
-                    if(MySpecie[to].Label[j].equals("Anti-Poison")) {anti=true;}
+                    if(MySpecie[to].Ability[j].equals("Anti-Poison")) {anti=true;}
                 }
                 if(anti==false) {
                     MyStatus[to].poisonous=true;
@@ -1753,10 +1805,10 @@ public class Battle extends ActionBarActivity {
             }
         }
         for(int i=0; i<5; i++){
-            if(MySpecie[to].Label[i].equals("Poisonous Defense")) {
+            if(MySpecie[to].Ability[i].equals("Poisonous Defense")) {
                 boolean anti=false;
                 for(int j=0; j<5; j++){
-                    if(AISpecie[from].Label[j].equals("Anti-Poison")) {anti=true;}
+                    if(AISpecie[from].Ability[j].equals("Anti-Poison")) {anti=true;}
                 }
                 if(anti==false) {
                     AIStatus[from].poisonous=true;
@@ -1785,7 +1837,11 @@ public class Battle extends ActionBarActivity {
             return 0;
         }
         else if(AIEatable(from, to)) {
-            AIHP[from]+=MyHP[to]; MyHP[to] = 0;
+            boolean stink = false;
+            for(int i=0; i<5; i++) {if(MySpecie[to].Ability[i].equals("Stink")) stink = true;}
+            if(!stink) AIHP[from]+=MyHP[to];
+            else AIHP[from]-=10;
+            MyHP[to] = 0;
             BattleRecord[0] = BattleRecord[0] + "Turn "+turn+ ": Our "+ MySpecie[to].english + " get eaten by enemy's " + AISpecie[from].english + "!" + '\n';
             return 100;
         }
@@ -1855,7 +1911,7 @@ public class Battle extends ActionBarActivity {
 
         int realMyAttack = MySpecie[from].Attack, realMyDefense = MySpecie[from].Defence;
         int realAIAttack = AISpecie[to].Attack, realAIDefense = AISpecie[to].Defence;
-        int SpongeCoe = 1, SocialCoe=1, CryptobiosisCoe = 1, ShellCoe=1;
+        int SpongeCoe = 1, SocialCoe=1, CryptobiosisCoe = 1, ShellCoe=1, TermiteCoe = 1;
         for(int i=0; i<5; i++){
             for(int j=0; j<5; j++){
                 if(MySpecie[i].Ability[j].equals("Sponge Reef")) {SpongeCoe=2;break;}
@@ -1870,10 +1926,11 @@ public class Battle extends ActionBarActivity {
             }
         }
         realMyAttack *= SocialCoe; realMyDefense *=SocialCoe*SpongeCoe*CryptobiosisCoe;
-        SpongeCoe = 1; SocialCoe=1; CryptobiosisCoe = 1;
+        SpongeCoe = 1; SocialCoe=1; CryptobiosisCoe = 1; TermiteCoe = 1;
         for(int i=0; i<5; i++){
             for(int j=0; j<5; j++){
                 if(AISpecie[i].Ability[j].equals("Sponge Reef")) {SpongeCoe=2;break;}
+                if(AISpecie[i].Ability[j].equals("Termite Mound") && Size2Num(AISpecie[i].Size)<=Size2Num("Small")) {TermiteCoe=2;break;}
                 if(AISpecie[i].Ability[j].equals("Shell Colony") && (MySpecie[from].Size.equals("Huge")||MySpecie[from].Size.equals("XLarge")) ) {ShellCoe=2;break;}
             }
             if(AIHP[to]<100 && AISpecie[to].Ability[i].equals("Cryptobiosis")) {CryptobiosisCoe=2; break;}
@@ -1885,34 +1942,34 @@ public class Battle extends ActionBarActivity {
                 if(AISpecie[i].Ability[j].equals("Social")) {SocialCoe=2;break;}
             }
         }
-        realAIAttack *= SocialCoe; realAIDefense *=SocialCoe*SpongeCoe*CryptobiosisCoe*ShellCoe;
+        realAIAttack *= SocialCoe; realAIDefense *=SocialCoe*SpongeCoe*CryptobiosisCoe*ShellCoe*TermiteCoe;
 
         for(int i=0; i<5; i++){
             if(AISpecie[to].Ability[i].equals("Spiky Body")) {MyHP[from]-=25;}
         }
         for(int i=0; i<5; i++){
-            if(MySpecie[from].Label[i].equals("Toxic Shock")) {
+            if(MySpecie[from].Ability[i].equals("Toxic Shock")) {
                 boolean anti=false;
                 for(int j=0; j<5; j++){
-                    if(AISpecie[to].Label[j].equals("Anti-Poison")) {anti=true;}
+                    if(AISpecie[to].Ability[j].equals("Anti-Poison")) {anti=true;}
                 }
                 if(anti==false) {AIStatus[to].Toxic=true; BattleRecord[0] = BattleRecord[0] + "Turn "+turn+ ": Enemy's "+ AISpecie[to].english + " touches toxic!" + '\n';}
             }
         }
         for(int i=0; i<5; i++){
-            if(AISpecie[to].Label[i].equals("Toxic Body")) {
+            if(AISpecie[to].Ability[i].equals("Toxic Body")) {
                 boolean anti=false;
                 for(int j=0; j<5; j++){
-                    if(MySpecie[from].Label[j].equals("Anti-Poison")) {anti=true;}
+                    if(MySpecie[from].Ability[j].equals("Anti-Poison")) {anti=true;}
                 }
                 if(anti==false) {MyStatus[from].Toxic=true;BattleRecord[0] = BattleRecord[0] + "Turn "+turn+ ": Our "+ MySpecie[from].english + " touches toxic!" + '\n';}
             }
         }
         for(int i=0; i<5; i++){
-            if(MySpecie[from].Label[i].equals("Poisonous Attack")) {
+            if(MySpecie[from].Ability[i].equals("Poisonous Attack")) {
                 boolean anti=false;
                 for(int j=0; j<5; j++){
-                    if(AISpecie[to].Label[j].equals("Anti-Poison")) {anti=true;}
+                    if(AISpecie[to].Ability[j].equals("Anti-Poison")) {anti=true;}
                 }
                 if(anti==false) {
                     AIStatus[to].poisonous=true;
@@ -1929,10 +1986,10 @@ public class Battle extends ActionBarActivity {
             }
         }
         for(int i=0; i<5; i++){
-            if(AISpecie[to].Label[i].equals("Poisonous Defense")) {
+            if(AISpecie[to].Ability[i].equals("Poisonous Defense")) {
                 boolean anti=false;
                 for(int j=0; j<5; j++){
-                    if(MySpecie[from].Label[j].equals("Anti-Poison")) {anti=true;}
+                    if(MySpecie[from].Ability[j].equals("Anti-Poison")) {anti=true;}
                 }
                 if(anti==false) {
                     MyStatus[from].poisonous=true;
@@ -1960,7 +2017,11 @@ public class Battle extends ActionBarActivity {
             BattleRecord[0] = BattleRecord[0] + "Turn "+turn+ ": Enemy's "+ AISpecie[to].english + " get parasitic by our " + MySpecie[from].english + '\n';
             return 0;
         } else if (MyEatable(from, to)) {
-            MyHP[from]+=AIHP[to]; AIHP[to] = 0;
+            boolean stink = false;
+            for(int i=0; i<5; i++) {if(AISpecie[to].Ability[i].equals("Stink")) stink = true;}
+            if(!stink) MyHP[from]+=AIHP[to];
+            else MyHP[from]-=10;
+            AIHP[to] = 0;
             BattleRecord[0] = BattleRecord[0] + "Turn "+turn+ ": Enemy's "+ AISpecie[to].english + " get eaten by our " + MySpecie[from].english + '\n';
             return 100;
         }

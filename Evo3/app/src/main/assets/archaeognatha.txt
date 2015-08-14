@@ -1,0 +1,26 @@
+Archaeognatha
+Rock Bristletail
+14
+16
+Small
+Herbivore
+Grassland
+Jungle
+Forest
+Mountain
+Tundra
+Desert
+Void
+Void
+Void
+High Jumping
+No
+No
+No
+No
+Bug
+Insect
+X
+X
+X
+O

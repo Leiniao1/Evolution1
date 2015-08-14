@@ -1,0 +1,27 @@
+Cratomelus
+Chilean King Cricket
+18
+15
+Medium
+Herbivore
+Forest
+Jungle
+Grassland
+Desert
+Void
+Void
+Void
+Void
+Void
+High Jumping
+No
+No
+No
+No
+Bug
+Insect
+Locust
+X
+X
+Mite
+O

@@ -2366,6 +2366,11 @@ Nothing
 Dromia Evo
 Hepatus
 Hemigrapsus
+Paralithodes
+-----------------
+Paralithodes Evo
+Nothing
+Nothing
 Nothing
 -----------------
 Hepatus Evo
@@ -2379,6 +2384,11 @@ Goneplax
 Xantho
 -----------------
 Gecarcinus Evo
+Eriocheir
+Nothing
+Nothing
+-----------------
+Eriocheir Evo
 Nothing
 Nothing
 Nothing
@@ -2659,7 +2669,7 @@ Nothing
 -----------------
 Leptynia Evo
 Ctenomorpha
-Nothing
+Phobaeticus
 Nothing
 -----------------
 Clonopsis Evo
@@ -2678,6 +2688,11 @@ Nothing
 Nothing
 -----------------
 Pseudophasma Evo
+Nothing
+Nothing
+Nothing
+-----------------
+Phobaeticus Evo
 Nothing
 Nothing
 Nothing

@@ -1,0 +1,26 @@
+Schistocerca
+American Bird Grasshopper
+20
+24
+Small+
+Herbivore
+Forest
+Jungle
+Grassland
+Desert
+Void
+Void
+Void
+Void
+Void
+High Jumping
+Camouflage
+Aerial
+No
+No
+Bug
+Insect
+Locust
+X
+X
+O

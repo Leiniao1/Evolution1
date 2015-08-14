@@ -18,11 +18,10 @@ Trap
 No
 No
 No
-Insect
+Bug
 Spider
 X
 X
 X
-Butterfly
-Fly
+Insect
 O

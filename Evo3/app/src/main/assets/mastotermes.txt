@@ -1,0 +1,26 @@
+Mastotermes
+Giant Northern Termite
+15
+16
+Small
+Herbivore
+Forest
+Jungle
+Grassland
+Desert
+Void
+Void
+Void
+Void
+Void
+Social
+Termite Mound
+No
+No
+No
+Bug
+Insect
+Termite
+X
+X
+O

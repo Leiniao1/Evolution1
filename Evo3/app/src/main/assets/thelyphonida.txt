@@ -1,0 +1,28 @@
+Thelyphonida
+Whip Scorpion
+50
+34
+Small+
+Carnivore
+Grassland
+Forest
+Jungle
+Desert
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Hole Digger
+No
+No
+No
+Bug
+Spider
+X
+X
+X
+Insect
+Centipede
+O

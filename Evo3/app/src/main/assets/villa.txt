@@ -1,0 +1,26 @@
+Villa
+Bee Fly
+18
+24
+Small
+Herbivore
+Forest
+Jungle
+Mountain
+Wetland
+Grassland
+Void
+Void
+Void
+Void
+Aerial
+Bee Mimicry
+No
+No
+No
+Bug
+Insect
+Fly
+X
+X
+O

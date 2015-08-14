@@ -1,0 +1,27 @@
+Euphausia
+Antarctic Krill
+12
+25
+Small+
+Herbivore
+Ocean
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Illuminator
+No
+No
+No
+Shell
+Shrimp
+X
+X
+X
+Plankton
+O

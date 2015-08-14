@@ -15,14 +15,16 @@ Void
 Void
 Anti-Poison
 Hole Digger
-Poison Attack
-Poison Defense
+Poisonous Attack
+Poisonous Defense
 No
-Insect
+Bug
 Spider
 X
 X
 X
-Insect
+Butterfly
+Locust
+Mantis
 Bird
 O

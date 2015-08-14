@@ -1,0 +1,26 @@
+Elasmucha
+Shield Bug
+20
+31
+Small+
+Herbivore
+Grassland
+Forest
+Jungle
+Mountain
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Stink
+Aerial
+No
+No
+Bug
+Insect
+True Bug
+X
+X
+O

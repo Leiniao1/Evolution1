@@ -1,0 +1,26 @@
+Andrena
+Minning Bee
+30
+28
+Small
+Herbivore
+Grassland
+Desert
+Mountain
+Void
+Void
+Void
+Void
+Void
+Void
+Hole Digger
+Poisonous Defense
+Aerial
+Social
+No
+Bug
+Insect
+Wasp
+X
+X
+O

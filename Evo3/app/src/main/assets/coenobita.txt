@@ -1,0 +1,26 @@
+Coenobita
+Coenobita
+36
+50
+Medium
+Herbivore
+Seashore
+Jungle
+Wetland
+Forest
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Shell Collector
+No
+Coral Collector
+No
+Shell
+Crab
+X
+X
+X
+O

@@ -1,0 +1,26 @@
+Hodotermes
+Harvester Termite
+14
+18
+Small
+Herbivore
+Forest
+Jungle
+Grassland
+Mountain
+Void
+Void
+Void
+Void
+Void
+Social
+Hole Digger
+No
+No
+No
+Bug
+Insect
+Termite
+X
+X
+O

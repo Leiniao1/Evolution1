@@ -1,0 +1,26 @@
+Acarus
+Grain Mite
+12
+15
+Micro
+Herbivore
+Grassland
+Jungle
+Forest
+Mountain
+Void
+Void
+Void
+Void
+Void
+No
+No
+No
+No
+No
+Mite
+Bug
+X
+X
+X
+O

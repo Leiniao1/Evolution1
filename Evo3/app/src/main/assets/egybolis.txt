@@ -1,0 +1,26 @@
+Egybolis
+Owlet Moth
+13
+22
+Medium+
+Herbivore
+Forest
+Mountain
+Jungle
+Void
+Void
+Void
+Void
+Void
+Void
+Aerial
+Owl Mimicry
+No
+No
+No
+Bug
+Insect
+ButterFly
+X
+X
+O

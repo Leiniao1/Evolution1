@@ -1,0 +1,26 @@
+Dorcus
+Lesser Stag Beetle
+75
+55
+Medium
+Herbivore
+Grassland
+Forest
+Jungle
+Mountain
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Aerial
+No
+No
+No
+Bug
+Insect
+Beetle
+X
+X
+O

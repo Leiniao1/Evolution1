@@ -13,12 +13,12 @@ Void
 Void
 Void
 Void
-Poison Attack
-Poison Defense
+Poisonous Attack
+Poisonous Defense
 Anti-Poison
 Hole Digger
 No
-Insect
+Bug
 Spider
 X
 X

@@ -1,0 +1,26 @@
+Gromphadorhina
+Hissing Cockroach
+18
+27
+Small+
+Herbivore
+Forest
+Jungle
+Grassland
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+No
+No
+No
+No
+Bug
+Insect
+Coackroach
+X
+X
+O

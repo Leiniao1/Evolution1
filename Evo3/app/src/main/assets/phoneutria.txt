@@ -18,10 +18,14 @@ Toxic Shock
 Toxic Body
 No
 No
-Insect
+Bug
 Spider
 X
 X
 X
-Insect
+Cockroach
+Locust
+Termite
+Butterfly
+Worm
 O

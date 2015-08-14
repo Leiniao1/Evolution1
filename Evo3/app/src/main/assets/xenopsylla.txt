@@ -1,0 +1,28 @@
+Xenopsylla
+Oriental Rat Flea
+12
+20
+XSmall
+Parasitic
+Forest
+Jungle
+Mountain
+Wetland
+Grassland
+Void
+Void
+Void
+Void
+High Jumping
+No
+No
+No
+No
+Bug
+Insect
+Mite
+X
+X
+Mammal
+Bird
+O

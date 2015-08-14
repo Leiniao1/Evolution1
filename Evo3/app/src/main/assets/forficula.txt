@@ -1,0 +1,26 @@
+Forficula
+Common Earwig
+28
+15
+Small
+Herbivore
+Wetland
+Forest
+Jungle
+Mountain
+Desert
+Void
+Void
+Void
+Void
+No
+No
+No
+No
+No
+Bug
+Insect
+Cockroach
+X
+X
+O

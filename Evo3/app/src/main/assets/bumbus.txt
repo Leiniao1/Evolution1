@@ -1,0 +1,26 @@
+Bumbus
+Bumble Bee
+30
+35
+Small+
+Herbivore
+Grassland
+Desert
+Mountain
+Forest
+Void
+Void
+Void
+Void
+Void
+Poison Defense
+Aerial
+Social
+No
+No
+Bug
+Insect
+Wasp
+X
+X
+O

@@ -47,6 +47,9 @@ Animals with this ability appears like owls to opposite until its first attack
 Ant Mimicry
 Animals with this ability appears like ants to opposite until its first attack
 ---------------
+Bee Mimicry
+Animals with this ability appears like bees to opposite until its first attack
+---------------
 Spiky Body
 Animals attack those with this ability get 25 health off
 ---------------
@@ -63,7 +66,7 @@ Sniper
 Animals with this ability can attack those size 2 levels smaller than it is, but cannot attack those larger than it is
 ---------------
 Illuminator
-Animals with this ability can make opposite's predators miss attack it at the first turn
+Animals with this ability can make opposite's animal miss attack it at the first turn
 ---------------
 Regenerator
 Animals with this ability can recover 15 health after under attack
@@ -83,6 +86,9 @@ Animals with this ability halfs damage made by opposite Huge and XLarge size ani
 Shell Collector
 Animals with this ability get abilities of shell animals on the field in the first turn
 ---------------
+Coral Collector
+Animals with this ability get abilities of coral animals on the field in the first turn
+---------------
 Smog
 Animals with this ability get hide after it is attacked
 ---------------
@@ -95,5 +101,8 @@ Animals with this ability cannot be attacked by animals of the same size or smal
 Trap
 Animals with this ability can kill and eat preys when the preys attack from opposite
 ---------------
-About Poisoned
-A -> poisoned -> B, result in B get N health off each turn. N = 2^(Asize-Bsize)*20
+Termite Mound
+Every small or under small size animal in team get 10 extra health per turn and defense doubled if the team has a member with this ability
+---------------
+Stink
+When eaten, animals with this ability will die but predators doesn't get health up but 10 off

@@ -1,0 +1,26 @@
+Hercules
+Hercules Beetle
+95
+60
+Medium
+Herbivore
+Grassland
+Forest
+Jungle
+Mountain
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+No
+No
+No
+No
+Bug
+Insect
+Beetle
+X
+X
+O

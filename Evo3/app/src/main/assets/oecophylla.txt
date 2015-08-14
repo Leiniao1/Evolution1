@@ -1,0 +1,27 @@
+Oecophylla
+Weaver Ant
+42
+32
+Small
+Carnivore
+Grassland
+Jungle
+Forest
+Void
+Void
+Void
+Void
+Void
+Void
+Poisonous Defense
+Poisonous Attack
+Social
+Anti-Poison
+No
+Bug
+Insect
+Ant
+X
+X
+Insect
+O

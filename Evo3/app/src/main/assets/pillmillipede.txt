@@ -1,0 +1,26 @@
+Pillmillipede
+Giant Pill Millipede
+15
+52
+Medium+
+Herbivore
+Grassland
+Forest
+Desert
+Mountain
+Jungle
+Void
+Void
+Void
+Void
+Anti-Poison
+Poisonous Defense
+No
+No
+No
+Bug
+Centipede
+X
+X
+X
+O

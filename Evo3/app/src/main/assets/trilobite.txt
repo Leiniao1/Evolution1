@@ -18,7 +18,7 @@ Spiky Body
 No
 No
 No
-Insect
+Bug
 Crab
 X
 X

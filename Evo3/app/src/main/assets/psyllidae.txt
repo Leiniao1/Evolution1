@@ -1,0 +1,26 @@
+Psyllidae
+Jumping Plant Lice
+16
+25
+Small
+Herbivore
+Forest
+Jungle
+Grassland
+Void
+Void
+Void
+Void
+Void
+Void
+High Jumping
+No
+No
+No
+No
+Bug
+Insect
+Mite
+X
+X
+O

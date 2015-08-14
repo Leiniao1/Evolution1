@@ -1,0 +1,26 @@
+Apoderus
+Giraffe Weevile
+18
+42
+Small+
+Herbivore
+Grassland
+Forest
+Jungle
+Mountain
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+No
+No
+No
+No
+Bug
+Insect
+Beetle
+X
+X
+O

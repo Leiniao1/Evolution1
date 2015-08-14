@@ -1,0 +1,28 @@
+Latrodectus
+Black Widow Spider
+32
+18
+Small+
+Carnivore
+Grassland
+Forest
+Jungle
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Toxic Shock
+Toxic Body
+Trap
+No
+Bug
+Spider
+X
+X
+X
+Insect
+Mite
+O

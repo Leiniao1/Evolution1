@@ -1,0 +1,28 @@
+Austropotamobius
+White-clawed Crayfish
+35
+40
+Medium
+Carnivore
+Wetland
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Hole Digger
+No
+No
+No
+Shell
+Crab
+X
+X
+X
+Snail
+Insect
+O

@@ -1,0 +1,31 @@
+Lophyra
+Tiger Beetle
+52
+40
+Small+
+Carnivore
+Grassland
+Desert
+Forest
+Jungle
+Mountain
+Void
+Void
+Void
+Void
+Hole Digger
+Anti-Poison
+No
+No
+No
+Bug
+Insect
+Beetle
+X
+X
+Spider
+Beetle
+Locust
+Ant
+Fly
+O

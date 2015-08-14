@@ -1,0 +1,30 @@
+Eciton
+Army Ant
+50
+40
+Small
+Herbivore
+Jungle
+Forest
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Poisonous Defense
+Poisonous Attack
+Social
+Anti-Poison
+No
+Bug
+Insect
+Ant
+X
+X
+Insect
+Amphibian
+Reptile
+Mammal
+O

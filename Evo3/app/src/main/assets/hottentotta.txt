@@ -18,11 +18,13 @@ Toxic Body
 Anti-Poison
 No
 No
-Insect
+Bug
 Spider
 X
 X
 X
-Insect
+Cockroach
+Locust
+Butterfly
 Worm
 O

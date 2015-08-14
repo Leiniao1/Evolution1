@@ -1,0 +1,26 @@
+Armadillidium
+Pill Bug
+13
+30
+Small
+Herbivore
+Mountain
+Grassland
+Forest
+Jungle
+Tundra
+Seashore
+Void
+Void
+Void
+Anti-Poison
+No
+No
+No
+No
+Bug
+Shrimp
+X
+X
+X
+O

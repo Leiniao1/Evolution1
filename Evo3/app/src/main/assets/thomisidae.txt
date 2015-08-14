@@ -18,7 +18,7 @@ Camouflage
 No
 No
 No
-Insect
+Bug
 Spider
 X
 X

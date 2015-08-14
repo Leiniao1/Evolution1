@@ -1,0 +1,26 @@
+Papilio
+Lime Butterfly
+13
+28
+Medium
+Herbivore
+Grassland
+Forest
+Jungle
+Void
+Void
+Void
+Void
+Void
+Void
+Aerial
+Stink
+No
+No
+No
+Bug
+Insect
+ButterFly
+X
+X
+O

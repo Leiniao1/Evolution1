@@ -1,0 +1,26 @@
+Chloroperlidae
+Green Stonefly
+8
+16
+Small
+Herbivore
+Wetland
+Forest
+Jungle
+Mountain
+Void
+Void
+Void
+Void
+Void
+Aerial
+No
+No
+No
+No
+Bug
+Insect
+Fly
+X
+X
+O

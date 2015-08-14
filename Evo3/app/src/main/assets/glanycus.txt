@@ -1,0 +1,26 @@
+Glanycus
+Picture-winged Leaf Moth
+14
+24
+Small+
+Herbivore
+Forest
+Mountain
+Jungle
+Grassland
+Void
+Void
+Void
+Void
+Void
+Aerial
+Poisonous Defense
+No
+No
+No
+Bug
+Insect
+ButterFly
+X
+X
+O

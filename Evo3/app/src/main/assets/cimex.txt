@@ -1,0 +1,27 @@
+Cimex
+Bed Bug
+12
+18
+XSmall
+Parasitic
+Forest
+Jungle
+Grassland
+Mountain
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Stink
+No
+No
+No
+Bug
+Insect
+Mite
+True Bug
+X
+Mammal
+O

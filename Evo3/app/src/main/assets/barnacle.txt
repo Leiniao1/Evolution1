@@ -1,0 +1,27 @@
+Barnacle
+Acorn Barnacle
+7
+55
+Small+
+Herbivore
+Ocean
+Seashore
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Shell Colony
+Still
+No
+No
+Shell
+X
+X
+X
+X
+Plankton
+O

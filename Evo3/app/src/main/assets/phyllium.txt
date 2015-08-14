@@ -1,0 +1,26 @@
+Phyllium
+Leaf Insect
+14
+21
+Medium
+Herbivore
+Forest
+Jungle
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Camouflage
+No
+No
+No
+No
+Bug
+Insect
+Locust
+X
+X
+O

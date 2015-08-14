@@ -1,0 +1,28 @@
+Lithobius
+Stone Centipede
+27
+20
+Small+
+Carnivore
+Grassland
+Jungle
+Forest
+Mountain
+Desert
+Void
+Void
+Void
+Void
+Anti-Poison
+Poisonous Attack
+Poisonous Defense
+No
+No
+Bug
+Centipede
+X
+X
+X
+Insect
+Mite
+O

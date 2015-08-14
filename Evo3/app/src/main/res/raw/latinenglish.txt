@@ -562,6 +562,9 @@ Armed Nylon Shrimp
 Enoplometopus
 Reef Lobster
 ------------------
+Stenopus
+Banded Coral Shrimp
+------------------
 Austropotamobius
 White-clawed Crayfish
 ------------------
@@ -594,6 +597,12 @@ Sponge Crab
 ------------------
 Pilumnus
 Bristly Crab
+------------------
+Ocypode
+Ghost Crab
+------------------
+Paralithodes
+King Crab
 ------------------
 Entenmuscheln
 Gooseneck Barnacle
@@ -1323,3 +1332,4 @@ Cramer's Eighty-eight
 ------------------
 Vindula
 Cruiser Butterfly
+------------------

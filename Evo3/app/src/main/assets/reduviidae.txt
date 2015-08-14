@@ -1,0 +1,30 @@
+Reduviidae
+Assassin Bug
+36
+25
+Small+
+Carnivore
+Forest
+Jungle
+Grassland
+Mountain
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Sniper
+Poison Attack
+No
+No
+Bug
+Insect
+True Bug
+X
+X
+Mite
+Cockroach
+True Bug
+Ant
+O

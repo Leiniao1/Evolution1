@@ -1,0 +1,29 @@
+Dromia
+Sponge Crab
+36
+45
+Medium
+Carnivore
+Seashore
+Ocean
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Coral Collector
+No
+No
+No
+Shell
+Crab
+X
+X
+X
+Worm
+Fish
+Shrimp
+O

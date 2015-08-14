@@ -47,8 +47,8 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
-    public String English_Name[] = new String[500];
-    public String Latin_Name[] = new String[500];
+    public String English_Name[] = new String[800];
+    public String Latin_Name[] = new String[800];
     public Specie currMainSpecie = new Specie();
     public Specie otherSpecie[] = new Specie[15];
     public int DNA = 200, DNA_rate = 2;
@@ -104,7 +104,7 @@ public class MainActivity extends ActionBarActivity {
             InputStream in = getResources().openRawResource(R.raw.latinenglish);
             BufferedReader dataIO = new BufferedReader(new InputStreamReader(in));
             String s_temp;
-            for(int i=0; i<500; i++) {English_Name[i]=""; Latin_Name[i]="";}
+            for(int i=0; i<800; i++) {English_Name[i]=""; Latin_Name[i]="";}
             int cnt=0;
             while ((s_temp = dataIO.readLine()) != null) {
                 if (s_temp.equals("------------------")) {
@@ -156,7 +156,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public String Latin2English(String s){
-        for(int i=0; i<500; i++){
+        for(int i=0; i<800; i++){
             if(Latin_Name[i].equals(s)){
                 return English_Name[i];
             }
@@ -165,7 +165,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public String English2Latin(String s){
-        for(int i=0; i<500; i++){
+        for(int i=0; i<800; i++){
             if(English_Name[i].equals(s)){
                 return Latin_Name[i];
             }
@@ -349,6 +349,18 @@ public class MainActivity extends ActionBarActivity {
         if(AchievementRecord[17]==false && currMainSpecie.latin.equals("Sepiapharaonis")){
             AchievementRecord[17]=true;
             AchievementAlert(17);
+        }
+        if(AchievementRecord[19]==false && currMainSpecie.Evo_level>=25){
+            AchievementRecord[19]=true;
+            AchievementAlert(19);
+        }
+        if(AchievementRecord[20]==false && currMainSpecie.latin.equals("Hymenodora")){
+            AchievementRecord[20]=true;
+            AchievementAlert(20);
+        }
+        if(AchievementRecord[21]==false && currMainSpecie.latin.equals("Delias")){
+            AchievementRecord[21]=true;
+            AchievementAlert(21);
         }
         WriteAchievementRecord();
         return;

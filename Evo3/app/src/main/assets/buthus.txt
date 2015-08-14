@@ -13,15 +13,17 @@ Void
 Void
 Void
 Void
-Poison Attack
-Poison Defense
+Poisonous Attack
+Poisonous Defense
 Anti-Poison
 No
 No
-Insect
+Bug
 Spider
 X
 X
 X
-Insect
+Locust
+Cockroach
+Termite
 O

@@ -1,0 +1,34 @@
+Scolopendra
+Amazon Giant Centipede
+75
+30
+Medium+
+Carnivore
+Jungle
+Forest
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Poisonous Attack
+Poisonous Defense
+No
+No
+Bug
+Centipede
+X
+X
+X
+Locust
+Butterfly
+Coackroach
+Beetle
+Bird
+Mammal
+Amphibian
+Reptile
+O

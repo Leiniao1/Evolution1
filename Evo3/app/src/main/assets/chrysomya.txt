@@ -1,0 +1,26 @@
+Chrysomya
+Blow Fly
+13
+16
+Small
+Herbivore
+Jungle
+Forest
+Grassland
+Mountain
+Seashore
+Void
+Void
+Void
+Void
+Aerial
+No
+No
+No
+No
+Bug
+Insect
+Fly
+X
+X
+O

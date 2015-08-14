@@ -1,0 +1,26 @@
+Scudderia
+Katydid
+14
+16
+Medium
+Herbivore
+Forest
+Jungle
+Grassland
+Mountain
+Void
+Void
+Void
+Void
+Void
+High Jumping
+Camouflage
+No
+No
+No
+Bug
+Insect
+Locust
+X
+X
+O

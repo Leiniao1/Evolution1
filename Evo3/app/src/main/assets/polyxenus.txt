@@ -1,0 +1,26 @@
+Polyxenus
+Bristly Millipede
+15
+35
+Small
+Herbivore
+Grassland
+Forest
+Desert
+Mountain
+Jungle
+Void
+Void
+Void
+Void
+Anti-Poison
+Spiky Body
+No
+No
+No
+Bug
+Centipede
+X
+X
+X
+O

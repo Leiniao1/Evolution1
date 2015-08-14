@@ -1,0 +1,29 @@
+Ammophila
+Digger Wasp
+40
+22
+Small
+Parasitic
+Grassland
+Desert
+Mountain
+Void
+Void
+Void
+Void
+Void
+Void
+Hole Digger
+Poisonous Attack
+Aerial
+No
+No
+Bug
+Insect
+Wasp
+X
+X
+Worm
+Beetle
+Butterfly
+O

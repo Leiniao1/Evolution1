@@ -1,0 +1,26 @@
+Hesperocorixa
+Water Boatman
+15
+30
+Small
+Herbivore
+Wetland
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+No
+No
+No
+No
+Bug
+Insect
+True Bug
+X
+X
+O

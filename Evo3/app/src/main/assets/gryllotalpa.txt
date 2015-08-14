@@ -1,0 +1,27 @@
+Gryllotalpa
+Mole Cricket
+15
+22
+Small+
+Herbivore
+Forest
+Jungle
+Grassland
+Mountain
+Void
+Void
+Void
+Void
+Void
+Hole Digger
+Aerial
+No
+No
+No
+Bug
+Insect
+Locust
+X
+X
+Worm
+O

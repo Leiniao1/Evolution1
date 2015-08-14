@@ -1,0 +1,27 @@
+Anthicid
+Ant Beetle
+20
+44
+Small
+Herbivore
+Grassland
+Forest
+Jungle
+Mountain
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Ant Mimicry
+No
+No
+No
+Bug
+Insect
+Beetle
+X
+X
+Mite
+O

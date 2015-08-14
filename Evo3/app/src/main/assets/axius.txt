@@ -1,0 +1,29 @@
+Axius
+Mud Lobster
+38
+36
+Medium
+Carnivore
+Seashore
+Ocean
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Hole Digger
+No
+No
+No
+Shell
+Crab
+X
+X
+X
+Worm
+Shrimp
+Fish
+O

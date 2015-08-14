@@ -1,0 +1,26 @@
+Parnassius
+Mountain Apollo
+15
+24
+Small+
+Herbivore
+Tundra
+Mountain
+Void
+Void
+Void
+Void
+Void
+Void
+Void
+Aerial
+No
+No
+No
+No
+Bug
+Insect
+ButterFly
+X
+X
+O

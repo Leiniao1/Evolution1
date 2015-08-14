@@ -1,0 +1,26 @@
+Blattodea
+German Cockroach
+20
+30
+Small
+Herbivore
+Forest
+Jungle
+Grassland
+Desert
+Mountain
+Void
+Void
+Void
+Void
+Anti-Poison
+Aerial
+No
+No
+No
+Bug
+Insect
+Coackroach
+X
+X
+O

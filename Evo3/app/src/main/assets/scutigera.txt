@@ -1,6 +1,6 @@
 Scutigera
 House Centipede
-14
+22
 18
 Small+
 Carnivore
@@ -15,13 +15,15 @@ Void
 Void
 Anti-Poison
 Sniper
-Poison Attack
+Poisonous Attack
 No
 No
-Insect
+Bug
 Centipede
 X
 X
 X
-Insect
+Cockroach
+Mite
+Termite
 O

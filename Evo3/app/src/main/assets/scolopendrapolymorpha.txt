@@ -1,0 +1,32 @@
+Scolopendrapolymorpha
+Banded Desert Centipede
+45
+33
+Medium
+Carnivore
+Grassland
+Forest
+Desert
+Void
+Void
+Void
+Void
+Void
+Void
+Anti-Poison
+Poisonous Attack
+Poisonous Defense
+No
+No
+Bug
+Centipede
+X
+X
+X
+Beetle
+Fly
+Butterfly
+Coackroach
+Locust
+Reptile
+O

@@ -1,0 +1,27 @@
+Hemiphlebia
+Ancient Greenling
+26
+15
+Small+
+Carnivore
+Wetland
+Jungle
+Grassland
+Forest
+Void
+Void
+Void
+Void
+Void
+Aerial
+No
+No
+No
+No
+Bug
+Insect
+Dragonfly
+X
+X
+Fly
+O

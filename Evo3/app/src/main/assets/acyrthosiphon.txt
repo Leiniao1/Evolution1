@@ -1,0 +1,26 @@
+Acyrthosiphon
+Pea aphid
+13
+20
+XSmall
+Herbivore
+Forest
+Jungle
+Grassland
+Mountain
+Void
+Void
+Void
+Void
+Void
+Camouflage
+No
+No
+No
+No
+Bug
+Insect
+Mite
+X
+X
+O

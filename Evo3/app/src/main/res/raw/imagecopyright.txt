@@ -143,7 +143,7 @@ Mermis
 Monostilifera
 "Terrestrial ribbon worm" by Guido Bohne - Flickr.com. Licensed under CC BY-SA 2.0 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Terrestrial_ribbon_worm.jpg#/media/File:Terrestrial_ribbon_worm.jpg
 Parborlasia
-"Proboscis worm" by Henry Kaiser, National Science Foundation - http://www.usap.gov/; exact source. Licensed under Public Domain via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Proboscis_worm.JPG#/media/File:Proboscis_worm.JPG
+Author: James ZHAN, from http://pirate-cats.blogspot.com/2009/12/cerebratulus.html
 Bryozoa
 "Bryozoa" by Braunchitis - Own work. Licensed under CC BY-SA 3.0 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Bryozoa.jpg#/media/File:Bryozoa.jpg
 Entoprocta
@@ -1000,8 +1000,6 @@ Choristhemis
 "Choristhemis flavoterminata 1" by John Tann from Sydney, Australia - Yellow-tipped TigertailUploaded by berichard. Licensed under CC BY 2.0 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Choristhemis_flavoterminata_1.jpg#/media/File:Choristhemis_flavoterminata_1.jpg
 Pantala
 "Wandering Glider Pantala flavescens" by Muhammad Mahdi Karim (www.micro2macro.net) Facebook Youtube - Own work. Licensed under GFDL 1.2 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Wandering_Glider_Pantala_flavescens.jpg#/media/File:Wandering_Glider_Pantala_flavescens.jpg
-Osaundersii
-"Osaundersii Female" by Photograph by S. Dean Rider, Jr. - Photograph by S. Dean Rider, Jr.. Licensed under FAL via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Osaundersii_Female.jpg#/media/File:Osaundersii_Female.jpg
 Dinotoperla
 "Stonefly - dinotoperla" by Taken byfir0002 | flagstaffotos.com.auCanon 20D + Sigma 150mm f/2.8 + Canon MT 24-EX - Own work. Licensed under GFDL 1.2 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Stonefly_-_dinotoperla.jpg#/media/File:Stonefly_-_dinotoperla.jpg
 Nemoura
@@ -1640,10 +1638,13 @@ Nemophora
 "20050611-004-moth" by Gary Houston Ghouston 22:17, 18 August 2005 (UTC) - Own work. Licensed under CC0 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:20050611-004-moth.jpg#/media/File:20050611-004-moth.jpg
 Cauchas
 "Cauchas rufimitrella female" by James Lindsey at Ecology of Commanster. Licensed under CC BY-SA 3.0 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Cauchas_rufimitrella_female.jpg#/media/File:Cauchas_rufimitrella_female.jpg
-
-
-
-
-
-
-
+Paralithodes
+"Spiny king crab md" by User:Moondigger - Own work. Licensed under CC BY-SA 2.5 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Spiny_king_crab_md.jpg#/media/File:Spiny_king_crab_md.jpg
+Eriocheir
+“EriocheirSinensis1”。来自维基共享资源 - https://commons.wikimedia.org/wiki/File:EriocheirSinensis1.jpg#/media/File:EriocheirSinensis1.jpg根据CC BY-SA 3.0授权
+Trichodina
+"Small parasites like Trichodina are diagnosed by looking at gills and mucus under a microscope." Credt: Andy Goodwin/USFWS from "https://www.flickr.com/photos/usfwspacific/9686127311"
+Osaundersii
+"CSIRO ScienceImage 2198 Embioptera Web Spinner" by CSIRO. Licensed under CC BY 3.0 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_2198_Embioptera_Web_Spinner.jpg#/media/File:CSIRO_ScienceImage_2198_Embioptera_Web_Spinner.jpg
+Phobaeticus
+"Phobaeticus serratipes" by Drägü at German Wikipedia(Original text: Drägü) - Self-photographed. Licensed under Public Domain via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Phobaeticus_serratipes.jpg#/media/File:Phobaeticus_serratipes.jpg
